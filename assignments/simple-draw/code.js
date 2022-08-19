@@ -37,10 +37,6 @@
 
 drawLine(0, 0, width, height, 'red')
 
-drawCircle(width/100, height/2, 10, 'blue');
-
-drawRect(50, 50, 60, 40, 'black');
-
 drawFilledCircle(width - 475, height - 575, 50, 'yellow');
 
 drawFilledRect(50, height - 150, 450, 300, 'green');
