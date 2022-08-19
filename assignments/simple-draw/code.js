@@ -40,6 +40,6 @@
 
 drawFilledCircle(width - 475, height - 575, 50, 'yellow');
 
-drawFilledRect(50, height - 150, 525, 300, 'green');
+drawFilledRect(50, height - 150, 400, 300, 'green');
 
 drawFilledRect(50, height - 450, 1400, 400, 'lightblue');
