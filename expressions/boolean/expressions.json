@@ -98,5 +98,10 @@
     "name": "Time to sleep?",
     "answer": "sleepy && dark",
     "correct": false
+  },
+  {
+    "name": "Time to sleep?",
+    "answer": "!sleepy && !dark",
+    "correct": false
   }
 ]
