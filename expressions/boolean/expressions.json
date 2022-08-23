@@ -88,5 +88,10 @@
     "name": "Not feeling it?",
     "answer": "!fun || tired",
     "correct": true
+  },
+  {
+    "name": "Time to sleep?",
+    "answer": "!sleepy && !dark",
+    "correct": false
   }
 ]
