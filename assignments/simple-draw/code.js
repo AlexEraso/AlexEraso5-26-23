@@ -51,4 +51,4 @@ drawFilledRect(110, height - 375, 300, 225, 'grey');
 
 drawFilledRect(225, height - 260, 75, 115, 'brown');
 
-drawFilledCircle(width - 10, height - 120, 10, 'white');
+drawFilledCircle(width - 10, height - 190, 10, 'white');
