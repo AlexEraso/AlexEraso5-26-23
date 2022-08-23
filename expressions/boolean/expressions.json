@@ -83,5 +83,10 @@
     "name": "Not feeling it?",
     "answer": "fun && !tired",
     "correct": false
+  },
+  {
+    "name": "Not feeling it?",
+    "answer": "!fun || tired",
+    "correct": true
   }
 ]
