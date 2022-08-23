@@ -73,5 +73,10 @@
     "name": "Having fun?",
     "answer": "done || fun ",
     "correct": false
+  },
+  {
+    "name": "Having fun?",
+    "answer": "done || !fun ",
+    "correct": true
   }
 ]
