@@ -83,5 +83,10 @@
     "name": "Can pay attention?",
     "answer": "hungry || !interested",
     "correct": false
+  },
+  {
+    "name": "Can pay attention?",
+    "answer": "!hungry || interested",
+    "correct": false
   }
 ]
