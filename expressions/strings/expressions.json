@@ -124,5 +124,11 @@
     "answer": "11",
     "correct": false,
     "timestamp": 1661378686233
+  },
+  {
+    "name": "lower case",
+    "answer": "3",
+    "correct": false,
+    "timestamp": 1661378762850
   }
 ]
