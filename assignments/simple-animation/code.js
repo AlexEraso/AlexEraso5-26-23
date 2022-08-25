@@ -50,7 +50,7 @@ const drawFallingFilledTriangle = (x, time) => {
   let y3 = y1 - 23;
 
   // Actually draw the triangle.
-  drawFilledTriangle(x1, y1, x2, y2, x3, y3, 'purple', 3);
+  drawFilledTriangle(x1, y1, x2, y2, x3, y3, 'orange', 3);
 };
 
 // Leave this code here or the animation won't run. Also don't change the name
