@@ -42,4 +42,4 @@ const drawFallingTriangle = (x, time) => {
 // the same way in both places.)
 animate(drawFrame);
 
-  drawFilledCircle((time / 10) % width, height / 1.6, 17, 'black');
+  drawFilledRect((time / 10) % width, height / 1.6, 17, 'black');
