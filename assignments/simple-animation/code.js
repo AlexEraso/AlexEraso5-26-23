@@ -41,3 +41,4 @@ const drawFallingTriangle = (x, time) => {
 // the same way in both places.)
 animate(drawFrame);
 
+drawFilledRect(-10, height - 200, 900, 300, 'green');
