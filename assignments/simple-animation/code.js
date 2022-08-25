@@ -19,9 +19,9 @@ drawFilledRect(110, height - 375, 300, 225, 'grey');
 drawFilledRect(225, height - 260, 75, 115, 'brown');
 
 drawFilledCircle(width - 210, height - 190, 5, 'white');
-  drawFilledCircle((time / 1.9) % width, height / 1.4, 15, 'white');
-  drawFilledCircle((time / 2) % width, height / 1.4, 15, 'blue');
-    drawFilledCircle((time / 2.1) % width, height / 1.4, 15, 'red');
+  drawFilledCircle((time / 1.9) % width, height / 1.2, 15, 'white');
+  drawFilledCircle((time / 2) % width, height / 1.2, 15, 'blue');
+    drawFilledCircle((time / 2.1) % width, height / 1.2, 15, 'red');
 
 
   drawFallingFilledTriangle(width / 2, time);
