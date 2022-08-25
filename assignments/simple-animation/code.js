@@ -14,7 +14,7 @@ const drawFrame = (time) => {
 // This is a function that we define to make it easier to draw a triangle. You
 // may want to experiment with writing your own functions using this one as a
 // model to draw other shapes.
-const drawFilledRect = (x1, y1, x2, y2, x3, y3, color, width = 1) => {
+const drawTriangle = (x1, y1, x2, y2, x3, y3, color, width = 1) => {
   drawLine(x1, y1, x2, y2, color, width);
   drawLine(x2, y2, x3, y3, color, width);
   drawLine(x3, y3, x1, y1, color, width);
@@ -42,4 +42,4 @@ const drawFallingTriangle = (x, time) => {
 // the same way in both places.)
 animate(drawFrame);
 
-  drawFilledRect((time / 10) % width, height / 1.6, 17, 'black');
+  drawFilledRectangle((time / 10) % width, height / 1.6, 17, 'black');
