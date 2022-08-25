@@ -8,6 +8,17 @@ const drawFrame = (time) => {
   clear();
   drawFilledRect(-10, height - 200, 900, 300, 'green');
 
+drawFilledRect(-10, height - 600, 1400, 400, 'lightblue');
+
+drawFilledCircle(width - 475, height - 575, 50, 'yellow');
+
+
+
+drawFilledRect(110, height - 375, 300, 225, 'grey');
+
+drawFilledRect(225, height - 260, 75, 115, 'brown');
+
+drawFilledCircle(width - 210, height - 190, 5, 'white');
   drawFilledCircle((time / 1.9) % width, height / 2, 25, 'green');
   drawFilledCircle((time / 2) % width, height / 2, 25, 'blue');
     drawFilledCircle((time / 2.1) % width, height / 2, 25, 'red');
