@@ -19,7 +19,7 @@ drawFilledRect(110, height - 375, 300, 225, 'grey');
 drawFilledRect(225, height - 260, 75, 115, 'brown');
 
 drawFilledCircle(width - 210, height - 190, 5, 'white');
-  drawFilledCircle((time / 1.9) % width, height / 2, 25, 'green');
+  drawFilledCircle((time / 1.9) % width, height / 2, 25, 'white');
   drawFilledCircle((time / 2) % width, height / 2, 25, 'blue');
     drawFilledCircle((time / 2.1) % width, height / 2, 25, 'red');
 
