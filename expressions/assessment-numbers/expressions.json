@@ -82,5 +82,12 @@
     "answer": "Math.PI*2**2",
     "correct": true,
     "timestamp": 1661896345481
+  },
+  {
+    "name": "Manhattan distance",
+    "canonical": "Math.abs(x1 - x2) + Math.abs(y1 - y2)",
+    "answer": "(x2-y2)/(x1-y1)",
+    "correct": false,
+    "timestamp": 1661898508749
   }
 ]
