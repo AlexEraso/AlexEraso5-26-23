@@ -5,5 +5,12 @@
     "answer": "fast && strong",
     "correct": true,
     "timestamp": 1661896523712
+  },
+  {
+    "name": "Super beat?",
+    "canonical": "!enoughSleep && !eatenEnough",
+    "answer": "!enoughSleep && !eatenEnough",
+    "correct": true,
+    "timestamp": 1661896567752
   }
 ]
