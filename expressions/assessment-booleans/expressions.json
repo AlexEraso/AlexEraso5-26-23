@@ -26,5 +26,12 @@
     "answer": "inTheClass || isProctor",
     "correct": true,
     "timestamp": 1661896629818
+  },
+  {
+    "name": "Energetic?",
+    "canonical": "enoughSleep && !justWorkedOut",
+    "answer": "enoughSleep && !justWorkedOut",
+    "correct": true,
+    "timestamp": 1661896660955
   }
 ]
