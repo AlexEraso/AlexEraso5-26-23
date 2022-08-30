@@ -89,5 +89,12 @@
     "answer": "!hungry && interested",
     "correct": true,
     "timestamp": 1661896915194
+  },
+  {
+    "name": "Coming to bookclub?",
+    "canonical": "member && !outSick",
+    "answer": "!member || outsick",
+    "correct": false,
+    "timestamp": 1661896938923
   }
 ]
