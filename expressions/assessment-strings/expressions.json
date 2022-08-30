@@ -1,0 +1,9 @@
+[
+  {
+    "name": "Length",
+    "canonical": "s.length",
+    "answer": "s.substring(1, slength)",
+    "correct": false,
+    "timestamp": 1661897112753
+  }
+]
