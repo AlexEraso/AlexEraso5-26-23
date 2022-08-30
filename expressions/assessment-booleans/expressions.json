@@ -96,5 +96,12 @@
     "answer": "!member || outsick",
     "correct": false,
     "timestamp": 1661896938923
+  },
+  {
+    "name": "Wait for a sale?",
+    "canonical": "!storeOpen || !isASale",
+    "answer": "!storeOpen || !isASale",
+    "correct": true,
+    "timestamp": 1661896970188
   }
 ]
