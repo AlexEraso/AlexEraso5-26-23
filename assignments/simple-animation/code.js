@@ -7,6 +7,7 @@
 const drawFrame = (time) => {
   clear();
 
+    drawTriangle(x1, y1, x2, y2, x3, y3, 'pink', 3);
 
 
   
@@ -64,3 +65,20 @@ const drawFallingFilledTriangle = (x, time) => {
 // of drawFrame either here or where it is defined. (Or, if you must, change it
 // the same way in both places.)
 animate(drawFrame);
+
+
+
+
+const drawFrame = (time) => {
+    clear();
+    drawFilledCircle((time / 3) % width, height/2, 25, 'blue');
+    drawFallingTriangle(width/2, time);
+
+
+
+    const drawTriangle = (x1, y1, x2, y2, x3, y3, color, width=1) => {
+    drawLine(x1, y1, x2, y2, color, width);
+    drawLine(x2, y2, x3, y3, color, width);
+    drawLine(x3, y3, x1, y1, color, width);
+
+
