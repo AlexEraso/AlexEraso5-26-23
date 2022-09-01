@@ -56,10 +56,7 @@ const drawFallingFilledTriangle = (x, time) => {
   // Actually draw the triangle.
   drawFilledTriangle(x1, y1, x2, y2, x3, y3, 'orange', 3);
 
-const drawTriangle = (x1, y1, x2, y2, x3, y3, color, width=1) => {
-    drawLine(x1, y1, x2, y2, color, width);
-    drawLine(x2, y2, x3, y3, color, width);
-    drawLine(x3, y3, x1, y1, color, width);
+
 
 };
 
