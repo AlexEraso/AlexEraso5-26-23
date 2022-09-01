@@ -10,6 +10,11 @@ const drawFrame = (time) => {
   drawFallingTriangle(width / 2, time);
 };
 
+const drawFrame = (time) => {
+    clear();
+    drawFilledCircle((time / 3) % width, height/2, 25, 'blue');
+    drawFallingTriangle(width/2, time);
+
 // This is a function that we define to make it easier to draw a triangle. You
 // may want to experiment with writing your own functions using this one as a
 // model to draw other shapes.
