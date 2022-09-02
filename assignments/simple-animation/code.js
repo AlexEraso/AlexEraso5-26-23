@@ -59,14 +59,15 @@ const drawSquare = (x1, y1, x2, y2, x3, y3, color, width = 1) => {
 
 const drawFallingSquareTriangle = (x, time) => {
  
-  let x1 = x - 75;
-  let x2 = x;
-  let x3 = x + 25;
+  let = x - 75;
+  let  = x;
+  let  = x + 25;
 
 
   let y1 = (time / 50) % height;
-  let  y2= y1 + 75;
-  let  y3= y1 - 23;
+  let  = y1 + 75;
+  let  = y1 - 23;
+  drawFilledTriangle(x1, y1, x2, y2, x3, y3, 'green', 3);
 
 
 animate(drawFrame);
