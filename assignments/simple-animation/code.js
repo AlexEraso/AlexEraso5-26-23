@@ -62,12 +62,13 @@ const drawFallingSquare= (x, time) => {
   let x1= x - 75;
   let  x2= x;
   let  x3= x + 25;
-
+   let x4= x;
 
   let y1 = (time / 50) % height;
   let  y2= y1 + 75;
   let  y3= y1 - 23;
-  drawSquare(x1, y1, x2, y2, x3, y3, 'green', 3);
+  let y4= y1 +15;
+  drawSquare(x1, y1, x2, y2, x3, y3, x4, y4 'green', 3);
 
 
 animate(drawFrame);
