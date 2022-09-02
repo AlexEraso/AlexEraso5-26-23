@@ -67,7 +67,7 @@ const drawFallingSquareTriangle = (x, time) => {
   let y1 = (time / 50) % height;
   let  y2= y1 + 75;
   let  y3= y1 - 23;
-  drawFilledTriangle(x1, y1, x2, y2, x3, y3, 'green', 3);
+  drawSquare(x1, y1, x2, y2, x3, y3, 'green', 3);
 
 
 animate(drawFrame);
