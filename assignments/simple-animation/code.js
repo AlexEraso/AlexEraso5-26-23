@@ -52,12 +52,5 @@ const drawFallingFilledTriangle = (x, time) => {
 };
 
 
-let x1 = x - 50;
-    let x2 = x;
-    let x3 = x + 50;
- let y1 = (time / 4) % height;
-    let y2 = y1 + 37;
-    let y3 = y1 - 13;
-    drawTriangle(x1, y1, x2, y2, x3, y3, 'pink', 3);
 
 animate(drawFrame);
