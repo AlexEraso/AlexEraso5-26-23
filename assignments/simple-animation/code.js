@@ -57,7 +57,7 @@ const drawSquare = (x1, y1, x2, y2, x3, y3, color, width = 1) => {
   drawLine(x2, y2, x3, y3, color, width);
   drawLine(x3, y3, x1, y1, color, width);
 
-const drawFallingSquareTriangle = (x, time) => {
+const drawFallingSquare= (x, time) => {
  
   let x1= x - 75;
   let  x2= x;
