@@ -28,13 +28,13 @@ drawFilledCircle(width - 210, height - 190, 5, 'white');
     drawFilledCircle((time / 2.1) % width, height / 1.2, 15, 'red');
 
 
-  drawFallingFilledSquare(width / 2, time);
+  drawFallingFilledTriangle(width / 2, time);
 };
 
 // This is a function that we define to make it easier to draw a triangle. You
 // may want to experiment with writing your own functions using this one as a
 // model to draw other shapes.
-const drawFilledSquare = (x1, y1, x2, y2, x3, y3, color, width = 1) => {
+const drawFilledTriangle = (x1, y1, x2, y2, x3, y3, color, width = 1) => {
   drawLine(x1, y1, x2, y2, color, width);
   drawLine(x2, y2, x3, y3, color, width);
   drawLine(x3, y3, x1, y1, color, width);
@@ -42,7 +42,7 @@ const drawFilledSquare = (x1, y1, x2, y2, x3, y3, color, width = 1) => {
 
 // This draws a falling trangle of a particular shape whose bottom point is
 // positioned at x and whose y is a function of time.
-const drawFallingFilledSquare = (x, time) => {
+const drawFallingFilledTriangle = (x, time) => {
   // Figure out the x values relative to the passed in x
   let x1 = x - 75;
   let x2 = x;
@@ -54,7 +54,7 @@ const drawFallingFilledSquare = (x, time) => {
   let y3 = y1 - 23;
 
   // Actually draw the triangle.
-  drawFilledSquare(x1, y1, x2, y2, x3, y3, 'orange', 3);
+  drawFilledTriangle(x1, y1, x2, y2, x3, y3, 'orange', 3);
 
 
 
