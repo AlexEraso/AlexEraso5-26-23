@@ -8,4 +8,4 @@ const divide = (x,y) => x / y;
 
 const mod = (x,y) => x % y;
 
-const averageOfTwo  =(x,y) (x + y)/2;
+const averageOfTwo  =(x,y) (x + y)/ 2;
