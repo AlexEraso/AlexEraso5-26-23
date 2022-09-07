@@ -1,4 +1,3 @@
-
-const double = (x) => x * 2;
-
 const add = (x,y) => x + y; 
+
+const subtract = (x,y) => x - y; 
