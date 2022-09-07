@@ -8,10 +8,3 @@ const divide = (x,y) => x / y;
 
 const mod = (x,y) => x % y;
 
-const averageOfTwo  = (x,y) (x + y)/ 2;
-
-const averageOfThree = (x,y,z) (x + y + z)/3;
-
-const distance  = (a,b) Math.abs(a-b)	
-
-const manhattanDistance = (x1,x2,y1,y2) Math.abs(x1 - x2) + Math.abs(y1 - y2)	
