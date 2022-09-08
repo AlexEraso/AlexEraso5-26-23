@@ -17,6 +17,4 @@ const distance  = (x,y) Math.sqrt(x * x + y * y);
     let x = y2 - y1;
 
 
-const manhattanDistance = (x1,x2,y1,y2) Math.abs(x1 - x2) + Math.abs(y1 - y2)	
 
-const euclideanDistance =
