@@ -16,5 +16,5 @@ const distance  = (x,y) => Math.abs(x-y)
 
 const manhattanDistance = (x1,x2,y1,y2) =>  Math.abs(x1 - y1) + Math.abs(x2 - y2)	
 
-const euclideanDistance = Math.sqrt(Math.abs(x1-y1) **2 + Math.abs (x2-y2) **2)
+const euclideanDistance = (x1,x2,y1,y2) => Math.sqrt(Math.abs(x1-y1) **2 + Math.abs (x2-y2) **2)
 
