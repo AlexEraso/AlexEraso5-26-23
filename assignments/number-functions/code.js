@@ -12,9 +12,4 @@ const averageOfTwo  = (x,y) => (x + y)/ 2;
 
 const averageOfThree = (x,y,z) => (x + y + z)/3;
 
-const distance  = (x,y) Math.sqrt(x * x + y * y);	
-   let y = x2 - x1;
-    let x = y2 - y1;
-
-
 
