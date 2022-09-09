@@ -29,4 +29,4 @@ const eatsWorms = (red , spotted) => red && spotted || !red && spotted || red &&
 
 const eatsNuts = (red , spotted) => red && spotted || red && !spotted || !red && !spotted;
 
-const eatsFish = (red spotted) => red && spotted || !red && spotted || !red && !spotted;
+const eatsFish = (red , spotted) => red && spotted || !red && spotted || !red && !spotted;
