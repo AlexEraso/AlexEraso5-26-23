@@ -32,3 +32,5 @@ const eatsNuts = (red , spotted) => red && spotted || red && !spotted || !red &&
 const eatsFish = (red , spotted) => red && spotted || !red && spotted || !red && !spotted;
 
 const eatsMice = (red , spotted) => red && !spotted || !red && spotted || !red && !spotted;  
+
+const isRed = (isFlobbyBird, isBloggyBird, isFibbleBird, isGlobbyBird) => isFlobbyBird || isBloggyBird || isFibbleBird || isGlobbyBird; 
