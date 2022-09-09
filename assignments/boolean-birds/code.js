@@ -18,3 +18,25 @@
  */
 
 const isFlobbyBird = (red , spotted) => red && spotted ;
+
+const isBloggyBird = (red , spotted) => red || spotted 
+
+const isFlibbleBird =
+
+const isGlobbyBird =
+
+const eatsWorms =
+
+const eatsNuts =
+  
+const eatsFish =
+
+const eatsMice = 
+
+const isRed =
+
+const isSpotted =
+
+const isNotRed =
+
+const isNotSpotted =
