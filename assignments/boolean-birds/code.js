@@ -34,3 +34,5 @@ const eatsFish = (red, spotted) => red && spotted || !red && spotted || !red && 
 const eatsMice = (red, spotted) => red && !spotted || !red && spotted || !red && !spotted;
 
 const isRed = (red) => red === 'Flobby' || red === 'Bloggy';   
+
+const isSpotted = (spotted) => spotted === 'Flobby' || spotted === 'Flibble'; 
