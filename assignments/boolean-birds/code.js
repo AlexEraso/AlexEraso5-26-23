@@ -38,3 +38,5 @@ const isRed = (red) => red === 'Flobby' || red === 'Bloggy';
 const isSpotted = (spotted) => spotted === 'Flobby' || spotted === 'Flibble'; 
 
 const isNotRed = (isNotRed) => isNotRed === 'Flibble' || isNotRed === 'Globby';
+
+const isNotSpotted = (isNotSpotted) => isNotSpotted === 'Bloggy' || isNotSpotted === 'Globby'; 
