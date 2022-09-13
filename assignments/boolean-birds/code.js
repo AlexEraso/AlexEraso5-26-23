@@ -33,4 +33,4 @@ const eatsFish = (red, spotted) => red && spotted || !red && spotted || !red && 
 
 const eatsMice = (red, spotted) => red && !spotted || !red && spotted || !red && !spotted;
 
-const isRed = (red) => red === Flobby && Bloggy   
+const isRed = (red) => red === Flobby || red === Bloggy;   
