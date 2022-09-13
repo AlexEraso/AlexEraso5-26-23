@@ -36,3 +36,5 @@ const eatsMice = (red, spotted) => red && !spotted || !red && spotted || !red &&
 const isRed = (red) => red === 'Flobby' || red === 'Bloggy';   
 
 const isSpotted = (spotted) => spotted === 'Flobby' || spotted === 'Flibble'; 
+
+const isNotRed = (isNotRed) => isNotRed === 'Flibble' || isNotRed === 'Globby';
