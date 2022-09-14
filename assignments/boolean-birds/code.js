@@ -27,15 +27,15 @@ const isGlobbyBird = (red, spotted) => !red && !spotted;
 
 const eatsWorms = (red, spotted) => red || spotted;
 
-const eatsNuts = (red, spotted) => isFlobbyBird(red, spotted) || isFlibbleBird(red, spotted) || isBloggyBird(red, spotted);
+const eatsNuts = (red, spotted) => red && spotted || red && !spotted || !red && !spotted;
 
-const eatsFish = (red, spotted) => red && spotted || !red && spotted || !red && !spotted;
+const eatsFish = (red, spotted) => red && spotted || !red && !spotted || !red && spotted;
 
-const eatsMice = (red, spotted) => red && !spotted || !red && spotted || !red && !spotted;
+const eatsMice = (red, spotted) => red && !spotted || !red && !spotted || !red && spotted;
 
-const isRed = (red) => red === 'Flobby' || red === 'Bloggy';   
+const isRed = (red) => red === 'Flobby' || red === 'Bloggy';
 
-const isSpotted = (spotted) => spotted === 'Flobby' || spotted === 'Flibble'; 
+const isSpotted = (spotted) => spotted === 'Flobby' || spotted === 'Flibble';
 
 const isNotRed = (isNotRed) => isNotRed === 'Flibble' || isNotRed === 'Globby';
 
