@@ -14,7 +14,7 @@ const averageOfThree = (x,y,z) => (x + y + z)/3;
 
 const distance  = (x,y) => Math.abs(x-y)	
 
-const manhattanDistance = (x1,x2,y1,y2) =>  Math.abs(x1 - y1) + Math.abs(x2 - y2)	
+const manhattanDistance = (a,b,c,d) =>  Math.abs(a - c) + Math.abs(b - d)	
 
-const euclideanDistance = (x1,x2,y1,y2) => Math.sqrt(Math.abs(x1-y1) **2 + Math.abs (x2-y2) **2)
+const euclideanDistance = (a,b,c,d) => Math.sqrt(Math.abs(a - c) **2 + Math.abs (b - d) **2)
 
