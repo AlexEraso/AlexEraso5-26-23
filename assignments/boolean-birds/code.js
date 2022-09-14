@@ -27,7 +27,7 @@ const isGlobbyBird = (red, spotted) => !red && !spotted;
 
 const eatsWorms = (red, spotted) => red || spotted;
 
-const eatsWorms = (red, soitted) => isFlobbyBird(red, spotted) || isFlibbleBird(red, spotted) || isBloggyBird(red, spotted);
+const eatsWorms = (red, spotted) => isFlobbyBird(red, spotted) || isFlibbleBird(red, spotted) || isBloggyBird(red, spotted);
 
 const eatsFish = (red, spotted) => red && spotted || !red && spotted || !red && !spotted;
 
