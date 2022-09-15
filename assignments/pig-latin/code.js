@@ -32,6 +32,9 @@
 // Feel free to play around in the REPL to make sure you understand how this
 // operator works.
 
-const s = 'phone'
-
 s.search (/[aeiou]/) returns 2 
+
+const s = 'phone';
+
+
+
