@@ -34,10 +34,10 @@
 
 //s.search (/[aeiou]/) returns 2 
 
-s.search(/[aeiou]/) returns 2 
-
 const s = 'phone'
 
-const pigLatin = (word) => 
+s.search(/[aeiou]/) 
+
+const pigLatin = (word) => s.substring 
 
 
