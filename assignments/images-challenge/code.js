@@ -23,6 +23,7 @@
  *
  *  clear()
  */
+
 var NUM_CIRCLES = 15;
 var CenterX = getWidth() / 2;
 var CenterY = getHeight() / 2 ;
