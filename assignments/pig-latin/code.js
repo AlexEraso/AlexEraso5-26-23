@@ -36,7 +36,7 @@
 
 
 
-return vowlsearch = 'word.search(/[aeiou]/)'
+const vowlsearch = 'word.search(/[aeiou]/)'
 
 const pigLatin = (word) =>
   word.substring('vowelsearch') + word.substring(0, 'vowelsearch') + 'ay'
