@@ -1,1 +1,1 @@
-drawFilledCircle(width - 400, height - 250, 50, 'yellow');
+drawFilledCircle(width - 300, height - 250, 50, 'yellow');
