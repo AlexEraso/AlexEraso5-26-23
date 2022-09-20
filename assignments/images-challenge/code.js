@@ -1,0 +1,1 @@
+drawFilledCircle(width - 475, height - 575, 50, 'yellow');
