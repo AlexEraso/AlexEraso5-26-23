@@ -8,4 +8,4 @@ drawFilledCircle(x*25, height - 250, 13, 'red');
 
 
 
-drawLine(0, 0, width, height, 'red');
+drawLine(10, 0, width, height, 'red');
