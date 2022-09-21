@@ -1,4 +1,7 @@
-
 for (let x = 0; x < 100; x++) {
-  drawFilledCircle(x*25, height - 250, 12, 'blue');
+ if (x % 2 ==0){
+ drawFilledCircle(x25, height - 250, 13, 'blue');
+} else{
+drawFilledCircle(x25, height - 250, 13, 'red');
+}
 }
