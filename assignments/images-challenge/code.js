@@ -1,1 +1,1 @@
-drawLine(x1, y1, x2, y2, black, 15)
+drawLine(0, 0, width, height, 'red');
