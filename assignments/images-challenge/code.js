@@ -1,7 +1,7 @@
 
 //Line of Circles
 const lineofcircles = (r) => {
-  for (let x = 0; x < width/r*2; x++) {
+  for (let x = 0; x < width/(r*2); x++) {
     drawFilledCircle(x * r*2, height - 250, r, 'blue');
   }
 };
