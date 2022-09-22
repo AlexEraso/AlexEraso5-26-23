@@ -6,7 +6,7 @@ const lineofcircles = (r) => {
   }
 };
 
-lineofcircles(23)
+lineofcircles(2)
 
 //Line of Circles Alternating 
 /*
