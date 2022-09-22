@@ -1,13 +1,24 @@
 
+//Line of Circles
+const lineofcircles = (r) => {
+  for (let x = 0; x < 100; x++) {
+    drawFilledCircle(x * 25, height - 250, 13, 'blue');
+  }
+};
+
+lineofcircles(13)
+
+//Line of Circles Alternating 
+/*
 for (let x = 0; x < 100; x++) {
-  drawFilledCircle(x*25, height - 250, 13, 'blue');
+  if (x % 2 == 0) {
+    drawFilledCircle(x * 25, height - 250, 13, 'blue');
+  } else {
+    drawFilledCircle(x * 25, height - 250, 13, 'red');
+  }
 }
 
+//Concentric Circles
 
-for (let x = 0; x < 100; x++) {
- if (x % 2 ==0){
- drawFilledCircle(x* 25, height - 250, 13, 'blue');
-} else{
-drawFilledCircle(x*25, height - 250, 13, 'red');
-}
-}
+drawFilledCircle(width - 475, height - 575, 50, 'yellow');
+*/
