@@ -21,4 +21,4 @@ for (let x = 0; x < 100; x++) {
 
 //Concentric Circles
 */
-drawFilledCircle(width - 475, height - 575, 50, 'yellow');
+drawFilledCircle(width - 475, height - 200, 50, 'yellow');
