@@ -27,3 +27,4 @@ drawFilledCircle(width - 250, height - 250, 25, 'yellow');
   }
 };
 
+cocentriccircles(10)
