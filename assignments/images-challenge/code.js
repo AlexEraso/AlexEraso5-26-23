@@ -8,7 +8,7 @@ const lineofcircles = (r) => {
 };
 
 lineofcircles(13)
-*/
+
 //Line of Circles Alternating 
 
 for (let x = 0; x < 100; x++) {
@@ -20,5 +20,5 @@ for (let x = 0; x < 100; x++) {
 }
 
 //Concentric Circles
-
+*/
 drawFilledCircle(width - 475, height - 575, 50, 'yellow');
