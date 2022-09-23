@@ -22,7 +22,7 @@ for (let x = 0; x < 100; x++) {
 //Concentric Circles
 
 const cocentriccircles = (r) => {
-  for (let x = 0; x < diameter/ r*10); x++ {
+  for (let x = 0; x < width/ r*10); x++ {
 drawFilledCircle(width - 250, height - 250, 25, 'yellow');
   }
 };
