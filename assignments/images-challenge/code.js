@@ -18,7 +18,7 @@ for (let x = 0; x < 100; x++) {
     drawFilledCircle(x * 25, height - 250, 13, 'red');
   }
 }
-
+*/
 //Concentric Circles
 
 const cocentriccircles = (n) => {
@@ -27,3 +27,4 @@ const cocentriccircles = (n) => {
   }
 };
 
+drawFilledCircle(width - 450, height - 230, 225, 'yellow');
