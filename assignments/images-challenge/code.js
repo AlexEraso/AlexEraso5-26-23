@@ -27,4 +27,4 @@ const cocentriccircles = (n) => {
   }
 };
 
-
+cocentriccircles(10)
