@@ -27,4 +27,4 @@ const cocentriccircles = (n) => {
   }
 };
 */
-drawFilledCircle(width - 250, height - 250, 175, 'yellow');
+drawFilledCircle(width - 250, height - 250, 190, 'yellow');
