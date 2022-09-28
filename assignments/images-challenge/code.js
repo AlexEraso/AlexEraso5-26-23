@@ -23,7 +23,8 @@ for (let x = 0; x < 100; x++) {
 
 const cocentriccircles = (n) => {
   for (let x = 0; x < width / n * 10; x++) {
-  if drawFilledCircle(width - 450, height - 230, 225, 'yellow');
+  if (x % 2 ==0)
+  drawFilledCircle(width - 450, height - 230, 225, 'yellow');
   } else }
     drawFilledCircle(width - 450, height - 230, 225-x*10, 'black');
   }
