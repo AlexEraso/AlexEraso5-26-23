@@ -22,11 +22,12 @@ for (let x = 0; x < 100; x++) {
 //Concentric Circles
 
 const cocentriccircles = (n) => {
+  const gap = (225/n)
   for (let x = 0; x < n; x++) {
     if (x % 2 === 0) {
-      drawFilledCircle(width - 450, height - 230, 225 - x * 10, 'yellow');
+      drawFilledCircle(width - 450, height - 230, 225 - x * gap, 'yellow');
     } else {
-      drawFilledCircle(width - 450, height - 230, 225 - x * 10, 'black');
+      drawFilledCircle(width - 450, height - 230, 225 - x * gap, 'black');
     }
   }
 };
