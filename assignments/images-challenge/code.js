@@ -32,4 +32,4 @@ const cocentriccircles = (n) => {
   }
 };
 
-cocentriccircles(100)
+cocentriccircles(10)
