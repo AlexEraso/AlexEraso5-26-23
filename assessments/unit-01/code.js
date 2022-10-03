@@ -10,11 +10,13 @@ const averageWeight = (x , y) => (x + y)/2;
 
 const hypotenuse = (a , b) => (a ** 2 ) + (b **2);
 
-const maxRadius = (width , height) => 
+const maxRadius = (width , height) => Math.min (width, height) /2
 
-const numCircles = (radius , width) => 
+//the max radius of the circle is dependent on the smaller value out of the height or width, then /2 
 
-const offset = (width , ) => 
+const numCircles = (radius , width) => width/2*r
+
+const offset = (width , length) => 
 
 const canSleepIn = (weekday , vacation) => weekday && vacation || !weekday && vacation; 
 
@@ -22,7 +24,7 @@ const canGoToProm = (senior , invited , exclusion) => senior && !exclusion || !s
 
 const getsSpeedingTicket = (speed , grouchy) => speed && !grouchy || !speed && grouchy;  
 
-const moreThanTwiceAsLong = () => 
+const moreThanTwiceAsLong = (a , b) => s.length	 
 
 const aFartherThanB = () => 
 
@@ -34,4 +36,6 @@ const upDown = () =>
 
 const everyOther = () => 
 
-const 
+const upDownLastCharacter = () =>
+
+const yesIfEven = if (x %  2 ===0)
