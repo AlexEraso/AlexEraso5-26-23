@@ -42,3 +42,27 @@ const getsSpeedingTicket = (mph, grouchy) => {
 const moreThanTwiceAsLong = (s1, s2) => {
   return s1.length > s2.length * 2;
 };
+
+const aFartherThanB = (a, b, c) => {
+  return Math.abs(c - a) > Math.abs(b - c);
+};
+
+const firstHalf = (s) => {
+  return s.substring(0, s.length / 2);
+};
+
+const secondHalf = (s) => {
+  return s.string(s.length / 2, s.length)
+};
+
+const upDown = (s) => {
+  return s.toUpperCase() + s.toLowerCase();
+};
+
+const everyOther = () => {
+  return s(0) + s(2) + s(4);
+};
+
+const upDownLastCharacter = (s) => {
+  return s.s(s.length -1). toUpperCase() + s(s.length -1) to.LowerCase();
+};
