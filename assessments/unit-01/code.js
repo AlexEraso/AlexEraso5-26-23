@@ -42,17 +42,3 @@ const getsSpeedingTicket = (mph, grouchy) => {
 const moreThanTwiceAsLong = (s1, s2) => {
   return s1.length > s2.length * 2;
 };
-
-const aFartherThanB = () => 
-
-const firstHalf = () => 
-
-const secondHalf = () => 
-
-const upDown = () =>
-
-const everyOther = () => 
-
-const upDownLastCharacter = () =>
-
-const yesIfEven = if (x % 2 === 0)
