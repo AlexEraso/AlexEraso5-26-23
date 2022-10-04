@@ -6,25 +6,34 @@ const emit = (a, b, product) => {
 
 // Write your code here ...
 
-const averageWeight = (x , y) => (x + y)/2;
+const averageWeight = (weight, items) => {
+  return weight / items;
+};
 
-const hypotenuse = (a , b) => (a ** 2 ) + (b **2);
+const hypotenuse = (a, b) => {
+  return Math.sqrt(a ** 2 + b ** 2);
+};
 
-const maxRadius = (width , height) => Math.min (width, height) /2
+const maxRadius = (width, height) => {
+  return Math.min(width, height) / 2;
+};
 
-//the max radius of the circle is dependent on the smaller value out of the height or width, then /2 
 
-const numCircles = (radius , width) => width/2*r
+const numCircles = (radius, width) => {
+  return Math.floor(width / (r * 2));
+};
 
-const offset = (width , length) => 
+const offset = (width, figureWidth) => {
+  return (width - figureWidth) / 2;
+}
 
-const canSleepIn = (weekday , vacation) => weekday && vacation || !weekday && vacation; 
+const canSleepIn = (weekday, vacation) => weekday && vacation || !weekday && vacation;
 
-const canGoToProm = (senior , invited , exclusion) => senior && !exclusion || !senior && invited; 
+const canGoToProm = (senior, invited, exclusion) => senior && !exclusion || !senior && invited;
 
-const getsSpeedingTicket = (speed , grouchy) => speed && !grouchy || !speed && grouchy;  
+const getsSpeedingTicket = (speed, grouchy) => speed && !grouchy || !speed && grouchy;
 
-const moreThanTwiceAsLong = (a , b) => s.length	 
+const moreThanTwiceAsLong = (a, b) => s.length
 
 const aFartherThanB = () => 
 
@@ -38,4 +47,4 @@ const everyOther = () =>
 
 const upDownLastCharacter = () =>
 
-const yesIfEven = if (x %  2 ===0)
+const yesIfEven = if (x % 2 === 0)
