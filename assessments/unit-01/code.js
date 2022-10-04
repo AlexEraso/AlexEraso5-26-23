@@ -27,13 +27,21 @@ const offset = (width, figureWidth) => {
   return (width - figureWidth) / 2;
 }
 
-const canSleepIn = (weekday, vacation) => weekday && vacation || !weekday && vacation;
+const canSleepIn = (weekday, vacation) => {
+  return !weekday && vacation;
+};
 
-const canGoToProm = (senior, invited, exclusion) => senior && !exclusion || !senior && invited;
+const canGoToProm = (senior, invited, exclusion) => {
+  return senior || invited && !exclusion;
+}
 
-const getsSpeedingTicket = (speed, grouchy) => speed && !grouchy || !speed && grouchy;
+const getsSpeedingTicket = (mph, grouchy) => {
+  return mph > 70 || grouchy && mph > 65;
+};
 
-const moreThanTwiceAsLong = (a, b) => s.length
+const moreThanTwiceAsLong = (s1, s2) => {
+  return s1.length > s2.length * 2;
+};
 
 const aFartherThanB = () => 
 
