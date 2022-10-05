@@ -61,5 +61,12 @@
     "answer": "Math.abs(a - c) + Math.abs(b - d)\t",
     "correct": false,
     "timestamp": 1665007317598
+  },
+  {
+    "name": "General average",
+    "canonical": "total / count",
+    "answer": "count/total",
+    "correct": false,
+    "timestamp": 1665007801256
   }
 ]
