@@ -1,0 +1,9 @@
+[
+  {
+    "name": "Perimeter of a square",
+    "canonical": "4*s",
+    "answer": "s*4",
+    "correct": true,
+    "timestamp": 1665007453069
+  }
+]
