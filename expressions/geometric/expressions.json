@@ -5,5 +5,12 @@
     "answer": "s*4",
     "correct": true,
     "timestamp": 1665007453069
+  },
+  {
+    "name": "Area of a triangle",
+    "canonical": "b*h/2",
+    "answer": "(b*h)/2",
+    "correct": true,
+    "timestamp": 1665008288065
   }
 ]
