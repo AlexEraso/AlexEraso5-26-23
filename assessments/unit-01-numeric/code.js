@@ -43,7 +43,7 @@ const weightOnJupiter = (weightOfPerson) => {
   return weightOfPerson EARTH;
 };
 
-const gravity = () => {
-  return;
+const gravity = (distance , body1 , body2) => {
+  return ;
 };
 
