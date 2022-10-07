@@ -19,16 +19,16 @@ const volumeOfCube = (sideLength) => {
   return sideLength**3
 };
 
-const populationGrowth = (currentPopulation , growth) => {
-  return currentPopulation  
+const populationGrowth = (currentPopulation , growthRate) => {
+  return (currentPopulation * growthRate) 
 };
 
 const earnedRunAverage = (earnedRuns , innings) => {
   return (earnedRuns / innings) * 9;
 };
 
-const valueOfJewels = (diamonds , emeralds , diamondInGold , emeraldInGold) => {
-  return ;
+const valueOfJewels = (diamond , emerald , diamondInGold , emeraldInGold) => {
+  return (diamond * diamondInGold) + (emerald * emeraldInGold);
 };
 
 const payWithOvertime = (hoursWorked , hourlyRate , overtimeRate) => {
@@ -40,10 +40,10 @@ const firstClassPostage = (weightOfLetter) => {
 };
 
 const weightOnJupiter = (weightOfPerson) => {
-  return weightOfPerson EARTH;
+  return weightOfPerson *  (JUPITER_GRAVITY / EARTH_GRAVITY);
 };
 
 const gravity = (distance , body1 , body2) => {
-  return ;
+  return ((body1 * body2)/distance**2) * G;
 };
 
