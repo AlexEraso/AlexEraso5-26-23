@@ -1,3 +1,3 @@
-const countTens [x , y , z]; {
-  return
-}
+const countTens (x) {
+  return 
+};
