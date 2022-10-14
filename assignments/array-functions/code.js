@@ -1,8 +1,9 @@
-const countTens (x) {
-  let totalTens = 0
-  while (x.length > 0){
-    if (x.pop() === 10)
-    totalTens++
+const countTens = (x) => {
+let count = 0
+for (let x = 0; x < 100; x++) {
+  if (someCondition(x)) {
+  count++
   }
-  return totalTens
 }
+
+return count 
