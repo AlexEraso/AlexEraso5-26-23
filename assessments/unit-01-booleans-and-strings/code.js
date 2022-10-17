@@ -26,8 +26,8 @@ const evenGreaterThanZero = (number) => {
   return even && number<0
 };
 
-const isLeapYear = (divisibleByFour , divisibleByHundred) => {
-  return divisibleByFour ||  !divisibleByHundred && 
+const isLeapYear = () => {
+  return 
 };
 
 const firstAndLast = (s) => {
@@ -45,6 +45,8 @@ const simplePigLatin = (singleWord , firstVowel) => {
 const randomCharacter = () => {
   return 
 };
+
+//const rand = (n) => Math.floor(Math.random() * n);
 
 const randomCharacterUpDown = () => {
   return
