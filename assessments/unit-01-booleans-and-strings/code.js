@@ -26,8 +26,8 @@ const evenGreaterThanZero = (number) => {
   return even && number<0
 };
 
-const isLeapYear = () => {
-  return 
+const isLeapYear = (divisibleByFour , divisibleByHundred) => {
+  return divisibleByFour ||  !divisibleByHundred && 
 };
 
 const firstAndLast = (s) => {
@@ -35,9 +35,26 @@ const firstAndLast = (s) => {
 };
 
 const swapFrontAndBack = (s) => {
+  return 
+};
+
+const simplePigLatin = (singleWord , firstVowel) => {
+  return 
+};
+
+const randomCharacter = () => {
+  return 
+};
+
+const randomCharacterUpDown = () => {
   return
 };
 
-const simplePigLatin = () => {
+const isAllUpperCase = () => {
   return 
 };
+
+const sameIgnoringCase = () => {
+  return 
+};
+
