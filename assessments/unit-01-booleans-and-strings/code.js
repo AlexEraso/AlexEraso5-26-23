@@ -15,15 +15,15 @@ const fireAlarm = (pulled , smoke , drill) => {
 };
 
 const canBePresident = ( thirtyFive, citizen , fourteenYears) => {
-  return thirtyFive || citizen || fourteenYears
+  return thirtyFive >= 35 && citizen && fourteenYears >= 14
 };
 
 const willSeeTweet = (follows , retweeted, blocked) => {
-  return follows || retweeted || blocked
+  return (follows || retweeted) && !blocked
 };
 
-const evenGreaterThanZero = (number) => {
-  return even && number<0
+const evenGreaterThanZero = (n) => {
+  return n%2 === 0 && number<0
 };
 
 const isLeapYear = (year) => {
