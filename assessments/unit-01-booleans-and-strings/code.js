@@ -37,8 +37,18 @@ const isLeapYear = (year) => {
   return true;
 };
 
+//Correct Answer 
+
+const isLeapYear = (year) => {
+const even4 = year % 4 === 0;
+const even100 = year % 100 === 0;
+const even400 = year % 400 === 0;
+
+return even4 && (!even100 || even400);
+}
+
 const firstAndLast = (s) => {
-  return s.substring(1)	+ s.substring(s.length - 1, s.length)	
+  return s.substring(0 , 1)	+ s.substring(s.length - 1, s.length)	
 };
 
 const swapFrontAndBack = (s) => {
@@ -60,13 +70,12 @@ const randomCharacterUpDown = () => {
   return
 };
 
-const isAllUpperCase = () => {
-  const isAllUpperCase = (s) => {
+const isAllUpperCase = (s) => {
   if (s === s.toUpperCase(s)){
   return true;
   }else{
   return false;
-};
+}};
 
 const sameIgnoringCase = (word1 , word2) => {
   if(s.toLowerCase(word1) === s.toLowerCase(word2)){
