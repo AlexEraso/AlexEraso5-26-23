@@ -26,8 +26,15 @@ const evenGreaterThanZero = (number) => {
   return even && number<0
 };
 
-const isLeapYear = () => {
-  return 
+const isLeapYear = (year) => {
+  if(year % 100 === 0){
+  if(year % 400 === 0){
+    return true;
+  }else{
+    return false;
+  }
+}else if(year % 4 === 0){
+  return true;
 };
 
 const firstAndLast = (s) => {
@@ -35,7 +42,8 @@ const firstAndLast = (s) => {
 };
 
 const swapFrontAndBack = (s) => {
-  return 
+  return s.substring (s.length/2 ) + s.substring(0, s.length/2)
+
 };
 
 const simplePigLatin = (singleWord , firstVowel) => {
@@ -57,6 +65,7 @@ const isAllUpperCase = () => {
 };
 
 const sameIgnoringCase = () => {
-  return 
+  return if(word1 s.toLowerCase() == word2.toLowerCase())
+
 };
 
