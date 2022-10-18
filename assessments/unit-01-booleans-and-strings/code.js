@@ -61,11 +61,18 @@ const randomCharacterUpDown = () => {
 };
 
 const isAllUpperCase = () => {
-  return 
+  const isAllUpperCase = (s) => {
+  if (s === s.toUpperCase(s)){
+  return true;
+  }else{
+  return false;
 };
 
-const sameIgnoringCase = () => {
-  return if(word1 s.toLowerCase() == word2.toLowerCase())
-
+const sameIgnoringCase = (word1 , word2) => {
+  if(s.toLowerCase(word1) === s.toLowerCase(word2)){
+    return true;
+  }else{
+    return false;
+  } 
 };
 
