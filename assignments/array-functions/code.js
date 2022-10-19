@@ -20,7 +20,7 @@ const evens = (numbers) => {
 const pyramid = (n) => {
   let result = [];
   for (let v = 0; v < n; v++) {
-    for (let a = 0; a < 10; a++) {
+    for (let a = 0; a < 2; a++) {
       result.push(42);
     }
   }
