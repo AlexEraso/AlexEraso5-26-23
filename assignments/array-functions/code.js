@@ -16,3 +16,11 @@ const evens = (numbers) => {
     result.push(numbers[i])
   }
 }
+
+const pyramid = (n) => {
+  let result = [];
+  for (let v = 0; v < n; v++){
+    result.push(v);
+
+  }
+}
