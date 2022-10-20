@@ -5,32 +5,27 @@ const countTens = (numbers) => {
       tens = tens + 1
     }
   }
- return tens 
+  return tens
 };
 
-const sum = (numbers) => {
- let sum = 0;
- for (let i = 0; i++ )
- 
-   return
- 
- const evens = (numbers) => {
-   let result = [];
-   for (let i = 0; i < numbers.length; i++)
-     if (numbers[i] % 2 === 0) {
-       result.push(numbers[i])
-     }
- }
-
-
-  const anyOverOneHundred = (numbers) => {
-for (let i = 0; i < numbers.length; i++) {
-  if (numbers[i]>100) {
-    return true
+const evens = (numbers) => {
+  let result = [];
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2 === 0) {
+      result.push(numbers[i])
+    }
   }
+  return result
 }
-return false
+
+const anyOverOneHundred = (numbers) => {
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] > 100) {
+      return true
+    }
   }
+  return false
+}
 
 
 
