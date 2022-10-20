@@ -6,7 +6,7 @@ const countTens = (numbers) => {
 
     }
 }
-};
+
 /*
 const sum = (numbers) => {
   let sum = 0;
