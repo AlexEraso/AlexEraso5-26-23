@@ -1,12 +1,10 @@
 const countTens = (numbers) => {
-  for (let i = 0; i < numbers.length; i++) {
-    let count = 0;
-    for (let j = 0 j < numbers.length; i++)
-      if (numbers[i] === 10) {
-        count++
+  for (let i = 0; i < numbers.length; i++)
+    if (numbers[i] === 10) {
+      count++
 
-      }
-  }
+    }
+}
 };
 
 const sum = (numbers) => {
@@ -24,7 +22,7 @@ const sum = (numbers) => {
   }
 
   const anyOverOneHundred = () => {
-    
+
   }
 
   const pyramid = (n) => {
@@ -37,3 +35,25 @@ const sum = (numbers) => {
     return result
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//questions: 
+// push pull, how the remainder % works, nested loops, fixing my code, if (someCondition(i)), index
