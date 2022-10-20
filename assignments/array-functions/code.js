@@ -4,8 +4,8 @@ const countTens = (numbers) => {
     if (numbers[i] === 10) {
       tens++
 
-    }
-}
+    };
+};
 
 /*
 const sum = (numbers) => {
