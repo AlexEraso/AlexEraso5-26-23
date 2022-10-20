@@ -8,7 +8,7 @@ const countTens = (numbers) => {
  return tens 
 };
 
-/*
+
 const sum = (numbers) => {
   let sum = 0;
   for (let i = 0; i++ )
@@ -23,20 +23,15 @@ const sum = (numbers) => {
       }
   }
 
-  const anyOverOneHundred = () => {
-
-  }
-
-  const pyramid = (n) => {
-    let result = [];
-    for (let v = 0; v < n; v++) {
-      for (let a = 0; a < 2; a++) {
-        result.push(42);
-      }
-    }
-    return result
+  const anyOverOneHundred = (numbers) => {
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i].100) {
+    return true
   }
 }
+return false
+  }
+
 //questions: nested, index, revising code, 
 
 
