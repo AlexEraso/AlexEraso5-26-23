@@ -25,7 +25,7 @@ const sum = (numbers) => {
 
   const anyOverOneHundred = (numbers) => {
 for (let i = 0; i < numbers.length; i++) {
-  if (numbers[i].100) {
+  if (numbers[i]>100) {
     return true
   }
 }
