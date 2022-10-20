@@ -1,7 +1,8 @@
 const countTens = (numbers) => {
+  let tens = 0;
   for (let i = 0; i < numbers.length; i++)
     if (numbers[i] === 10) {
-      count++
+      tens++
 
     }
 }
@@ -35,7 +36,7 @@ const sum = (numbers) => {
     return result
   }
 }
-
+//questions: nested, index, revising code, 
 
 
 
