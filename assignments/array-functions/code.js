@@ -15,14 +15,7 @@ const sum = (numbers) => {
 
     return
 
-  const evens = (numbers) => {
-    let result = [];
-    for (let i = 0; i < numbers.length; i++)
-      if (numbers[i] % 2 === 0) {
-        result.push(numbers[i])
-      }
-  }
-
+  
   const anyOverOneHundred = (numbers) => {
 for (let i = 0; i < numbers.length; i++) {
   if (numbers[i]>100) {
