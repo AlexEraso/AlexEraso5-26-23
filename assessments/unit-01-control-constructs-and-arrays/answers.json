@@ -19,5 +19,5 @@
   "true",
   "The sum of the numbers from 0 to numbers.length.",
   "Produces a new array containing the words in words that are all uppercase.",
-  "The function produces an array that contains words but backwards and the t"
+  "The function produces an array that contains words but backwards and the amount of words can only be as long as the xs.length minus 1."
 ]
