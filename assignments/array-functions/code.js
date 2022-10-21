@@ -14,7 +14,7 @@ const sum = (number) => {
     s = s+number[i]
   }
     return s
-}
+};
 
 const evens = (numbers) => {
   let result = [];
