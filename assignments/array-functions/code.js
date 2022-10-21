@@ -35,7 +35,7 @@ const anyOverOneHundred = (numbers) => {
   return false
 }
 
-const 
+
 
 //So, I didn't realize how late it was getting. We are just now eating, and I have to do Coop's bedtime afterward. I won't be free for another hour at least. So, here's what I offer you for the pyramid instead:
 
