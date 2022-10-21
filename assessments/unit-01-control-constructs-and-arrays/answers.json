@@ -16,7 +16,7 @@
   "undefined",
   "xs[2][1]",
   "300",
-  "true",
+  "false",
   "The sum of the numbers from 0 to numbers.length.",
   "Produces a new array containing the words in words that are all uppercase.",
   "It appends all the elements in the words array from the beginning to xs, the parameter, backwards to the result. It also wont contain the first character. So i guess from element 1 to element xs backwards. "
