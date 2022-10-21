@@ -7,7 +7,7 @@
   null,
   "20",
   null,
-  null,
+  "The sum of the numbers from 0 to 9",
   "When done is less than 0.01",
   "It tests whether there are more than limit prime numbers below max.",
   "10",
