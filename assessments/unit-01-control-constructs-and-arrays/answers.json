@@ -1,7 +1,7 @@
 [
   "Yes",
   "Both foo and bar",
-  "Neither foo nor bar.",
+  "Just foo",
   "i < 10",
   "100",
   null,
