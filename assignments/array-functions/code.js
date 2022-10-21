@@ -11,9 +11,9 @@ const countTens = (numbers) => {
 const sum = (number) => {
   let s = 0;
   for (let i = 0; i < number.length; i++) {
-    s = s+number[i]
+    s = s + number[i]
   }
-    return s
+  return s
 };
 
 const evens = (numbers) => {
@@ -35,7 +35,14 @@ const anyOverOneHundred = (numbers) => {
   return false
 }
 
-
+const pyramid = (numbers) => {
+  const pyramid = []
+  for (let i = 0; i <= numbers; i++) {
+    for (let j = 0; j < i; j++) {
+    }
+  }
+  return pyramid
+}
 
 //So, I didn't realize how late it was getting. We are just now eating, and I have to do Coop's bedtime afterward. I won't be free for another hour at least. So, here's what I offer you for the pyramid instead:
 
