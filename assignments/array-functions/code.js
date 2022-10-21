@@ -9,7 +9,11 @@ const countTens = (numbers) => {
 };
 
 const sum = (number) => {
-  for (let i = 0; i < 100; i++) {
+  let s = 0;
+  for (let i = 0; i < numnber.length; i++) {
+    s = s+number[i]
+  }
+    return s
 }
 
 const evens = (numbers) => {
