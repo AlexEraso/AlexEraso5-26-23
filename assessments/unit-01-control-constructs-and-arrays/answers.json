@@ -6,7 +6,7 @@
   "100",
   "It’s random but definitely less than 10.",
   "20",
-  "3",
+  "6",
   "The sum of the numbers from 0 to 9",
   "When done is less than 0.01",
   "It tests whether there are more than limit prime numbers below max.",
@@ -16,7 +16,7 @@
   "undefined",
   "xs[2][1]",
   "300",
-  "false",
+  "true",
   "The sum of the numbers from 0 to numbers.length.",
   "Produces a new array containing the words in words that are all uppercase.",
   "It appends all the elements in the words array from the beginning to xs, the parameter, backwards to the result. It also wont contain the first character. So i guess from element 1 to element xs backwards. "
