@@ -17,5 +17,5 @@
   "xs[2][1]",
   "300",
   "true",
-  "The sum of the even numbers in numbers."
+  "The sum of all but the last number in the array."
 ]
