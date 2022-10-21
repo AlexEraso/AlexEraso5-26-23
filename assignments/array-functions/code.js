@@ -8,7 +8,7 @@ const countTens = (numbers) => {
   return tens
 };
 
-const sum = (numbers) => {
+const sum = (number) => {
   for (let i = 0; i < 100; i++) {
 }
 
