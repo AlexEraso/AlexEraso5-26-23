@@ -8,7 +8,9 @@ const countTens = (numbers) => {
   return tens
 };
 
-
+const sum = (numbers) => {
+  for (let i = 0; i < 100; i++) {
+}
 
 const evens = (numbers) => {
   let result = [];
@@ -29,6 +31,7 @@ const anyOverOneHundred = (numbers) => {
   return false
 }
 
+const pyramid = ()
 
 
 
