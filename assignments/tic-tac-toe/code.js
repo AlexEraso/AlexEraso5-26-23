@@ -8,4 +8,8 @@
 registerOnclick((x, y) => {
   drawText('X', x, y, 'black', Math.min(width, height) * 0.3);
 });
-
+const board = () => {
+for (let i = 0; i < 2; i++)
+const x = (i + 1) * width / 3
+drawLine(0, x, width, x, 'black', 5);
+}
