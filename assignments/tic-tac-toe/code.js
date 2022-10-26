@@ -9,6 +9,3 @@ registerOnclick((x, y) => {
   drawText('X', x, y, 'black', Math.min(width, height) * 0.3);
 });
 
-const board = () => {
-  drawLine (x, 0, x, height, 'black', 5);
-}
