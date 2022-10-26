@@ -6,5 +6,9 @@
 // weeks but for now you can just adapt this code.
 
 registerOnclick((x, y) => {
-  drawText('butt', x, y, 'black', Math.min(width, height) * 0.3);
+  drawText('X', x, y, 'black', Math.min(width, height) * 0.3);
 });
+
+const board = () => {
+  drawLine (x, 0, x, height, 'black', 5);
+}
