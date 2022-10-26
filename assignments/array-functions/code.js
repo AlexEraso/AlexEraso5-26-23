@@ -45,7 +45,6 @@ const pyramid = (numbers) => {
   return pyramid
 }
 
-//So, I didn't realize how late it was getting. We are just now eating, and I have to do Coop's bedtime afterward. I won't be free for another hour at least. So, here's what I offer you for the pyramid instead:
 
 //* Build a return array
 //* Starting at 0 and counting up to the provided number (function parameter)...
