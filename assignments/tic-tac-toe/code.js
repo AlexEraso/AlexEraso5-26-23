@@ -10,7 +10,7 @@ registerOnclick((x, y) => {
 });
 const board = () => {
   for (let i = 0; i < 2; i++) {
-    const x = (i + 1) * width / 2
+    const x = (i + 1) * width / 5
     drawLine(x, 0, x, height, 'black', 5);
   }
   for (let i = 0; i < 2; i++) {
