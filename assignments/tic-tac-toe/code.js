@@ -5,7 +5,6 @@
 // is called an anonymous function. We'll discuss this in more detail in a few
 // weeks but for now you can just adapt this code.
 
-
 registerOnclick((x, y) => {
   drawText('X', x, y, 'black', Math.min(width, height) * 0.3);
 });
@@ -19,9 +18,6 @@ const board = () => {
     drawLine(0, x, width, x, 'black', 5);
   }
 }
-const alternate = () => {
-  for (let move = 0;)
-}
-board()
 
+board()
 
