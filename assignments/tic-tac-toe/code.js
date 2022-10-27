@@ -22,8 +22,8 @@ const board = () => {
 
 board()
 
-if movenumber %2===0 make it x else make it o 
+//if movenumber %2===0 make it x else make it o 
 
-how do i make the move number increase every click, let move = 0 then like each click ++ 
+//how do i make the move number increase every click, let move = 0 then like each click ++ 
 
 
