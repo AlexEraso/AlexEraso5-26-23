@@ -19,15 +19,5 @@ const board = () => {
     drawLine(0, x, width, x, 'black', 5);
   }
 }
-const alternate = () => {
-  for (let i = 0; i < 10; i++) {
-    registerOnclick((x, y) => {
-  drawText('X', x, y, 'black', Math.min(width, height) * 0.3);
-  if 
-  }
-}
-board()
-
-if movenumber%2===0 make it x else make it o 
 
  
