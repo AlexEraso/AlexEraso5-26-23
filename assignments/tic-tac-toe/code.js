@@ -24,6 +24,4 @@ const alternate = () => {
 }
 board()
 
-if 
 
-else 
