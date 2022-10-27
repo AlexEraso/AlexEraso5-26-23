@@ -8,7 +8,7 @@
 let move = 0;
 
 registerOnclick((x, y) => {
-  if move % 2 === 0{
+  if (move % 2 === 0) {
     drawText('X', x, y, 'black', Math.min(width, height) * 0.3);
   } else {
     drawText('O', x, y, 'black', Math.min(width, height) * 0.3);
