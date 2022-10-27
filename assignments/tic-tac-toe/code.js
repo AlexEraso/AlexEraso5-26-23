@@ -5,15 +5,15 @@
 // is called an anonymous function. We'll discuss this in more detail in a few
 // weeks but for now you can just adapt this code.
 
-let move = 0; 
+let move = 0;
+
 registerOnclick((x, y) => {
-  if move % 2 ===0{
-  drawText('X', x, y, 'black', Math.min(width, height) * 0.3);
-  
-  else {
+  if move % 2 === 0{
+    drawText('X', x, y, 'black', Math.min(width, height) * 0.3);
+  } else {
     drawText('O', x, y, 'black', Math.min(width, height) * 0.3);
   }
-  move++; 
+  move++;
 });
 const board = () => {
   for (let i = 0; i < 2; i++) {
