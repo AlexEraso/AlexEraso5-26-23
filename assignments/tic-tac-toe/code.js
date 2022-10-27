@@ -19,5 +19,11 @@ const board = () => {
     drawLine(0, x, width, x, 'black', 5);
   }
 }
+const alternate = () => {
+  for (let move = 0;)
+}
+board()
 
- 
+if 
+
+else 
