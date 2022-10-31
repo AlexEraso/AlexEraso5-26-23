@@ -58,3 +58,13 @@ const isAllUpperCase = (s) => {
   }else{
   return false;
 }};
+
+const sameIgnoringCase = (word1 , word2) => {
+  if(s.toLowerCase(word1) === s.toLowerCase(word2)){
+    return true;
+  }else{
+    return false;
+  } 
+};
+
+const return firstName = ()
