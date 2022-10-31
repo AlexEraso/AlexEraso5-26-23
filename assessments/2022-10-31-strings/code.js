@@ -73,14 +73,18 @@ const sameIgnoringCase = (word1, word2) => {
   }
 };
 
-const firstName = () => {
-  return
+//you use can if else statement. if the upper case is equal to
+//the lower case than it returns true
+//if not it returns false
+
+const firstName = (s) => {
+  return s.substring(0 , indexOf(" "))
 };
 
-const lastName = () => {
-  return
+const lastName = (s) => {
+  return s.substring(s.indexOf(" "))
 };
 
-const initials = () => 
-return
+const initials = (s) => {
+  return s.substring(s.indexOf(" ") + 1) + s.substring(s.indexOf(" "))
 };
