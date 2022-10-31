@@ -16,11 +16,11 @@ const firstHalf = (s) => {
 };
 
 const secondHalf = (s) => {
-  return s.substring (s.length/2 )
+  return s.substring(s.length / 2)
 };
 
 const upDown = (s) => {
-  return s.toUpperCase() + s.toLowerCase 
+  return s.toUpperCase() + s.toLowerCase
 };
 
 const firstFewEveryOther = (s) => {
@@ -28,43 +28,59 @@ const firstFewEveryOther = (s) => {
 };
 
 const upDownLastCharacter = () => {
-  return s(s.length -1).toUpperCase() + s(s.length -1).toLowerCase  
+  return s(s.length - 1).toUpperCase() + s(s.length - 1).toLowerCase
 };
 
 const firstAndLast = (s) => {
-  return s.substring(0 , 1)	+ s.substring(s.length - 1, s.length)	
+  return s.substring(0, 1) + s.substring(s.length - 1, s.length)
 };
 
 const swapFrontAndBack = (s) => {
-  return s.substring (s.length/2 ) + s.substring(0, s.length/2)
+  return s.substring(s.length / 2) + s.substring(0, s.length / 2)
 };
 
 const simplePigLatin = (s, firstVowel) => {
   return s.substring(firstVowel) + s.substring(0, firstVowel) + 'ay';
 };
 
+//You will need this function for some of the problems. It returns a random
+//number between 0, inclusive, and n, exclusive. Thus rand(3) could possibly
+//return 0, 1, or 2 but will not return 3.
+//const rand = (n) => Math.floor(Math.random() * n);
+
 const randomCharacter = (s) => {
-  return s[rand(s.length)];
+  return s(rand(s.length));
 };
 
 const randomCharacterUpDown = (s) => {
   const i = rand(s.length);
-  return s[i].toUpperCase() + s[i].toLowerCase();
+  return s(i).toUpperCase() + s(i).toLowerCase();
 };
 
 const isAllUpperCase = (s) => {
-  if (s === s.toUpperCase(s)){
-  return true;
-  }else{
-  return false;
-}};
-
-const sameIgnoringCase = (word1 , word2) => {
-  if(s.toLowerCase(word1) === s.toLowerCase(word2)){
+  if (s === s.toUpperCase(s)) {
     return true;
-  }else{
+  } else {
     return false;
-  } 
+  }
 };
 
-const return firstName = ()
+const sameIgnoringCase = (word1, word2) => {
+  if (s.toLowerCase(word1) === s.toLowerCase(word2)) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+const firstName = () => {
+  return
+};
+
+const lastName = () => {
+  return
+};
+
+const initials = () => 
+return
+};
