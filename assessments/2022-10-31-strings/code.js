@@ -13,12 +13,30 @@ const rand = (n) => Math.floor(Math.random() * n);
 
 const firstHalf = (s) => {
   return s.substring(0, s.length / 2)
-}
+};
 
 const secondHalf = (s) => {
   return s.substring (s.length/2 )
-}
+};
 
-const upDown = () => {
-  return 
-}
+const upDown = (s) => {
+  return s.toUpperCase() + s.toLowerCase 
+};
+
+const firstFewEveryOther = (s) => {
+  return s(0) + s(2) + s(4)
+};
+
+const upDownLastCharacter = () => {
+  return s(s.length -1).toUpperCase() + s(s.length -1).toLowerCase  
+};
+
+const firstAndLast = (s) => {
+  return s.substring(0 , 1)	+ s.substring(s.length - 1, s.length)	
+};
+
+const swapFrontAndBack = (s) => {
+  return s.substring (s.length/2 ) + s.substring(0, s.length/2)
+};
+
+
