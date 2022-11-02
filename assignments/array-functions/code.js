@@ -46,12 +46,6 @@ const pyramid = (numbers) => {
 }
 
 
-//* Build a return array
-//* Starting at 0 and counting up to the provided number (function parameter)...
-//Get the current number, and create another loop. Start at 0 again and count up to whatever number you're on.
-//On each iteration of the loop, append whatever number you're on to the return array
-//After the second loop finishes, you will have the appropriate number of digits (one 1s, two 2s, etc.), and the first loop will keep going until the number provided to the function. Then you return your array and bada-bing, bada-boom!
-//The point of the question is to do a nested for-loop
 
 
 
