@@ -18,7 +18,7 @@ drawText(WHITE_BISHOP, width/3.4, height/8, 'black', 64);
 drawText(WHITE_BISHOP, width/1.5, height/8, 'black', 64);
 drawText(WHITE_KNIGHT, width/1.27, height/8, 'black', 64);
 drawText(WHITE_KNIGHT, width/5.9, height/8, 'black', 64);
-drawText(WHITE_ROOK, width/1.1, height/8, 'black', 64);
+drawText(WHITE_ROOK, width/1.08, height/8, 'black', 64);
 drawText(WHITE_ROOK, width/5.9, height/8, 'black', 64);
 
 
