@@ -16,6 +16,8 @@ drawText(WHITE_KING, width/1.85, height/8, 'black', 64);
 drawText(WHITE_QUEEN, width/2.4, height/8, 'black', 64);
 drawText(WHITE_BISHOP, width/3.4, height/8, 'black', 64);
 drawText(WHITE_BISHOP, width/1.5, height/8, 'black', 64);
+drawText(WHITE_KNIGHT, width/1.4, height/8, 'black', 64)
+
 
 const board = () => {
   for (let i = 0; i < 7; i++) {
