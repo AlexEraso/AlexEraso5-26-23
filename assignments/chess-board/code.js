@@ -15,12 +15,12 @@ const BLACK_PAWN   = '♟';
 drawText(WHITE_KING, width/2, height/2, 'black', 64);
 
 const board = () => {
-  for (let i = 0; i < 2; i++) {
-    const x = (i + 1) * width / 3
+  for (let i = 0; i < 7; i++) {
+    const x = (i + 1) * width / 8
     drawLine(x, 0, x, height, 'black', 5);
   }
-  for (let i = 0; i < 2; i++) {
-    const x = (i + 1) * height / 3
+  for (let i = 0; i < 7; i++) {
+    const x = (i + 1) * height / 8
     drawLine(0, x, width, x, 'black', 5);
   }
 
