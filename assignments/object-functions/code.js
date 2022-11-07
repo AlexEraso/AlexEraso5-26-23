@@ -1,5 +1,5 @@
-const getX = (x) => {
-  return { 'x' : 10}
+const getX = (object) => {
+  return object.x
 }
 
 const point = (x , y) => {
