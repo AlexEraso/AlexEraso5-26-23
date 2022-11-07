@@ -3,7 +3,7 @@ const getX = (object) => {
 }
 
 const point = (x , y) => {
-  return { 'x' : x, 'y' : x}
+  return { 'x' : x , 'y' : x}
 
 }
 
