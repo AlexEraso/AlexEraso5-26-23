@@ -22,20 +22,16 @@ const midpoint = (object1, object2) => {
 const sumSalaries = (array) => {
   let sum = 0
   for (let i = 0; i < array.length; i++) {
-    sum == sum + array[i].salary
+    sum = sum + array[i].salary
   }
   return sum
 }
 
-const newHighScore = (scoreArray, currentHighScore) => {
-  let newHighScore = currentHighScore
-  for (let i = 0; i < scoreArray.length; i++){
-    if (scoreArray[1].score > newHighScore){
-      newHighScore = scoreArray[1].score
+const newHighScore = () => {
+  return
 }
-}
-return newHighScore
-}
+
+
 const summarizeBooks = () => {
 
 }
