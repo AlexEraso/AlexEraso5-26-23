@@ -34,7 +34,7 @@ const newHighScore = (scoreArray, currentHighScore) => {
       newHighScore = scoreArray[1].score
 }
 }
-
+return newHighScore
 }
 
 
