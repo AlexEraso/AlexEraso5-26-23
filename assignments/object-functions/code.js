@@ -31,7 +31,7 @@ const newHighScore = (currentHighScore , scoreArray) => {
   let newHighScore = currentHighScore;
   for (let i = 0; i < scoreArray.length; i++) {
     if (scoreArray[i].score > newHighScore) {
-      newHighScore = scoreArray[1].score
+      newHighScore = scoreArray[i].score
     }
   }
   return newHighScore
