@@ -18,7 +18,13 @@ return
 };
 
 const isWinner = (player) => {
-
+let score = 0 
+  for (let i = 0; i < 100; i++) {
+    if (score[i] > 100) {
+      return true
+    }
+  }
+  return false
 };
 
 const updateWins = (players) => {
@@ -35,3 +41,5 @@ const sums = (n) => {
 
 const rule110 = (cells) => {
 };
+
+//i went to reload the tab to work on the sum problem that had an error, but i didn't save it so the test is pretty incomplete... 
