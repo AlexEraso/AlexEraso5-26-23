@@ -2,21 +2,33 @@
 // should save you some time.
 
 const area = (rect) => {
+(rect.width) * (rect.height)
 };
 
 const higherPaid = (e1, e2) => {
+return (e1.salary) > (e2.salary)
 };
 
 const isSamePoint = (p1, p2) => {
+return p1 ===p2
 };
 
 const totalWithTip = (bill, tipPercentage) => {
+return {subtotal : bill.subtotal, tip: bill.subtotal*tipPercentage, total : bill.subtotal + bill.subtotal*tipPercentage}
 };
 
 const isWinner = (player) => {
+let score = 0 
+  for (let i = 0; i < 100; i++) {
+    if (score[i] > 100) {
+      return true
+    }
+  }
+  return false
 };
 
 const updateWins = (players) => {
+
 };
 
 const bigWinners = (players) => {
@@ -30,3 +42,4 @@ const sums = (n) => {
 
 const rule110 = (cells) => {
 };
+
