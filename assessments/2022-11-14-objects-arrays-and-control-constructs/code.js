@@ -14,7 +14,7 @@ return p1 ===p2
 };
 
 const totalWithTip = (bill, tipPercentage) => {
-return 
+return {subtotal : bill.subtotal, tip: bill.subtotal*tipPercentage, total : bill.subtotal + bill.subtotal*tipPercentage}
 };
 
 const isWinner = (player) => {
@@ -28,6 +28,7 @@ let score = 0
 };
 
 const updateWins = (players) => {
+
 };
 
 const bigWinners = (players) => {
@@ -42,4 +43,3 @@ const sums = (n) => {
 const rule110 = (cells) => {
 };
 
-//i went to reload the tab to work on the sum problem that had an error, but i didn't save it so the test is pretty incomplete... 
