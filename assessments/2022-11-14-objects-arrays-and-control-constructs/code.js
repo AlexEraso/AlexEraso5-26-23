@@ -51,8 +51,20 @@ const isSamePoint = (p1, p2) => {
     }
   };
 
-  const fillTimesTable = (table) => {
-  };
+const fillTimesTable = (table) => {
+  for (let i = 0; i < 2; i++) {
+    const x = (i + 1) * width / n
+    drawLine(x, 0, x, height, 'black', 5);
+  }
+  for (let i = 0; i < 2; i++) {
+    const x = (i + 1) * height / n
+    drawLine(0, x, width, x, 'black', 5);
+  }
+
+}
+
+board()
+
 
   const sums = (n) => {
   };
