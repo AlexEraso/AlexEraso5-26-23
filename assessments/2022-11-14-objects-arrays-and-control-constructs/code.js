@@ -35,10 +35,20 @@ const isSamePoint = (p1, p2) => {
   };
 
   const updateWins = (players) => {
-
+    for (i = 0; i < players.length; i++) {
+      if (players[i].score > 100) {
+        players[i].wins = players[i].wins + 1
+      }
+    }
   };
 
   const bigWinners = (players) => {
+    let bigWins = []
+    for (i = 0; i < players.length; i++) {
+      if (players[i].wins > 10) {
+        bigWins.push(players[i])
+      }
+    }
   };
 
   const fillTimesTable = (table) => {
