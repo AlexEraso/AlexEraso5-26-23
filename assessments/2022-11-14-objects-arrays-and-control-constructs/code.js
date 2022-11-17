@@ -14,13 +14,8 @@ const higherPaid = (e1, e2) => {
 };
 
 const isSamePoint = (p1, p2) => {
-  if (p1.x = p2.x) {
-    if (p1.y = p2.y) {
-      return true
-    }
-  } else {
-    return false
-  };
+ return p1.x === p2.x && p1.y === p2.y;
+};
 
   const totalWithTip = (bill, tipPercentage) => {
     return { subtotal: bill.subtotal, tip: bill.subtotal * tipPercentage, total: bill.subtotal + bill.subtotal * tipPercentage }
@@ -48,22 +43,11 @@ const isSamePoint = (p1, p2) => {
       if (players[i].wins > 10) {
         bigWins.push(players[i])
       }
+    return bigWins
     }
   };
 
 const fillTimesTable = (table) => {
-  for (let i = 0; i < 2; i++) {
-    const x = (i + 1) * width / n
-    drawLine(x, 0, x, height, 'black', 5);
-  }
-  for (let i = 0; i < 2; i++) {
-    const x = (i + 1) * height / n
-    drawLine(0, x, width, x, 'black', 5);
-  }
-
-}
-
-board()
 
 
   const sums = (n) => {
