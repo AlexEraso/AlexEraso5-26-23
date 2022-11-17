@@ -48,8 +48,12 @@ const isSamePoint = (p1, p2) => {
   };
 
 const fillTimesTable = (table) => {
-
-
+  for (let i = 0; i < table.length; i++) {
+    for (let j = 0; j < table.length; j++) {
+      table[i][j] = (i + 1) * (j + 1);
+    }
+  }
+};
   const sums = (n) => {
   };
 
