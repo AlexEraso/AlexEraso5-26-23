@@ -6,7 +6,7 @@ registerOnclick((x, y) => {
   if (x < width/ && y < height/ ){
     drawText('X', 75,  40, 'red', Math.min(width, height) * 0.3);}
   } else {
-    drawText('O', x, y, 'blue', Math.min(width, height) * 0.3);
+    drawText('O', 75, 40, 'blue', Math.min(width, height) * 0.3);
   }
   }
   move++;
