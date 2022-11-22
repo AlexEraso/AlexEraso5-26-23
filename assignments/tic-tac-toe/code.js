@@ -1,7 +1,8 @@
 let move = 0;
 
 registerOnclick((x, y) => {
-  if (move % 2 === 0) {(x < width/3 && y < height/3){
+  if (move % 2 === 0) {
+  if {(x < width/3 && y < height/3){
     drawText('X', 75,  40, 'red', Math.min(width, height) * 0.3);}
   } else {
     drawText('O', x, y, 'blue', Math.min(width, height) * 0.3);
