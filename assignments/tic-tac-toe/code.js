@@ -7,7 +7,7 @@ registerOnclick((x, y) => {
   } else {
     drawText('O', 75, 40, 'blue', Math.min(width, height) * 0.3);
   }
-  }
+
   move++;
 });
 const board = () => {
