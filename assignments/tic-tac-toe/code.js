@@ -1,3 +1,5 @@
+let move = 0;
+
 registerOnclick((x, y) => {
   if (move % 2 === 0) {
       if (x < width/3 && y < height/3){
