@@ -1,17 +1,9 @@
 let move = 0;
 
 registerOnclick((x, y) => {
-  let marker;
-  let color;
-
-  if (move % 2 === 0) {
-    marker = 'X';
-    color = 'red';
-  } else {
-    marker = 'O';
-    color = 'blue';
-  }
-
+  const marker = move % 2 === 0 ? 'X' : 'O';
+  const color = move % 2 === 0 ? 'red' : 'blue '
+  
   const col = Math.floor(x / (width / 3));
   const xPos = (col * width / 3) + width / 9;
 
