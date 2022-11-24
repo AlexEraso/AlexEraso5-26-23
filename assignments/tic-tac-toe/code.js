@@ -3,8 +3,6 @@ let move = 0;
 registerOnclick((x, y) => {
   let marker;
   let color;
-  let xPos;
-  let yPos;
 
   if (move % 2 === 0) {
     marker = 'X';
@@ -14,15 +12,15 @@ registerOnclick((x, y) => {
     color = 'blue';
   }
 
-const col = Math.floor(x / (width /3));
-const xPos = (col * width / 3) + width / 9;
+  const col = Math.floor(x / (width / 3));
+  const xPos = (col * width / 3) + width / 9;
 
-const row = 1 + Math.floor(y / height 3));
-const yPos = (row * height /3) - height /9) + (height /18);
+  const row = 1 + Math.floor(y / height 3));
+const yPos = (row * height / 3) - height / 9) + (height / 18);
 
-  drawText(marker, xPos, yPos, color, Math.min(width, height) * 0.3);
+drawText(marker, xPos, yPos, color, Math.min(width, height) * 0.3);
 
-  move++;
+move++;
 });
 
 const board = () => {
