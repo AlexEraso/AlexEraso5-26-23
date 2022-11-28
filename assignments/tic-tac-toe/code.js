@@ -1,7 +1,5 @@
 let move = 0;
 
-
-
 registerOnclick((x, y) => {
   const marker = move % 2 === 0 ? 'X' : 'O';
   const color = move % 2 === 0 ? 'red' : 'blue';
@@ -23,11 +21,15 @@ const board = () => {
   for (let i = 0; i < 2; i++) {
     const x = (i + 1) * width / 3
     drawLine(x, 0, x, height, 'black', 5);
-  }
+  }90i0=jk[j[
+    i0
+    KP=
+    p=
+  ]]
   for (let i = 0; i < 2; i++) {
     const x = (i + 1) * height / 3
     drawLine(0, x, width, x, 'black', 5);
-  }
-}
+   
 
-board()
+
+   Drawline
