@@ -13,18 +13,6 @@ registerOnclick((x, y) => {
 
 
   drawText(marker, xPos, yPos, color, Math.min(width, height) * 0.3);
-// save x to arr at row,col
-
-//  0  1  2
-//  3  4  5
-//  6  7  8
-
-// arr[9] = {0, 1, 2, 3, 4, 5, 6, 7, 8};
-// arr[3][3] = { {0, 1, 2},
-//               {3, 4, 5},
-//               {6, 7, 8}}
-
-
 
   move++;
 });
