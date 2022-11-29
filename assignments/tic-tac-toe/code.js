@@ -6,7 +6,6 @@ const board = [
     ['', '', ''],
 ];
 
-board[0][0]
 
 const winningConditions = [
   [0, 1, 2],
