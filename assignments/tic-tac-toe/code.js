@@ -29,7 +29,7 @@ registerOnclick((x, y) => {
   const col = Math.floor(x / (width / 3));
 
   board[row - 1][col] = marker;
-  if (board [0][0])
+  
 
   const xPos = (col * width / 3) + width / 9;
   const yPos = (row * height / 3) - (height / 9) + (height / 18);
