@@ -1,12 +1,11 @@
 let move = 0;
 
 const board = [
-    ['', '', ''],
-    ['', '', ''],
-    ['', '', ''],
+  ['', '', ''],
+  ['', '', ''],
+  ['', '', ''],
 ];
 
-board[0][0] = 'X';
 
 
 
@@ -17,6 +16,7 @@ registerOnclick((x, y) => {
   const row = 1 + Math.floor(y / (height / 3));
   const col = Math.floor(x / (width / 3));
 
+  board[row - 1][col] = marker;
 
   const xPos = (col * width / 3) + width / 9;
   const yPos = (row * height / 3) - (height / 9) + (height / 18);
