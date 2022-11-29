@@ -1,7 +1,6 @@
 let move = 0;
 
 
-
 registerOnclick((x, y) => {
   const marker = move % 2 === 0 ? 'X' : 'O';
   const color = move % 2 === 0 ? 'red' : 'blue';
