@@ -1,11 +1,24 @@
 let move = 0;
 
 const board = [
-  ['', '', ''],
-  ['', '', ''],
-  ['', '', ''],
+    ['', '', ''],
+    ['', '', ''],
+    ['', '', ''],
 ];
 
+board[0][0]
+
+const winningConditions = [
+  [0, 1, 2],
+  [3, 4, 5],
+  [6, 7, 8],
+  [0, 4, 8],
+  [2, 4, 6],
+  [1, 4, 7],
+  [2, 5, 8],
+  [1, 4, 7],
+  [0, 3, 6],
+];
 
 
 
@@ -17,6 +30,7 @@ registerOnclick((x, y) => {
   const col = Math.floor(x / (width / 3));
 
   board[row - 1][col] = marker;
+  if (board [0][0])
 
   const xPos = (col * width / 3) + width / 9;
   const yPos = (row * height / 3) - (height / 9) + (height / 18);
