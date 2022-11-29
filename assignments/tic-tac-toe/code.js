@@ -1,5 +1,27 @@
 let move = 0;
 
+const board = [
+    ['', '', ''],
+    ['', '', ''],
+    ['', '', ''],
+];
+
+board[0][0]
+
+const winningConditions = [
+  [0, 1, 2],
+  [3, 4, 5],
+  [6, 7, 8],
+  [0, 4, 8],
+  [2, 4, 6],
+  [1, 4, 7],
+  [2, 5, 8],
+  [1, 4, 7],
+  [0, 3, 6],
+];
+
+
+
 registerOnclick((x, y) => {
   const marker = move % 2 === 0 ? 'X' : 'O';
   const color = move % 2 === 0 ? 'red' : 'blue';
@@ -18,7 +40,7 @@ registerOnclick((x, y) => {
   move++;
 });
 
-const board = () => {
+const drawBoard = () => {
   for (let i = 0; i < 2; i++) {
     const x = (i + 1) * width / 3
     drawLine(x, 0, x, height, 'black', 5);
