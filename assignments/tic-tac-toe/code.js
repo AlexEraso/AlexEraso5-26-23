@@ -39,4 +39,4 @@ const drawBoard = () => {
   }
 }
 
-board()
+drawBoard()
