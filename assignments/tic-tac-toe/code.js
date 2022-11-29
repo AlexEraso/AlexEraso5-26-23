@@ -1,6 +1,5 @@
 let move = 0;
 
-
 registerOnclick((x, y) => {
   const marker = move % 2 === 0 ? 'X' : 'O';
   const color = move % 2 === 0 ? 'red' : 'blue';
@@ -15,10 +14,11 @@ registerOnclick((x, y) => {
 
   drawText(marker, xPos, yPos, color, Math.min(width, height) * 0.3);
 
+
   move++;
 });
 
-const drawBoard = () => {
+const board = () => {
   for (let i = 0; i < 2; i++) {
     const x = (i + 1) * width / 3
     drawLine(x, 0, x, height, 'black', 5);
