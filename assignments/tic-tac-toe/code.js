@@ -30,7 +30,7 @@ registerOnclick((x, y) => {
 
   board[row - 1][col] = marker;
   if (board[0][0] === '') {
-    return drawText(marker, xPos, yPos, color, Math.min(width, height) * 0.3);
+    drawText(marker, xPos, yPos, color, Math.min(width, height) * 0.3);
   };
 
 
