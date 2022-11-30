@@ -19,8 +19,8 @@ registerOnclick((x, y) => {
   if (board[row - 1][col] === '') {
     drawText(marker, xPos, yPos, color, Math.min(width, height) * 0.3);
 
-  board[row - 1][col] = marker;
-  move++;
+    board[row - 1][col] = marker;
+    move++;
   };
 });
 
