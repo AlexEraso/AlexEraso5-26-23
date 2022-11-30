@@ -1,7 +1,7 @@
 let move = 0;
 
 const board = [
-  ['null', '', ''],
+  ['', '', ''],
   ['', '', ''],
   ['', '', ''],
 ];
@@ -32,7 +32,7 @@ registerOnclick((x, y) => {
   const yPos = (row * height / 3) - (height / 9) + (height / 18);
 
   board[row - 1][col] = marker;
-  if (board[0][0] === 'null') {
+  if (board[0][0] === '') {
     drawText(marker, xPos, yPos, color, Math.min(width, height) * 0.3);
   };
 
