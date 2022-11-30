@@ -38,7 +38,6 @@ registerOnclick((x, y) => {
   const yPos = (row * height / 3) - (height / 9) + (height / 18);
 
 
-  drawText(marker, xPos, yPos, color, Math.min(width, height) * 0.3);
 
 
   move++;
