@@ -28,17 +28,13 @@ registerOnclick((x, y) => {
   const row = 1 + Math.floor(y / (height / 3));
   const col = Math.floor(x / (width / 3));
 
+ const xPos = (col * width / 3) + width / 9;
+  const yPos = (row * height / 3) - (height / 9) + (height / 18);
+
   board[row - 1][col] = marker;
   if (board[0][0] === '') {
     drawText(marker, xPos, yPos, color, Math.min(width, height) * 0.3);
   };
-
-
-  const xPos = (col * width / 3) + width / 9;
-  const yPos = (row * height / 3) - (height / 9) + (height / 18);
-
-
-
 
   move++;
 });
