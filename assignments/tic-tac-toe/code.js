@@ -37,7 +37,6 @@ registerOnclick((x, y) => {
   const xPos = (col * width / 3) + width / 9;
   const yPos = (row * height / 3) - (height / 9) + (height / 18);
 
-
   move++;
 });
 
