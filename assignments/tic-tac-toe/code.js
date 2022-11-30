@@ -29,7 +29,7 @@ registerOnclick((x, y) => {
   const col = Math.floor(x / (width / 3));
 
   board[row - 1][col] = marker;
-  if (board[row][col] === '') {
+  if (board[0][0] === '') {
     drawText(marker, xPos, yPos, color, Math.min(width, height) * 0.3);
   };
 
