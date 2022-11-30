@@ -36,6 +36,10 @@ registerOnclick((x, y) => {
   };
   board[row - 1][col] = marker;
 
+  if (board[row-1][col] === 'X' || 'O'){
+    
+  };
+
   move++;
 });
 
