@@ -25,60 +25,16 @@ registerOnclick((x, y) => {
 });
 
 function checkWinner() {
-    //horizontally, check 3 rows
-    for (let r = 0; r < 3; r++) {
-        if (board[r][0] == board[r][1] && board[r][1] == board[r][2] && board[r][0] != ' ') {
-            //if we found the winning row
-            //apply the winner style to that row
-            for (let i = 0; i < 3; i++) {
-                let tile = document.getElementById(r.toString() + "-" + i.toString());
-                tile.classList.add("winner");
-            }
-            gameOver = true;
-            return;
-        }
-    }
-
-    //vertically, check 3 columns
-    for (let c = 0; c < 3; c++) {
-        if (board[0][c] == board[1][c] && board[1][c] ==  board[2][c] && board[0][c] != ' ') {
-            //if we found the winning col
-            //apply the winner style to that col
-            for (let i = 0; i < 3; i++) {
-                let tile = document.getElementById(i.toString() + "-" + c.toString());                
-                tile.classList.add("winner");
-            }
-            gameOver = true;
-            return;
-        }
-    }
-
-    //diagonally
+  //checking horizontally
+   for (let r = 0; r < 3; r++) {
+        if (board[r][0] == board[r][1] && board[r][1] == board[r][2] && board[r][0] != '') {
+  //checking vertically
+  for (let c = 0; c < 3; c++) {
+        if (board[0][c] == board[1][c] && board[1][c] ==  board[2][c] && board[0][c] != '') {
+  //checking diagonally from left to right
     if (board[0][0] == board[1][1] && board[1][1] == board[2][2] && board[0][0] != ' ') {
-        for (let i = 0; i < 3; i++) {
-            let tile = document.getElementById(i.toString() + "-" + i.toString());                
-            tile.classList.add("winner");
-        }
-        gameOver = true;
-        return;
-    }
-
-    //anti-diagonally
-    if (board[0][2] == board[1][1] && board[1][1] == board[2][0] && board[0][2] != ' ') {
-        //0-2
-        let tile = document.getElementById("0-2");                
-        tile.classList.add("winner");
-
-        //1-1
-        tile = document.getElementById("1-1");                
-        tile.classList.add("winner");
-
-        //2-0
-        tile = document.getElementById("2-0");                
-        tile.classList.add("winner");
-        gameOver = true;
-        return;
-    }
+  //checking diagonally from right to left
+      if (board[0][2] == board[1][1] && board[1][1] == board[2][0] && board[0][2] != ' ') {
 }
 
 const drawBoard = () => {
