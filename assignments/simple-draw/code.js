@@ -4,8 +4,7 @@
 
 //horizontal
 
-drawLine(100, 0, 100, 0, 'red', 30);
-
+drawLine(0, -100, 0, -100, 'red', 30);
 
 //vertical
 
