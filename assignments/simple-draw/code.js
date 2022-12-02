@@ -8,8 +8,8 @@
 
 //diagonal left to right 
 
-drawLine(-800, - 200, 900, 300, 'red', 30);
+drawLine(-800, -200, 900, 300, 'red', 30);
 
 //diagonal right to left
 
-drawLine(50, 100, 50, 100, 'red', 30);
+drawLine(0, 0, 50, 100, 'red', 30);
