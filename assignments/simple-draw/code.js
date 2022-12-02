@@ -40,4 +40,4 @@
 
 
 
-drawLine(-10, 200, 900, 300, 'red');
+drawLine(-10, height - 200, 900, 300, 'red');
