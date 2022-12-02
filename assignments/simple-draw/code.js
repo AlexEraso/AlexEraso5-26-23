@@ -4,9 +4,12 @@
 
 //horizontal
 
+drawLine(100, 0, 100, 0, 'red', 30);
+
+
 //vertical
 
-drawLine(100, 400, 100, 0, 'red', 30);
+//drawLine(100, 400, 100, 0, 'red', 30);
 
 
 //diagonal left to right 
