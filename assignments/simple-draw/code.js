@@ -12,4 +12,4 @@
 
 //diagonal right to left
 
-drawLine(0, 400, 1000, 0,'red', 30);
+drawLine(0, 400, 900, 0,'red', 30);
