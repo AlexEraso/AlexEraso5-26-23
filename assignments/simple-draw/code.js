@@ -39,5 +39,5 @@
 
 //drawLine(x1, y1, x2, y2, color, lineWidth)
 
-drawLine(-800, - 50, 900, 300, 'red', 30);
+drawLine(-800, - 50, 900, 450, 'red', 30);
 
