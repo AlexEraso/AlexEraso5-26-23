@@ -6,7 +6,7 @@
 
 //vertical
 
-drawLine(0, 400, 400, 0, 'red', 30);
+drawLine(100, 400, 400, 0, 'red', 30);
 
 
 //diagonal left to right 
