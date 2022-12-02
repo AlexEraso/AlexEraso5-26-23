@@ -39,6 +39,28 @@ function checkWinner() {
       if (board[0][2] == board[1][1] && board[1][1] == board[2][0] && board[0][2] != ' ') {
 }
 
+
+
+//drawLine(x1, y1, x2, y2, color, lineWidth)
+
+//horizontal
+
+//drawLine(0, 100, 1000, 100, 'red', 30);
+
+//vertical
+
+//drawLine(100, 400, 100, 0, 'red', 30);
+
+
+//diagonal left to right 
+
+//drawLine(-800, -200, 900, 300, 'red', 30);
+
+//diagonal right to left
+
+//drawLine(0, 400, 900, 0,'red', 30);
+
+
 const drawBoard = () => {
   for (let i = 0; i < 2; i++) {
     const x = (i + 1) * width / 3
