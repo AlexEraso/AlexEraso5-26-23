@@ -36,11 +36,11 @@ function checkWinner() {
           drawLine(0, 100, 1000, 100, 'red', 30);
 
           //checking diagonally from left to right
-          if (board[0][0] == board[1][1] && board[1][1] == board[2][2] && board[0][0] != ' ') {
+          if (board[0][0] == board[1][1] && board[1][1] == board[2][2] && board[0][0] != '') {
             drawLine(-800, - 200, 900, 300, 'red', 30);
 
             //checking diagonally from right to left
-            if (board[0][2] == board[1][1] && board[1][1] == board[2][0] && board[0][2] != ' ') {
+            if (board[0][2] == board[1][1] && board[1][1] == board[2][0] && board[0][2] != '') {
               drawLine(0, 400, 900, 0, 'red', 30);
             }
           }
