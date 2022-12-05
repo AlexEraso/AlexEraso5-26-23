@@ -29,16 +29,16 @@ function checkWinner() {
   for (let r = 0; r < 3; r++) {
     if (board[r][0] == board[r][1] && board[r][1] == board[r][2] && board[r][0] != '') {
       drawLine(0, 100, 1000, 100, 'red', 30);
-
+    } else {
       //checking vertically
       for (let c = 0; c < 3; c++) {
         if (board[0][c] == board[1][c] && board[1][c] == board[2][c] && board[0][c] != '') {
           drawLine(0, 100, 1000, 100, 'red', 30);
-
+        } else {
           //checking diagonally from left to right
           if (board[0][0] == board[1][1] && board[1][1] == board[2][2] && board[0][0] != '') {
             drawLine(-800, - 200, 900, 300, 'red', 30);
-
+          } else {
             //checking diagonally from right to left
             if (board[0][2] == board[1][1] && board[1][1] == board[2][0] && board[0][2] != '') {
               drawLine(0, 400, 900, 0, 'red', 30);
@@ -49,7 +49,6 @@ function checkWinner() {
     }
   }
 }
-drawLine(0, 400, 900, 0, 'red', 30);
 
 
 
