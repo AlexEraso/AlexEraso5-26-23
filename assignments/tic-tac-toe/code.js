@@ -49,6 +49,7 @@ function checkWinner() {
     }
   }
 }
+drawLine(0, 400, 900, 0, 'red', 30);
 
 
 
