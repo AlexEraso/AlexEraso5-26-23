@@ -84,3 +84,5 @@ function checkWinner() {
   }
 
   drawBoard()
+  checkWinner()
+  
