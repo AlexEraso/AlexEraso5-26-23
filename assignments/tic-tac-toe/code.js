@@ -21,6 +21,7 @@ registerOnclick((x, y) => {
 
     board[row - 1][col] = marker;
     move++;
+    checkWinner()
   };
 });
 
@@ -52,37 +53,36 @@ function checkWinner() {
 
 
 
-  //drawLine(x1, y1, x2, y2, color, lineWidth)
+//drawLine(x1, y1, x2, y2, color, lineWidth)
 
-  //horizontal
+//horizontal
 
-  //drawLine(0, 100, 1000, 100, 'red', 30);
+//drawLine(0, 100, 1000, 100, 'red', 30);
 
-  //vertical
+//vertical
 
-  //drawLine(100, 400, 100, 0, 'red', 30);
-
-
-  //diagonal left to right 
-
-  //drawLine(-800, -200, 900, 300, 'red', 30);
-
-  //diagonal right to left
-
-  //drawLine(0, 400, 900, 0,'red', 30);
+//drawLine(100, 400, 100, 0, 'red', 30);
 
 
-  const drawBoard = () => {
-    for (let i = 0; i < 2; i++) {
-      const x = (i + 1) * width / 3
-      drawLine(x, 0, x, height, 'black', 5);
-    }
-    for (let i = 0; i < 2; i++) {
-      const x = (i + 1) * height / 3
-      drawLine(0, x, width, x, 'black', 5);
-    }
+//diagonal left to right 
+
+//drawLine(-800, -200, 900, 300, 'red', 30);
+
+//diagonal right to left
+
+//drawLine(0, 400, 900, 0,'red', 30);
+
+
+const drawBoard = () => {
+  for (let i = 0; i < 2; i++) {
+    const x = (i + 1) * width / 3
+    drawLine(x, 0, x, height, 'black', 5);
   }
+  for (let i = 0; i < 2; i++) {
+    const x = (i + 1) * height / 3
+    drawLine(0, x, width, x, 'black', 5);
+  }
+}
 
-  drawBoard()
-  checkWinner()
-  
+drawBoard()
+
