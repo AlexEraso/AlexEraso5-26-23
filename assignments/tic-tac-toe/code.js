@@ -46,7 +46,7 @@ function checkWinner() {
 
   //checking diagonally from right to left
   if (board[0][2] == board[1][1] && board[1][1] == board[2][0] && board[0][2] != '') {
-    drawLine(0, 400, 900, 10, 'yellow', 20);
+    drawLine(0, 400, 900, 100, 'yellow', 20);
   }
 }
 
