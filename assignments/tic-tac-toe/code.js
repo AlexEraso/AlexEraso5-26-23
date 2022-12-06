@@ -41,12 +41,12 @@ function checkWinner() {
   }
   //checking diagonally from left to right
   if (board[0][0] == board[1][1] && board[1][1] == board[2][2] && board[0][0] != '') {
-    drawLine(-800, - 200, 900, 300, 'yellow', 20);
+    drawLine(-800, - 200, 900, 000, 'yellow', 20);
   }
 
   //checking diagonally from right to left
   if (board[0][2] == board[1][1] && board[1][1] == board[2][0] && board[0][2] != '') {
-    drawLine(0, 400, 900, 300, 'yellow', 20);
+    drawLine(0, 400, 900, 0, 'yellow', 20);
   }
 }
 
