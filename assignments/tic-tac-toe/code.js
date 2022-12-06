@@ -29,13 +29,13 @@ function checkWinner() {
   //checking horizontally
   for (let r = 0; r < 3; r++) {
     if (board[r][0] == board[r][1] && board[r][1] == board[r][2] && board[r][0] != '') {
-      drawLine([r], 60, [r], 60, 'yellow', 20);
+      drawLine(0, 60, 1000, 60, 'yellow', 20);
     }
   }
   //checking vertically
   for (let c = 0; c < 3; c++) {
     if (board[0][c] == board[1][c] && board[1][c] == board[2][c] && board[0][c] != '') {
-      drawLine(140, [c], 140, [c], 'yellow', 20);
+      drawLine(140, 40, 140, 0, 'yellow', 20);
 
     }
   }
