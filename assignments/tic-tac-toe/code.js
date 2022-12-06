@@ -29,13 +29,13 @@ function checkWinner() {
   //checking horizontally: Change the 0 and 1000 to a variable 
   for (let r = 0; r < 3; r++) {
     if (board[r][0] == board[r][1] && board[r][1] == board[r][2] && board[r][0] != '') {
-      drawLine(row, 60, row, 60, 'yellow', 20);
+      drawLine(0, 60, 1000, 60, 'yellow', 20);
     }
   }
-  //checking vertically: Change 400 and 0 to a variable 
+  //checking vertically: Change 400 and 0 to a variable
   for (let c = 0; c < 3; c++) {
     if (board[0][c] == board[1][c] && board[1][c] == board[2][c] && board[0][c] != '') {
-      drawLine(140, col, 140, col, 'yellow', 20);
+      drawLine(140, 400, 140, 0, 'yellow', 20);
 
     }
   }
