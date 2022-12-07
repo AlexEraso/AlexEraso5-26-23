@@ -29,10 +29,10 @@ function checkWinner() {
   //checking horizontally: y for first row is 60, second row is 170, third is 280
   for (let r = 0; r < 3; r++) {
     if (board[r][0] == board[r][1] && board[r][1] == board[r][2] && board[r][0] != '') {
-      drawLine(0, 280, width, 280, 'yellow', 20);
+      drawLine(0, height/6, width, height/6, 'yellow', 20);
     }
   }
-  //checking vertically: x for first column is 135, second column is 435, third column is 
+  //checking vertically: x for first column is 135, second column is 435, third column is 735 
   for (let c = 0; c < 3; c++) {
     if (board[0][c] == board[1][c] && board[1][c] == board[2][c] && board[0][c] != '') {
       drawLine(735, 0, 735, height, 'yellow', 20);
