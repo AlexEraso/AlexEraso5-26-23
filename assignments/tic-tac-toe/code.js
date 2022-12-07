@@ -26,7 +26,7 @@ registerOnclick((x, y) => {
 });
 
 function checkWinner() { 
-  //checking horizontally: y for first row is 60, second row is 
+  //checking horizontally: y for first row is 60, second row is 170, third is 
   for (let r = 0; r < 3; r++) {
     if (board[r][0] == board[r][1] && board[r][1] == board[r][2] && board[r][0] != '') {
       drawLine(0, 170, width, 170, 'yellow', 20);
