@@ -35,7 +35,7 @@ function checkWinner() {
   //checking vertically: x for first column is 135, second column is 
   for (let c = 0; c < 3; c++) {
     if (board[0][c] == board[1][c] && board[1][c] == board[2][c] && board[0][c] != '') {
-      drawLine(440, 0, 440, height, 'yellow', 20);
+      drawLine(430, 0, 430, height, 'yellow', 20);
 
     }
   }
