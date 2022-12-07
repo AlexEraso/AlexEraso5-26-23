@@ -35,13 +35,13 @@ function checkWinner() {
   //checking vertically: Change 400 and 0 to a variable
   for (let c = 0; c < 3; c++) {
     if (board[0][c] == board[1][c] && board[1][c] == board[2][c] && board[0][c] != '') {
-      drawLine(135, 0, 135, 400, 'yellow', 20);
+      drawLine(135, height, 135, 400, 'yellow', 20);
 
     }
   }
   //checking diagonally from left to right
   if (board[0][0] == board[1][1] && board[1][1] == board[2][2] && board[0][0] != '') {
-    drawLine(height, 0, 900, 400, 'yellow', 20);
+    drawLine(0, 0, 900, 400, 'yellow', 20);
   }
 
   //checking diagonally from right to left
