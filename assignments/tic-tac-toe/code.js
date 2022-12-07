@@ -29,7 +29,7 @@ function checkWinner() {
   //checking horizontally: Change the 0 and 1000 to a variable 
   for (let r = 0; r < 3; r++) {
     if (board[r][0] == board[r][1] && board[r][1] == board[r][2] && board[r][0] != '') {
-      drawLine(0, 140, width, 140, 'yellow', 20);
+      drawLine(0, 60, width, 60, 'yellow', 20);
     }
   }
   //checking vertically: Change 400 and 0 to a variable
