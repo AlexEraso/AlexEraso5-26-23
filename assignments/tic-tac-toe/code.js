@@ -13,7 +13,7 @@ registerOnclick((x, y) => {
   const row = 1 + Math.floor(y / (height / 3));
   const col = Math.floor(x / (width / 3));
 
-  const xPos = (col * width / 3) + width / 9;
+  const xPos =  (col * width / 3) + width / 9;
   const yPos = (row * height / 3) - (height / 9) + (height / 18);
 
   if (board[row - 1][col] === '') {
@@ -35,7 +35,7 @@ function checkWinner() {
   //checking vertically: Change 400 and 0 to a variable
   for (let c = 0; c < 3; c++) {
     if (board[0][c] == board[1][c] && board[1][c] == board[2][c] && board[0][c] != '') {
-      drawLine(750, 0, 750, 400, 'yellow', 20);
+      drawLine((col * width / 6), 0, (col * width / 6), 400, 'yellow', 20);
 
     }
   }
