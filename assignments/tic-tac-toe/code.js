@@ -29,7 +29,7 @@ function checkWinner() {
   //checking horizontally: y for first row is 60, second row is 170, third is 
   for (let r = 0; r < 3; r++) {
     if (board[r][0] == board[r][1] && board[r][1] == board[r][2] && board[r][0] != '') {
-      drawLine(0, 270, width, 270, 'yellow', 20);
+      drawLine(0, 280, width, 280, 'yellow', 20);
     }
   }
   //checking vertically: Change 400 and 0 to a variable
