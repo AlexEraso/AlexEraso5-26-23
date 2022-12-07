@@ -32,10 +32,10 @@ function checkWinner() {
       drawLine(0, 280, width, 280, 'yellow', 20);
     }
   }
-  //checking vertically: x for first row is 
+  //checking vertically: x for first column is 135, second column is 
   for (let c = 0; c < 3; c++) {
     if (board[0][c] == board[1][c] && board[1][c] == board[2][c] && board[0][c] != '') {
-      drawLine(135, 0, 135, height, 'yellow', 20);
+      drawLine(270, 0, 270, height, 'yellow', 20);
 
     }
   }
