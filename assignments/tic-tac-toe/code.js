@@ -32,7 +32,7 @@ function checkWinner() {
       drawLine(0, 280, width, 280, 'yellow', 20);
     }
   }
-  //checking vertically: Change 400 and 0 to a variable
+  //checking vertically: x for first row is 
   for (let c = 0; c < 3; c++) {
     if (board[0][c] == board[1][c] && board[1][c] == board[2][c] && board[0][c] != '') {
       drawLine(135, 0, 135, height, 'yellow', 20);
