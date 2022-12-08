@@ -13,9 +13,7 @@ registerOnclick((x, y) => {
   const row = 1 + Math.floor(y / (height / 3));
   const col = Math.floor(x / (width / 3));
 
-  const floor = Math.floor(y/(height/3));
-
-  const xPos =  (col * width / 3) + width / 9;
+  const xPos = (col * width / 3) + width / 9;
   const yPos = (row * height / 3) - (height / 9) + (height / 18);
 
   if (board[row - 1][col] === '') {
@@ -27,18 +25,19 @@ registerOnclick((x, y) => {
   };
 });
 
-function checkWinner() { 
+function checkWinner() {
   //checking horizontally: Change the 0 and 1000 to a variable 
-  
+  const floor = Math.floor(y / (height / 3));
+
   for (let r = 0; r < 3; r++) {
     if (board[r][0] == board[r][1] && board[r][1] == board[r][2] && board[r][0] != '') {
-      drawLine(0, (floor * height/3) + height/6, 1000, (floor * height/3) + height/6, 'yellow', 20);
+      drawLine(0, (floor * height / 3) + height / 6, 1000, (floor * height / 3) + height / 6, 'yellow', 20);
     }
   }
   //checking vertically: Change 400 and 0 to a variable
   for (let c = 0; c < 3; c++) {
     if (board[0][c] == board[1][c] && board[1][c] == board[2][c] && board[0][c] != '') {
-      drawLine((floor * width/3) + width/6, 0, (floor * width/3) + width/6, 400, 'yellow', 20);
+      drawLine((floor * width / 3) + width / 6, 0, (floor * width / 3) + width / 6, 400, 'yellow', 20);
 
     }
   }
