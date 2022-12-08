@@ -25,7 +25,7 @@ registerOnclick((x, y) => {
   };
 });
 
-function checkWinner() 
+function checkWinner() {
   //checking horizontally: y for first row is 60, second row is 170, third is 280
   if (board[0][0] == board[0][1] && board[0][1] == board[0][2] && board[0][0] != '') {
     drawLine(0, 60, 1000, 60, 'yellow', 20);
