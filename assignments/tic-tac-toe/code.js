@@ -10,7 +10,7 @@ registerOnclick((x, y) => {
   const marker = move % 2 === 0 ? 'X' : 'O';
   const color = move % 2 === 0 ? 'red' : 'blue';
 
-  const row = Math.floor(y / (height / 3));
+  const row = 1 + Math.floor(y / (height / 3));
   const col = Math.floor(x / (width / 3));
 
   const xPos =  (col * width / 3) + width / 9;
