@@ -13,7 +13,7 @@ registerOnclick((x, y) => {
   const row = 1 + Math.floor(y / (height / 3));
   const col = Math.floor(x / (width / 3));
 
-  const xPos = (col * width / 3) + width / 9;
+  const xPos =  (col * width / 3) + width / 9;
   const yPos = (row * height / 3) - (height / 9) + (height / 18);
 
   if (board[row - 1][col] === '') {
@@ -25,25 +25,28 @@ registerOnclick((x, y) => {
   };
 });
 
-function checkWinner() {
+function checkWinner() { 
   //checking horizontally: y for first row is 60, second row is 170, third is 280
-  if (board[0][0] == board[0][1] && board[0][1] == board[0][2] && board[0][0] != '') {
-    drawLine(0, 60, 1000, 60, 'yellow', 20);
+    if (board[r][0] == board[r][1] && board[r][1] == board[r][2] && board[r][0] != '') {
+      drawLine((height/3) + (height/6), 60, (height/3) + (height/6), 60, 'yellow', 20);
+    }
+  }
+  //checking vertically: x for first column is 135, second column is 435, third column is 735 
+  for (let c = 0; c < 3; c++) {
+    if (board[0][c] == board[1][c] && board[1][c] == board[2][c] && board[0][c] != '') {
+      drawLine(735, 0, 735, height, 'yellow', 20);
+
+    }
+  }
+  //checking diagonally from left to right
+  if (board[0][0] == board[1][1] && board[1][1] == board[2][2] && board[0][0] != '') {
+    drawLine(0, 0, width, height, 'yellow', 20);
   }
 
-//checking vertically: x for first column is 135, second column is 435, third column is 735 
-if (board[0][c] == board[1][c] && board[1][c] == board[2][c] && board[0][c] != '') {
-  drawLine(735, 0, 735, height, 'yellow', 20);
-}
-
-//checking diagonally from left to right
-if (board[0][0] == board[1][1] && board[1][1] == board[2][2] && board[0][0] != '') {
-  drawLine(0, 0, width, height, 'yellow', 20);
-}
-
-//checking diagonally from right to left
-if (board[0][2] == board[1][1] && board[1][1] == board[2][0] && board[0][2] != '') {
-  drawLine(0, height, width, 0, 'yellow', 20);
+  //checking diagonally from right to left
+  if (board[0][2] == board[1][1] && board[1][1] == board[2][0] && board[0][2] != '') {
+    drawLine(0, height, width, 0, 'yellow', 20);
+  }
 }
 
 
