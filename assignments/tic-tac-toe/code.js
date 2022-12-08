@@ -27,7 +27,7 @@ registerOnclick((x, y) => {
 
 function checkWinner() {
   //checking horizontally: Change the 0 and 1000 to a variable 
-  const floor = Math.floor(height/ (height / 3));
+  const floor = Math.floor(y / (height / 3));
 
   for (let r = 0; r < 3; r++) {
     if (board[r][0] == board[r][1] && board[r][1] == board[r][2] && board[r][0] != '') {
