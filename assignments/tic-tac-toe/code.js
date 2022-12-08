@@ -27,9 +27,8 @@ registerOnclick((x, y) => {
 
 function checkWinner() { 
   //checking horizontally: y for first row is 60, second row is 170, third is 280
-  for (let r = 0; r < 3; r++) {
-    if (board[r][0] == board[r][1] && board[r][1] == board[r][2] && board[r][0] != '') {
-      drawLine((height/3) + (height/6), 60, (height/3) + (height/6), 60, 'yellow', 20);
+    if (board[0][0] == board[0][1] && board[0][1] == board[0][2] && board[0][0] != '') {
+      drawLine(0, 60, 1000, 60, 'yellow', 20);
     }
   }
   //checking vertically: x for first column is 135, second column is 435, third column is 735 
