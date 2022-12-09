@@ -27,7 +27,7 @@ registerOnclick((x, y) => {
 
 function checkWinner() {
   //checking horizontally: Change the 0 and 1000 to a variable 
-  const floor = Math.floor(y / (height / 3));
+  const floor = Math.floor(i / (height / 3));
 
   for (let r = 0; r < 3; r++) {
     if (board[r][0] == board[r][1] && board[r][1] == board[r][2] && board[r][0] != '') {
@@ -35,7 +35,7 @@ function checkWinner() {
     }
   }
   //checking vertically: Change 400 and 0 to a variable
-  for (let c = 0; c < 3; c++) {
+  for (let c = 0; c < 3; c++) {we
     if (board[0][c] == board[1][c] && board[1][c] == board[2][c] && board[0][c] != '') {
       drawLine((floor * width / 3) + width / 6, 0, (floor * width / 3) + width / 6, 400, 'yellow', 20);
 
