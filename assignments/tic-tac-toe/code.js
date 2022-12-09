@@ -13,7 +13,7 @@ registerOnclick((x, y) => {
   const row = 1 + Math.floor(y / (height / 3));
   const col = Math.floor(x / (width / 3));
 
-  const xPos = (col * width / 3) + width / 9;
+  const xPos =  (col * width / 3) + width / 9;
   const yPos = (row * height / 3) - (height / 9) + (height / 18);
 
   if (board[row - 1][col] === '') {
@@ -25,30 +25,29 @@ registerOnclick((x, y) => {
   };
 });
 
-function checkWinner() {
-  //checking horizontally: Change the 0 and 1000 to a variable 
-  const floor = Math.floor(i / (height / 3));
-
+function checkWinner() { 
+  //checking horizontally: y for first row is 60, second row is 170, third is 280
+  const floor = Math.floor(y/(height/3));
   for (let r = 0; r < 3; r++) {
     if (board[r][0] == board[r][1] && board[r][1] == board[r][2] && board[r][0] != '') {
-      drawLine(0, (floor * height / 3) + height / 6, 1000, (floor * height / 3) + height / 6, 'yellow', 20);
+      drawLine(0, (floor * width / 3) + width/6 , 1000,(floor * width / 3) + width/6, 'yellow', 20);
     }
   }
-  //checking vertically: Change 400 and 0 to a variable
-  for (let c = 0; c < 3; c++) {we
+  //checking vertically: x for first column is 135, second column is 435, third column is 735 
+  for (let c = 0; c < 3; c++) {
     if (board[0][c] == board[1][c] && board[1][c] == board[2][c] && board[0][c] != '') {
-      drawLine((floor * width / 3) + width / 6, 0, (floor * width / 3) + width / 6, 400, 'yellow', 20);
+      drawLine((floor * height / 3) + height/6, 0, (floor * height / 3) + height/6, 'yellow', 20);
 
     }
   }
   //checking diagonally from left to right
   if (board[0][0] == board[1][1] && board[1][1] == board[2][2] && board[0][0] != '') {
-    drawLine(0, 0, 900, 400, 'yellow', 20);
+    drawLine(0, 0, width, height, 'yellow', 20);
   }
 
   //checking diagonally from right to left
   if (board[0][2] == board[1][1] && board[1][1] == board[2][0] && board[0][2] != '') {
-    drawLine(0, 400, 900, 0, 'yellow', 20);
+    drawLine(0, height, width, 0, 'yellow', 20);
   }
 }
 
@@ -65,7 +64,6 @@ function checkWinner() {
 //vertical
 
 //drawLine(100, 400, 100, 0, 'red', 30);
-
 
 //diagonal left to right 
 
