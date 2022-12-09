@@ -29,8 +29,8 @@ function checkWinner() {
   //checking horizontally: y for first row is 60, second row is 170, third is 280
   for (let r = 0; r < 3; r++) {
     if (board[r][0] == board[r][1] && board[r][1] == board[r][2] && board[r][0] != '') {
-    }      drawLine((height / 6) + (r * height / 3), 0, (height / 6) + (r * height / 3), width, "yellow", 20);
-
+      drawLine((height / 6) + (r * height / 3), 0, (height / 6) + (c * height / 3), width, "yellow", 20);
+    }
   }
   //checking vertically: x for first column is 135, second column is 435, third column is 735 
   for (let c = 0; c < 3; c++) {
