@@ -27,16 +27,15 @@ registerOnclick((x, y) => {
 
 function checkWinner() { 
   //checking horizontally: y for first row is 60, second row is 170, third is 280
-  const floor = Math.floor(y/(height/3));
   for (let r = 0; r < 3; r++) {
     if (board[r][0] == board[r][1] && board[r][1] == board[r][2] && board[r][0] != '') {
-      drawLine(0, (floor * width / 3) + width/6 , 1000,(floor * width / 3) + width/6, 'yellow', 20);
+      drawLine((width/3) + (width/6), 60, (width/3) + (width/6), 60, 'yellow', 20);
     }
   }
   //checking vertically: x for first column is 135, second column is 435, third column is 735 
   for (let c = 0; c < 3; c++) {
     if (board[0][c] == board[1][c] && board[1][c] == board[2][c] && board[0][c] != '') {
-      drawLine((floor * height / 3) + height/6, 0, (floor * height / 3) + height/6, 'yellow', 20);
+      drawLine(735, 0, 735, height, 'yellow', 20);
 
     }
   }
@@ -64,6 +63,7 @@ function checkWinner() {
 //vertical
 
 //drawLine(100, 400, 100, 0, 'red', 30);
+
 
 //diagonal left to right 
 
