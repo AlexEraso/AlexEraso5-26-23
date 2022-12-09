@@ -13,7 +13,7 @@ registerOnclick((x, y) => {
   const row = 1 + Math.floor(y / (height / 3));
   const col = Math.floor(x / (width / 3));
 
-  const xPos =  (col * width / 3) + width / 9;
+  const xPos = (col * width / 3) + width / 9;
   const yPos = (row * height / 3) - (height / 9) + (height / 18);
 
   if (board[row - 1][col] === '') {
@@ -25,17 +25,17 @@ registerOnclick((x, y) => {
   };
 });
 
-function checkWinner() { 
+function checkWinner() {
   //checking horizontally: y for first row is 60, second row is 170, third is 280
-w  for (let r = 0; r < 3; r++) {
+  for (let r = 0; r < 3; r++) {
     if (board[r][0] == board[r][1] && board[r][1] == board[r][2] && board[r][0] != '') {
-      drawLine(0, (floor * width / 3) + width/6 , 1000,(floor * width / 3) + width/6, 'yellow', 20);
+      drawLine(0, (floor * width / 3) + width / 6, 1000, (floor * width / 3) + width / 6, 'yellow', 20);
     }
   }
   //checking vertically: x for first column is 135, second column is 435, third column is 735 
   for (let c = 0; c < 3; c++) {
     if (board[0][c] == board[1][c] && board[1][c] == board[2][c] && board[0][c] != '') {
-      drawLine((width/6) + (c*width/3),(heigth/6),(width/6)  + (c * width /3), (5*width/6),"yellow",20);
+      drawLine((width / 6) + (c * width / 3), (heigth / 6), (width / 6) + (c * width / 3), (5 * width / 6), "yellow", 20);
 
     }
   }
