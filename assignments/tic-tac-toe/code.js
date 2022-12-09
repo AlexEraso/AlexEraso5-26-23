@@ -36,7 +36,6 @@ function checkWinner() {
   for (let c = 0; c < 3; c++) {
     if (board[0][c] == board[1][c] && board[1][c] == board[2][c] && board[0][c] != '') {
       drawLine(0, (height / 6) + (c * height / 3), width, (height / 6) + (c * height / 3), "yellow", 20);
-
     }
   }
   //checking diagonally from left to right
