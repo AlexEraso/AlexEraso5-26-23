@@ -11,7 +11,7 @@ const BLACK_BISHOP = '♝';
 const BLACK_KNIGHT = '♞';
 const BLACK_PAWN   = '♟';
 
-const boardSize = Math.min(width , height) = 0.80;
+const boardSize = Math.min(width , height) * 0.80;
 const boardX = (width - boardSize) / 2;
 const boardY = (height - boardSize) / 2;
 
