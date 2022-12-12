@@ -11,33 +11,3 @@ const BLACK_BISHOP = '♝';
 const BLACK_KNIGHT = '♞';
 const BLACK_PAWN   = '♟';
 
-const boardSize = Math.min(width , height) * 0.80;
-const boardX = (width - boardSize) / 2;
-const boardY = (height - boardSize) / 2;
-
-const xy = (row, col) => {
-  boardX + col * boardSize /8; 
-  boardY + row * boardSize /8;
-};
-
-const emptyBoard = () => {
-  const sq = boardSize /8;
-  for (let i = 0; i < 8; i++) {
-    for (let j = 0; j < 8; j++) {
-      const [x, y] = xy(i , j);
-      const color = (i + j) % 2 === 0 ? 'white' : 'grey';
-      drawFilledRect(x, y, sq, sq, color);
-    }
-  }
-drawRect(boardX, boardY, boardSize, boardSize, 'grey', 1);
-};
-
-const drawPiece = (text, rank, tile) => {
-  const sq = boardSize / 8;
-  const [x, y] = xy(rank, tile);
-  drawText (text, x + sq * 0.2, y + sq * 0.75, 'black', bordSize / 8);
-};
-
-emptyBoard();
-drawPiece (WHITE_KING, 7,4);
-drawPiece (WHITE_QUEEN, 7, 3);
