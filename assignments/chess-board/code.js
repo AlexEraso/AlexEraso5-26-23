@@ -16,8 +16,8 @@ const boardX = (width - boardSize) / 2;
 const boardY = (height - boardSize) / 2;
 
 const xy = (row, col) => {
-  boardX + col = boardSize /8; 
-  boardY + row = boardSize /8;
+  boardX + col * boardSize /8; 
+  boardY + row * boardSize /8;
 };
 
 const emptyBoard = () => {
