@@ -122,5 +122,15 @@ const needHeavyCoat = (goingOutside, cold) => {
 };
 
 const needSunScreen = (goingToBeach, goingSkiing) => {
-  
+  goingToBeach || goingSkiing
 };
+
+const needMittens = (goingOutside, somewhereWarm) => {
+  goingOutside && ! somewhereWarm
+};
+
+const isVenomous = (stripedSnake, blueHeaded) => {
+  stripedSnake || !blueHeaded
+};
+
+
