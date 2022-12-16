@@ -126,7 +126,7 @@ const needSunScreen = (goingToBeach, goingSkiing) => {
 };
 
 const needMittens = (goingOutside, somewhereWarm) => {
-  goingOutside && ! somewhereWarm
+  goingOutside && !somewhereWarm
 };
 
 const isVenomous = (stripedSnake, blueHeaded) => {
@@ -137,16 +137,16 @@ const firstFewEveryOther = (s) => {
   s[0] + s[2] + s[4]
 };
 
-const firstHalf = () => {
-  s.substring(0 , s.length/2)
+const firstHalf = (s) => {
+  s.substring(0, s.length / 2)
 };
 
 const secondHalf = (s) => {
-  s.substring(s.length/2)
+  s.substring(s.length / 2)
 };
 
 const swapFrontAndBack = (s) => {
-  s.substring(s.length/2) + s.substring (0, s.length/2)
+  s.substring(s.length / 2) + s.substring(0, s.length / 2)
 };
 
 const upDown = (s) => {
@@ -154,5 +154,5 @@ const upDown = (s) => {
 };
 
 const firstAndLast = (s) => {
-  s[0] + s.substring[s.length -1]
+  s[0] + s.substring[s.length - 1]
 };
