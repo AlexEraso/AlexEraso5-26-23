@@ -138,5 +138,21 @@ const firstFewEveryOther = (s) => {
 };
 
 const firstHalf = () => {
-  s.substring()
+  s.substring(0 , s.length/2)
+};
+
+const secondHalf = (s) => {
+  s.substring(s.length/2)
+};
+
+const swapFrontAndBack = (s) => {
+  s.substring(s.length/2) + s.substring (0, s.length/2)
+};
+
+const upDown = (s) => {
+  s.toUpperCase() + s.toLowerCase()
+};
+
+const firstAndLast = (s) => {
+  s[0] + s.substring[s.length -1]
 };
