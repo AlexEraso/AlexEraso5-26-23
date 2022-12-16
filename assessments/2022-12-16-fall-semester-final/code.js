@@ -143,14 +143,10 @@ const firstHalf = (s) =>
 const secondHalf = (s) => 
   s.substring(s.length / 2);
 
-const swapFrontAndBack = (s) => {
-  s.substring(s.length / 2) + s.substring(0, s.length / 2)
-};
+const swapFrontAndBack = (s) => 
+  s.substring(s.length / 2) + s.substring(0, s.length / 2);
 
-const upDown = (s) => {
-  s.toUpperCase() + s.toLowerCase()
-};
+const upDown = (s) => s.toUpperCase() + s.toLowerCase();
 
-const firstAndLast = (s) => {
-  s[0] + s.substring[s.length - 1]
-};
+const firstAndLast = (s) => s[0] + s[s.length - 1];
+;
