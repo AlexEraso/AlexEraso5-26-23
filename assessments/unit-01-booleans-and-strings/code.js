@@ -3,5 +3,6 @@ const fireAlarm = (pulled, smoke, drill) => {
 };
 
 const canBePresident = (age, naturalBornCitizen, usFourteenYears) => {
-  return >= 35 && naturalBornCitizen && usFourteenYears >= 14;
-}
+  return age >= 35 && naturalBornCitizen && usFourteenYears >= 14
+};
+
