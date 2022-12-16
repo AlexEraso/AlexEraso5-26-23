@@ -117,4 +117,10 @@ const evenGreaterThanZero = (number) => {
   return number > 0 && number % 2 === 0
 };
 
+const needHeavyCoat = (goingOutside, cold) => {
+  return goingOutside && cold
+};
 
+const needSunScreen = (goingToBeach, goingSkiing) => {
+  
+};
