@@ -6,6 +6,8 @@ const canBePresident = (age, naturalBornCitizen, usFourteenYears) => {
   return age >= 35 && naturalBornCitizen && usFourteenYears >= 14
 };
 
-const willSeeTweet (followThePerson, followThePersonWhoRT, blocked) => {
-  
+const willSeeTweet = (followThePerson, followThePersonWhoRT, blocked) => {
+  (followThePerson || followThePersonWhoRT) && !blocked
 };
+
+const evenGreaterThanZero = (number) =>
