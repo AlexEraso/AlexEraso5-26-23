@@ -133,4 +133,6 @@ const isVenomous = (stripedSnake, blueHeaded) => {
   stripedSnake || !blueHeaded
 };
 
-
+const firstFewEveryOther = (s) => {
+  s[0] + s[2] + s[4]
+};
