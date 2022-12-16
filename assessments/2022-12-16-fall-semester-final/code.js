@@ -138,5 +138,5 @@ const firstFewEveryOther = (s) => {
 };
 
 const firstHalf = () => {
-  
-}
+  s.substring()
+};
