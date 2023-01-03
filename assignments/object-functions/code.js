@@ -27,11 +27,23 @@ const sumSalaries = (array) => {
   return sum
 }
 
-const newHighScore = () => {
-  return
+const newHighScore = (currentHighScore , scoreArray) => {
+  let newHighScore = currentHighScore;
+  for (let i = 0; i < scoreArray.length; i++) {
+    if (scoreArray[i].score > newHighScore) {
+      newHighScore = scoreArray[i].score
+    }
+  }
+  return newHighScore
 }
 
 
-const summarizeBooks = () => {
-
+const summarizeBooks = (books) => {
+let summary = {titles:[] , pages:0}
+for (let i = 0; i < books.length; i++){
+  summary.titles.push(books[i].title)
+  summary.pages = summary.pages + books[i].pages
 }
+return summary
+}
+
