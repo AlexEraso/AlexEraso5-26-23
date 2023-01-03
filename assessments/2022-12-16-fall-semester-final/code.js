@@ -96,3 +96,58 @@ const pair = (a, b) => {
 
 ////////////////////////////////////////////////////////////////////////
 // Write your code here ...
+
+//for Booleans and Strings
+
+const fireAlarm = (pulled, smoke, drill) => {
+  return pulled || smoke || drill;
+};
+
+const canBePresident = (age, naturalBornCitizen, usFourteenYears) => {
+  return age >= 35 && naturalBornCitizen && usFourteenYears >= 14;
+};
+
+const willSeeTweet = (followThePerson, followThePersonWhoRT, blocked) => {
+  (followThePerson || followThePersonWhoRT) && !blocked;
+};
+
+//the evenGreaterThanZero was in the original Booleans and Strings assessment, but not in this one, but I still kept the code
+
+const evenGreaterThanZero = (number) => {
+  return number > 0 && number % 2 === 0;
+};
+
+const needHeavyCoat = (goingOutside, cold) => {
+  return goingOutside && cold;
+};
+
+const needSunScreen = (goingToBeach, goingSkiing) => {
+  goingToBeach || goingSkiing;
+};
+
+const needMittens = (goingOutside, somewhereWarm) => {
+  goingOutside && !somewhereWarm;
+};
+
+const isVenomous = (stripedSnake, blueHeaded) => {
+  stripedSnake || !blueHeaded;
+};
+
+const firstFewEveryOther = (s) => {
+  s[0] + s[2] + s[4]
+};
+
+const firstHalf = (s) =>
+  s.substring(0, s.length / 2);
+
+const secondHalf = (s) =>
+  s.substring(s.length / 2);
+
+const swapFrontAndBack = (s) =>
+  s.substring(s.length / 2) + s.substring(0, s.length / 2);
+
+const upDown = (s) =>
+  s.toUpperCase() + s.toLowerCase();
+
+const firstAndLast = (s) =>
+  s[0] + s[s.length - 1];
