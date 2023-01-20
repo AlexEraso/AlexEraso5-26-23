@@ -53,7 +53,146 @@ a2.append(
 );
 
 body.append(a2);
+//newer thing 
 
+const q4 = document.createElement('h1');
+
+q4.append(document.createTextNode('What are some of the main elements of HTML?'));
+
+body.append(q4);
+
+const a4 = document.createElement('p');
+
+a4.append(
+  document.createTextNode(`
+  Some of the main elements of HTML include:
+`),
+);
+
+body.append(a4);
+
+//I hate lists
+
+const list = document.createElement('ol');
+
+const otherList = document.createElement('li');
+
+const code = document.createElement('code');
+
+code.append('<html>')
+otherList.append(code)
+otherList.append(document.createTextNode(': This is the root element of an HTML document, and it contains all of the other elements.'));
+list.append(otherList)
+
+
+//I really hate lists 1 
+
+const otherList1 = document.createElement('li');
+
+const code1 = document.createElement('code1');
+
+code1.append('<head>')
+otherList1.append(code1)
+otherList1.append(document.createTextNode(": This element contains information about the document, such as the title of the page, which is displayed in the browser's title bar or tab."));
+list.append(otherList1)
+
+
+//I really hate lists 2 
+
+const otherList2 = document.createElement('li');
+
+const code2 = document.createElement('code1');
+
+code2.append('<body>')
+otherList2.append(code2)
+otherList2.append(document.createTextNode(": This element contains the content of the document that is displayed in the browser window."));
+list.append(otherList2)
+body.append(list)
+
+
+//I really hate lists 3 
+
+const otherList3 = document.createElement('li');
+
+const code3 = document.createElement('code1');
+
+code3.append('<h1> to <h6>')
+otherList3.append(code3)
+otherList3.append(document.createTextNode(": These elements are used for headings and subheadings. <h1> is the highest level heading, while <h6> is the lowest."));
+list.append(otherList3)
+body.append(list)
+
+//I really hate lists 4 
+
+const otherList4 = document.createElement('li');
+
+const code4 = document.createElement('code1');
+
+code4.append('<p>')
+otherList4.append(code4)
+otherList4.append(document.createTextNode(": This element is used for paragraphs of text."));
+list.append(otherList4)
+body.append(list)
+
+//I really hate lists 5 
+
+const otherList5 = document.createElement('li');
+
+const code5 = document.createElement('code1');
+
+code5.append('<a>')
+otherList5.append(code5)
+otherList5.append(document.createTextNode(": This element is used for hyperlinks, which allow users to navigate between pages on the web."));
+list.append(otherList5)
+body.append(list)
+
+//I really hate lists 6
+
+const otherList6 = document.createElement('li');
+
+const code6 = document.createElement('code1');
+
+code6.append('<img>')
+otherList6.append(code6)
+otherList6.append(document.createTextNode(": This element is used to embed images in a web page."));
+list.append(otherList6)
+body.append(list)
+
+//I really hate lists 7 
+
+const otherList7 = document.createElement('li');
+
+const code7 = document.createElement('code1');
+
+code7.append('<ul> and <ol>')
+otherList7.append(code7)
+otherList7.append(document.createTextNode(": These elements are used for unordered and ordered lists, respectively."));
+list.append(otherList7)
+body.append(list)
+
+//I really hate lists 8
+
+const otherList8 = document.createElement('li');
+
+const code8 = document.createElement('code1');
+
+code8.append('<li>')
+otherList8.append(code8)
+otherList8.append(document.createTextNode(": This element is used for list items."));
+list.append(otherList8)
+body.append(list)
+
+//I really hate lists 9 
+
+const otherList9 = document.createElement('li');
+
+const code9 = document.createElement('code1');
+
+code9.append('<div> and <span>')
+otherList9.append(code9)
+otherList9.append(document.createTextNode(": These elements are used for grouping and applying styles to elements on a web page."));
+list.append(otherList9)
+body.append(list)
 
 //new thing 
 
