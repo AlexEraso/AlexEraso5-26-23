@@ -226,11 +226,53 @@ a3.append(
 
 body.append(a3);
 
+const credits = document.createElement('div')
 
+credits.setAttribute('class' , 'credits')
 
+const textcredits = document.createElement('p')
 
+textcredits.append(document.createTextNode('Text from 2023-01-14 conversation with '))
 
+credits.append(textcredits)
 
+const chatgpt = document.createElement('a')
+
+credits.append(chatgpt)
+
+chatgpt.setAttribute('href' , 'https://chat.openai.com/chat')
+
+const credits1 = document.createElement('p')
+
+credits1.append(document.createTextNode('Photo of a young Tim Berners-Lee from '))
+
+credits.append(credits1)
+
+const flickr = document.createElement('a')
+
+flickr.setAttribute('href' , 'https://www.flickr.com/photos/itupictures/16662336315')
+
+credits.append(flickr)
+
+const credits2 = document.createElement('p')
+
+credits2.append(document.createTextNode('no thanks to ChatGPT. ('))
+
+credits.append(credits2)
+
+const creativecommons = document.createElement('a')
+
+creativecommons.setAttribute('href' , 'https://creativecommons.org/licenses/by/2.0/')
+
+credits.append(creativecommons)
+
+const credits3 = document.createElement('p')
+
+credits3.append(document.createTextNode(')'))
+
+credits.append(credits3)
+
+body.append(credits)
 
 
 
