@@ -89,7 +89,7 @@ list.append(otherList)
 
 const otherList1 = document.createElement('li');
 
-const code1 = document.createElement('code1');
+const code1 = document.createElement('code');
 
 code1.append('<head>')
 otherList1.append(code1)
@@ -101,7 +101,7 @@ list.append(otherList1)
 
 const otherList2 = document.createElement('li');
 
-const code2 = document.createElement('code1');
+const code2 = document.createElement('code');
 
 code2.append('<body>')
 otherList2.append(code2)
@@ -114,7 +114,7 @@ body.append(list)
 
 const otherList3 = document.createElement('li');
 
-const code3 = document.createElement('code1');
+const code3 = document.createElement('code');
 
 code3.append('<h1> to <h6>')
 otherList3.append(code3)
@@ -126,7 +126,7 @@ body.append(list)
 
 const otherList4 = document.createElement('li');
 
-const code4 = document.createElement('code1');
+const code4 = document.createElement('code');
 
 code4.append('<p>')
 otherList4.append(code4)
@@ -138,7 +138,7 @@ body.append(list)
 
 const otherList5 = document.createElement('li');
 
-const code5 = document.createElement('code1');
+const code5 = document.createElement('code');
 
 code5.append('<a>')
 otherList5.append(code5)
@@ -150,7 +150,7 @@ body.append(list)
 
 const otherList6 = document.createElement('li');
 
-const code6 = document.createElement('code1');
+const code6 = document.createElement('code');
 
 code6.append('<img>')
 otherList6.append(code6)
@@ -162,7 +162,7 @@ body.append(list)
 
 const otherList7 = document.createElement('li');
 
-const code7 = document.createElement('code1');
+const code7 = document.createElement('code');
 
 code7.append('<ul> and <ol>')
 otherList7.append(code7)
@@ -174,7 +174,7 @@ body.append(list)
 
 const otherList8 = document.createElement('li');
 
-const code8 = document.createElement('code1');
+const code8 = document.createElement('code');
 
 code8.append('<li>')
 otherList8.append(code8)
@@ -186,7 +186,7 @@ body.append(list)
 
 const otherList9 = document.createElement('li');
 
-const code9 = document.createElement('code1');
+const code9 = document.createElement('code');
 
 code9.append('<div> and <span>')
 otherList9.append(code9)
@@ -203,6 +203,12 @@ q3.append(document.createTextNode('Can you find a picture of the inventor of the
 body.append(q3);
 
 const a3 = document.createElement('p');
+
+const image = document.createElement('img')
+
+image.setAttribute('src', "/images/tim-berners-lee.jpg", 'alt', "A young Tim Berner-Lee")
+
+body.append(image);
 
 a3.append(
   document.createTextNode(`
