@@ -1,7 +1,7 @@
 @import url('/styles/base.css');
 
 html {
-  background: #666;
+  background: rgb(187, 121, 34);
   cursor: pointer;
   user-select: none;
 }
@@ -11,12 +11,12 @@ body {
 }
 
 p {
-  color: aliceblue;
+  color: rgb(249, 249, 249);
 }
 
 div {
   position: absolute;
-  font-size: 3vw;
+  font-size: 8vw;
   top: 50vh;
   left: 50vw;
 }
