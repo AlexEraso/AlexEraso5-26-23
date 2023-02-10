@@ -3,11 +3,11 @@
 let nIntervalId;
 
 function startTimer() {
-
+  document.getElementById("thing").innerHTML = "start timer";
 };
 
 function stopTimer() {
-
+    document.getElementById("thing").innerHTML = "stop timer";
 };
 
 function fiveminutetimer(){

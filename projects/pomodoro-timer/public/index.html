@@ -4,6 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script src="/scripts/script.js" type="module"></script>
 <style>
 h1 {text-align: center;}
 .container { 
@@ -38,14 +39,15 @@ text-align:center;
 </style>
 </head>
 <body>
+  
 <body style="background-color:rgb(201, 98, 98);">
 <h1 style="color: white;">Pomodoro Timer</h1>
 <div class="container">
-  <p>25:00
-  </p>
-  <input type="button" class="button" value="Start Timer">
-  <input type="buttontwo" class="button" value="Stop Timer">
+  <p id="thing">25:00</p>
+  <input type="button" class="button" value="Start Timer" onclick = "startTimer()">
+
+  <input type="buttontwo" class="button" value="Stop Timer" onclick = "stopTimer()">
   </div>
-  <script src="/scripts/script.js" type="module"></script>
+
 </body>
 </html>
