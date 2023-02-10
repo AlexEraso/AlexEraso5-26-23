@@ -1,6 +1,11 @@
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
+<script src="/scripts/script.js" type="module"></script>
+
 <style>
 h1 {text-align: center;}
 .container { 
@@ -20,13 +25,28 @@ text-align:center;
   margin: 4px 2px;
   cursor: pointer;
 }
+.buttontwo {
+  background-color: #ac232f;
+  border: none;
+  color: white;
+  padding: 30px 64px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 </style>
 </head>
-<body>
+  
 <body style="background-color:rgb(201, 98, 98);">
 <h1 style="color: white;">Pomodoro Timer</h1>
 <div class="container">
-  <input type="button" class="button" value="Start Timer">
+  <p id="safeTimerDisplay">25:00</p>
+
+  <input id="start" type="button" class="button" value="Start Timer"/>
+  <input id="stop" type="button" class="buttontwo" value="Stop Timer"/>
   </div>
 
 </body>
