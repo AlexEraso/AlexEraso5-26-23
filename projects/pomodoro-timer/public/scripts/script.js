@@ -1,18 +1,11 @@
 
 
-let nIntervalId;
-
-function startTimer() {
-  document.getElementById("thing").innerHTML = "start timer";
-};
-
-function stopTimer() {
-    document.getElementById("thing").innerHTML = "stop timer";
-};
+//let nIntervalId;
+let timer;
 
 function fiveminutetimer(){
     var sec = 300;
-    var timer = setInterval(function(){
+    timer = setInterval(function(){
         document.getElementById('safeTimerDisplay').innerHTML='00:'+sec;
         sec--;
         if (sec < 0) {
@@ -23,7 +16,7 @@ function fiveminutetimer(){
 
 function twentyfivetimer(){
     var sec = 1500;
-    var timer = setInterval(function(){
+    timer = setInterval(function(){
         document.getElementById('safeTimerDisplay').innerHTML='00:'+sec;
         sec--;
         if (sec < 0) {
@@ -32,15 +25,26 @@ function twentyfivetimer(){
     }, 1000);
 }
 
-function count () {
-    setInterval(myTickFunc, 1000);
-    elapsedMs += 1000;
-    if (elapsedMs >= 5000) {doReverse = true;}
-};
+function startTimer() {
+    document.getElementById("thing").innerHTML = "start timer";
 
-document.getElementById("start").addEventListener("click", );
-document.getElementById("stop").addEventListener("click", );
+    // if not on break
+    twentyfivetimer();
 
-p.querySelector('#counter').textContent = `${counter}`;
+    // if on break
+    fiveminutetimer();
+  };
+  
+  function stopTimer() {
+      document.getElementById("thing").innerHTML = "stop timer";
+      console.log("stopTimer()");
+      // get the current timer's id
+      // call clearInterval() on that timer id
+  };
+  
+document.getElementById("start").addEventListener("click", startTimer);
+document.getElementById("stop").addEventListener("click", stopTimer);
+
+//p.querySelector('#counter').textContent = `${counter}`;
 
 
