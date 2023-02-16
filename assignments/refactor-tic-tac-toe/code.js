@@ -25,7 +25,7 @@
 // chunked it already and the comment is telling you what it does.)
 
 const size = Math.min(width, height) * 0.75;
-const left = (width - size) / 2;
+const boardLeft = (width - size) / 2;
 const top = (height - size) / 2;
 const cellSize = size / 3;
 const fontSize = size / 3;
@@ -56,14 +56,14 @@ const lines = [
 ];
 
 // Draw the board
-const x1 = left + cellSize;
-const x2 = left + 2 * cellSize;
+const x1 = boardLeft + cellSize;
+const x2 = boardLeft + 2 * cellSize;
 const y1 = top + cellSize;
 const y2 = top + 2 * cellSize;;
 drawLine(x1, top, x1, top + size, 'grey', 2);
 drawLine(x2, top, x2, top + size, 'grey', 2);
-drawLine(left, y1, left + size, y1, 'grey', 2);
-drawLine(left, y2, left + size, y2, 'grey', 2);
+drawLine(boardLeft, y1, boardLeft + size, y1, 'grey', 2);
+drawLine(boardLeft, y2, boardLeft + size, y2, 'grey', 2);
 
 registerOnclick((x, y) => {
 
@@ -88,14 +88,14 @@ registerOnclick((x, y) => {
   }
 
   r = Math.floor((y - top) / cellSize);
-  c = Math.floor((x - left) / cellSize);
+  c = Math.floor((x - boardLeft) / cellSize);
 
   // Only do anything if it's a legal move and the game isn't over.
   if (winner === null && 0 <= r && r < 3 && 0 <= c && c < 3 && board[r][c] === '') {
 
     // Draw the mark and record the move
     const marker = move % 2 === 0 ? 'X' : 'O';
-    const x = left + c * cellSize + cellSize / 2;
+    const x = boardLeft + c * cellSize + cellSize / 2;
     const y = top + r * cellSize + cellSize / 2;
     const nudge = marker === 'O' ? cellSize / 9 : cellSize / 19;
     drawText(marker, x - (fontSize * 0.3 + nudge), y + fontSize * 0.3, 'black', fontSize);
@@ -123,9 +123,9 @@ registerOnclick((x, y) => {
       const [r1, c1] = winner[0];
       const [r2, c2] = winner[winner.length - 1];
 
-      const x1 = left + c1 * cellSize + cellSize / 2;
+      const x1 = boardLeft + c1 * cellSize + cellSize / 2;
       const y1 = top + r1 * cellSize + cellSize / 2;
-      const x2 = left + c2 * cellSize + cellSize / 2;
+      const x2 = boardLeft + c2 * cellSize + cellSize / 2;
       const y2 = top + r2 * cellSize + cellSize / 2;
 
       let adjX1 = x1;
