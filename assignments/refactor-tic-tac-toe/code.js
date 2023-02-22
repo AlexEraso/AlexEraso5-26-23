@@ -145,5 +145,4 @@ registerOnclick((x, y) => {
 
       drawLine(adjX1, adjY1, adjX2, adjY2, 'red', 15);
     }
-  }
-});
+  
