@@ -99,22 +99,26 @@ const makeMove = (r, c) => {
   move++;
 };
 
+const gameOver = () => findWinner() !== null || move < 9;
+
+//legal move 
+
 registerOnclick((x, y) => {
-
-  let winner = findWinner();
-
   const r = Math.floor((y - boardTop) / cellSize);
   const c = Math.floor((x - boardLeft) / cellSize);
 
-  // Only do anything if it's a legal move and the game isn't over.
-  if (winner === null && 0 <= r && r < 3 && 0 <= c && c < 3 && board[r][c] === '') {
+  if (!gameOver()) {
 
-makeMove(r, c);
+    // Only do anything if it's a legal move and the game isn't over.
+    if (0 <= r && r < 3 && 0 <= c && c < 3 && board[r][c] === '') {
 
-    // Check if there's a winner now
-    winner = findWinner();
-    if (winner !== null) {
-      drawWinningLine(winner);
+      makeMove(r, c);
+      //EXTRACTING ARGUMENTS is sorta just making it a top level function, then doing the const thing, putting the local variables in the arguments, and calling it again with the locals arguments at the bottom, very repetitive process.
+      // Check if there's a winner now
+      let winner = findWinner();
+      if (winner !== null) {
+        drawWinningLine(winner);
+      }
     }
   }
 });
