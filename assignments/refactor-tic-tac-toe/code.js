@@ -59,6 +59,46 @@ const findWinner = () => {
   return null;
   //empty value for arrays and objects 
 };
+
+
+const drawWinningLine = (winner) => {
+  const [r1, c1] = winner[0];
+  const [r2, c2] = winner[winner.length - 1];
+
+  const x1 = boardLeft + c1 * cellSize + cellSize / 2;
+  const y1 = boardTop + r1 * cellSize + cellSize / 2;
+  const x2 = boardLeft + c2 * cellSize + cellSize / 2;
+  const y2 = boardTop + r2 * cellSize + cellSize / 2;
+
+  let adjX1 = x1;
+  let adjX2 = x2;
+  let adjY1 = y1;
+  let adjY2 = y2;
+
+  if (y1 === y2 || x1 !== x2) {
+    adjX1 -= lineEndAdjustment;
+    adjX2 += lineEndAdjustment;
+  }
+
+  if (x1 === x2 || y1 !== y2) {
+    const slope = y1 < y2 ? 1 : -1;
+    adjY1 -= (slope * lineEndAdjustment);
+    adjY2 += (slope * lineEndAdjustment);
+  }
+
+  drawLine(adjX1, adjY1, adjX2, adjY2, 'red', 15);
+};
+
+const makeMove = (r, c) => {
+  const marker = move % 2 === 0 ? 'X' : 'O';
+  const x = boardLeft + c * cellSize + cellSize / 2;
+  const y = boardTop + r * cellSize + cellSize / 2;
+  const nudge = marker === 'O' ? cellSize / 9 : cellSize / 19;
+  drawText(marker, x - (fontSize * 0.3 + nudge), y + fontSize * 0.3, 'black', fontSize);
+  board[r][c] = marker;
+  move++;
+};
+
 registerOnclick((x, y) => {
 
   let winner = findWinner();
@@ -69,44 +109,12 @@ registerOnclick((x, y) => {
   // Only do anything if it's a legal move and the game isn't over.
   if (winner === null && 0 <= r && r < 3 && 0 <= c && c < 3 && board[r][c] === '') {
 
-    // Draw the mark and record the move
-    const marker = move % 2 === 0 ? 'X' : 'O';
-    const x = boardLeft + c * cellSize + cellSize / 2;
-    const y = boardTop + r * cellSize + cellSize / 2;
-    const nudge = marker === 'O' ? cellSize / 9 : cellSize / 19;
-    drawText(marker, x - (fontSize * 0.3 + nudge), y + fontSize * 0.3, 'black', fontSize);
-    board[r][c] = marker;
-    move++;
+makeMove(r, c);
 
     // Check if there's a winner now
     winner = findWinner();
     if (winner !== null) {
-      // Draw the line through three in a row
-      const [r1, c1] = winner[0];
-      const [r2, c2] = winner[winner.length - 1];
-
-      const x1 = boardLeft + c1 * cellSize + cellSize / 2;
-      const y1 = boardTop + r1 * cellSize + cellSize / 2;
-      const x2 = boardLeft + c2 * cellSize + cellSize / 2;
-      const y2 = boardTop + r2 * cellSize + cellSize / 2;
-
-      let adjX1 = x1;
-      let adjX2 = x2;
-      let adjY1 = y1;
-      let adjY2 = y2;
-
-      if (y1 === y2 || x1 !== x2) {
-        adjX1 -= lineEndAdjustment;
-        adjX2 += lineEndAdjustment;
-      }
-
-      if (x1 === x2 || y1 !== y2) {
-        const slope = y1 < y2 ? 1 : -1;
-        adjY1 -= (slope * lineEndAdjustment);
-        adjY2 += (slope * lineEndAdjustment);
-      }
-
-      drawLine(adjX1, adjY1, adjX2, adjY2, 'red', 15);
+      drawWinningLine(winner);
     }
   }
 });
