@@ -1,29 +1,3 @@
-// This is a working tic tac toe game. However it is horribly factored
-// insofar as there are zero functions defined in this code. Consequently
-// there are many instances of duplicated code and thus many opportunities to
-// break out useful functions. You should do to this what you did to the
-// pie recipes but this time in code.
-
-// A tip: make small changes and keep the thing working. If you break it
-// and can't very quickly put it aright, use the Revisions menu to go back
-// to the working version and try again. The goal of refactoring is to change
-// the structure of the code without changing it's behavior.
-
-// Another tip: sometimes it's easier to identify some duplicate code than
-// it is to figure out exactly what it does. It's fine to break it out
-// into a function with a not-great name. Later on, you may well figure out
-// how it fits together and when you do you can use the Rename symbol feature
-// of the editor (on the right-click menu) to change the name of the function
-// to something more meaningful.
-
-// Also remember that it can be useful to break out a big chunk of code
-// just to give it a name. One clue that that might be a good idea is when
-// there's a big chunk of code with a comment explaining what it does.
-// Suprisingly often you can just turn the comment into a function name
-// and move the chunk of code into the function and replace it with a call
-// to the fuction. (Which makse sense because the original author had mentally
-// chunked it already and the comment is telling you what it does.)
-
 const boardSize = Math.min(width, height) * 0.75;
 const boardLeft = (width - boardSize) / 2;
 const boardTop = (height - boardSize) / 2;
@@ -55,41 +29,41 @@ const lines = [
   [[2, 0], [1, 1], [0, 2]],
 ];
 
-// Draw the board
-const x1 = boardLeft + cellSize;
-const x2 = boardLeft + 2 * cellSize;
-const y1 = boardTop + cellSize;
-const y2 = boardTop + 2 * cellSize;;
-drawLine(x1, boardTop, x1, boardTop + boardSize, 'grey', 2);
-drawLine(x2, boardTop, x2, boardTop + boardSize, 'grey', 2);
-drawLine(boardLeft, y1, boardLeft + boardSize, y1, 'grey', 2);
-drawLine(boardLeft, y2, boardLeft + boardSize, y2, 'grey', 2);
+const drawBoard = () => {
+  const x1 = boardLeft + cellSize;
+  const x2 = boardLeft + 2 * cellSize;
+  const y1 = boardTop + cellSize;
+  const y2 = boardTop + 2 * cellSize;;
+  drawLine(x1, boardTop, x1, boardTop + boardSize, 'grey', 2);
+  drawLine(x2, boardTop, x2, boardTop + boardSize, 'grey', 2);
+  drawLine(boardLeft, y1, boardLeft + boardSize, y1, 'grey', 2);
+  drawLine(boardLeft, y2, boardLeft + boardSize, y2, 'grey', 2);
+};
 
+const findWinner = () => {
+  // Check if there's a winner already.
+  for (let i = 0; i < lines.length; i++) {
+    r = lines[i][0][0];
+    c = lines[i][0][1];
+    const m0 = board[r][c];
+    r = lines[i][1][0];
+    c = lines[i][1][1];
+    const m1 = board[r][c];
+    r = lines[i][2][0];
+    c = lines[i][2][1];
+    const m2 = board[r][c];
+    if (m0 !== '' && m0 === m1 && m0 === m2) {
+      winner = lines[i];
+    }
+  }
+};
 registerOnclick((x, y) => {
 
   let winner = null;
   let r;
   let c;
 
-  // Check if there's a winner already.
-  const checkWinner = (lines, board) => {
-    for (let i = 0; i < lines.length; i++) {
-      let r = lines[i][0][0];
-      let c = lines[i][0][1];
-      const m0 = board[r][c];
-      r = lines[i][1][0];
-      c = lines[i][1][1];
-      const m1 = board[r][c];
-      r = lines[i][2][0];
-      c = lines[i][2][1];
-      const m2 = board[r][c];
-      if (m0 !== '' && m0 === m1 && m0 === m2) {
-        return lines[i]
-      }
-    }
-    return null;
-  }
-  winner = checkWinner(lines, board)
+  1
 
   r = Math.floor((y - boardTop) / cellSize);
   c = Math.floor((x - boardLeft) / cellSize);
@@ -107,7 +81,21 @@ registerOnclick((x, y) => {
     move++;
 
     // Check if there's a winner now
-    winner = checkWinner(lines, board)
+    winner = null;
+    for (let i = 0; i < lines.length; i++) {
+      r = lines[i][0][0];
+      c = lines[i][0][1];
+      const m0 = board[r][c];
+      r = lines[i][1][0];
+      c = lines[i][1][1];
+      const m1 = board[r][c];
+      r = lines[i][2][0];
+      c = lines[i][2][1];
+      const m2 = board[r][c];
+      if (m0 !== '' && m0 === m1 && m0 === m2) {
+        winner = lines[i];
+      }
+    }
     if (winner !== null) {
       // Draw the line through three in a row
       const [r1, c1] = winner[0];
@@ -138,3 +126,5 @@ registerOnclick((x, y) => {
     }
   }
 });
+
+drawBoard();
