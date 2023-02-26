@@ -1,126 +1,68 @@
-const boardSize = Math.min(width, height) * 0.75;
-const boardLeft = (width - boardSize) / 2;
-const boardTop = (height - boardSize) / 2;
-const cellSize = boardSize / 3;
-const fontSize = boardSize / 3;
-const lineEndAdjustment = cellSize * 0.7;
+const drawBackground = (horizon, width, height) => {
+  drawFilledRect(0, 0, width, horizon, '#ddeeff');
+  drawFilledRect(0, horizon, width, height - horizon, 'white');
+  drawLine(0, horizon, width, horizon, '#bbb');
+}
 
-let move = 0;
+const drawSnowman = (x, base, size) => {
+  const proportions = [3, 4, 5];
+  const total = proportions.reduce((tot, p) => tot + p, 0);
+  const sizes = proportions.map(p => size * (p / total));
 
-const board = [
-  ['', '', ''],
-  ['', '', ''],
-  ['', '', ''],
-];
+  const [headSize, torsoSize, buttSize] = sizes;
 
-const lines = [
-  // Rows
-  [[0, 0], [0, 1], [0, 2]],
-  [[1, 0], [1, 1], [1, 2]],
-  [[2, 0], [2, 1], [2, 2]],
+  const headY = (base - size) + headSize / 2;
+  const torsoY = headY + headSize / 2 + torsoSize / 2;
+  const buttY = torsoY + torsoSize / 2 + buttSize / 2;
 
-  // Cols
-  [[0, 0], [1, 0], [2, 0]],
-  [[0, 1], [1, 1], [2, 1]],
-  [[0, 2], [1, 2], [2, 2]],
+  drawHead(x, headY, headSize);
+  drawEyes(x, headY, headSize);
+  drawNose(x, headY, headSize);
+  drawMouth(x, headY, headSize);
+  drawHat(x, headY, headSize);
+  drawTorso(x, torsoY, torsoSize);
+  drawArms(x, torsoY, torsoSize);
+  drawButtons(x, torsoY, torsoSize);
+  drawButt(x, buttY, buttSize);
+}
 
-  // Diagonals
-  [[0, 0], [1, 1], [2, 2]],
-  [[2, 0], [1, 1], [0, 2]],
-];
+const drawHead = (x, y, size) => {
+  const radius = size / 2;
+  drawCircle(x, y, radius + 2, 'black', 3);
+  drawFilledCircle(x, y, radius, 'white', 3);
+}
 
-const drawBoard = () => {
-  const x1 = boardLeft + cellSize;
-  const x2 = boardLeft + 2 * cellSize;
-  const y1 = boardTop + cellSize;
-  const y2 = boardTop + 2 * cellSize;;
-  drawLine(x1, boardTop, x1, boardTop + boardSize, 'grey', 2);
-  drawLine(x2, boardTop, x2, boardTop + boardSize, 'grey', 2);
-  drawLine(boardLeft, y1, boardLeft + boardSize, y1, 'grey', 2);
-  drawLine(boardLeft, y2, boardLeft + boardSize, y2, 'grey', 2);
-};
+const drawEyes = (x, y, size) => {
+  const radius = size / 2;
+  const spacing = radius * 0.25;
+  drawFilledCircle(x - spacing, y - spacing, 4, 'black');
+  drawFilledCircle(x + spacing, y - spacing, 4, 'black');
+}
 
-const findWinner = () => {
-  // Check if there's a winner already.
-  for (let i = 0; i < lines.length; i++) {
-    let r = lines[i][0][0];
-    let c = lines[i][0][1];
-    const m0 = board[r][c];
-    r = lines[i][1][0];
-    c = lines[i][1][1];
-    const m1 = board[r][c];
-    r = lines[i][2][0];
-    c = lines[i][2][1];
-    const m2 = board[r][c];
-    if (m0 !== '' && m0 === m1 && m0 === m2) {
-      return lines[i];
-    }
+const drawNose = (x, y, size) => {
+  const length = size * 0.8;
+  drawFilledTriangle(x, y, x + length, y + length * 0.2, x, y + length * 0.3, 'orange');
+}
+
+const drawMouth = (x, y, size) => {
+  const radius = size / 2;
+  for (let i = 0; i < 5; i++) {
+    const dy = -2 * (2.1 ** Math.abs(i - 2));
+    drawFilledCircle(x - (i - 2.3) * radius * 0.21, y + radius * 0.65 + dy, 4, 'black');
   }
-  return null;
-  //empty value for arrays and objects 
-};
+}
+
+const drawHat = (x, y, size) => {
+  const radius = size / 2;
+  const brimTop = y - radius * 0.9;
+  const brimWidth = radius * 2.25;
+  const brimHeight = brimWidth * 0.08;
+  const hatWidth = brimWidth * 0.7;
+  const hatHeight = radius * 1.25;
+  drawFilledRect(x - brimWidth / 2, brimTop, brimWidth, brimHeight, 'black');
+  drawFilledRect(x - hatWidth / 2, brimTop - hatHeight, hatWidth, hatHeight, 'black');
+}
+
+const drawTorso = (x, y, size
 
 
-const drawWinningLine = (winner) => {
-  const [r1, c1] = winner[0];
-  const [r2, c2] = winner[winner.length - 1];
-
-  const x1 = boardLeft + c1 * cellSize + cellSize / 2;
-  const y1 = boardTop + r1 * cellSize + cellSize / 2;
-  const x2 = boardLeft + c2 * cellSize + cellSize / 2;
-  const y2 = boardTop + r2 * cellSize + cellSize / 2;
-
-  let adjX1 = x1;
-  let adjX2 = x2;
-  let adjY1 = y1;
-  let adjY2 = y2;
-
-  if (y1 === y2 || x1 !== x2) {
-    adjX1 -= lineEndAdjustment;
-    adjX2 += lineEndAdjustment;
-  }
-
-  if (x1 === x2 || y1 !== y2) {
-    const slope = y1 < y2 ? 1 : -1;
-    adjY1 -= (slope * lineEndAdjustment);
-    adjY2 += (slope * lineEndAdjustment);
-  }
-
-  drawLine(adjX1, adjY1, adjX2, adjY2, 'red', 15);
-};
-
-const makeMove = (r, c) => {
-  const marker = move % 2 === 0 ? 'X' : 'O';
-  const x = boardLeft + c * cellSize + cellSize / 2;
-  const y = boardTop + r * cellSize + cellSize / 2;
-  const nudge = marker === 'O' ? cellSize / 9 : cellSize / 19;
-  drawText(marker, x - (fontSize * 0.3 + nudge), y + fontSize * 0.3, 'black', fontSize);
-  board[r][c] = marker;
-  move++;
-};
-
-const gameOver = () => findWinner() !== null || move < 9;
-
-//legal move 
-
-registerOnclick((x, y) => {
-  const r = Math.floor((y - boardTop) / cellSize);
-  const c = Math.floor((x - boardLeft) / cellSize);
-
-  if (!gameOver()) {
-
-    // Only do anything if it's a legal move and the game isn't over.
-    if (0 <= r && r < 3 && 0 <= c && c < 3 && board[r][c] === '') {
-
-      makeMove(r, c);
-      //EXTRACTING ARGUMENTS is sorta just making it a top level function, then doing the const thing, putting the local variables in the arguments, and calling it again with the locals arguments at the bottom, very repetitive process.
-      // Check if there's a winner now
-      let winner = findWinner();
-      if (winner !== null) {
-        drawWinningLine(winner);
-      }
-    }
-  }
-});
-
-drawBoard();
