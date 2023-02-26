@@ -104,8 +104,8 @@ const gameOver = () => findWinner() !== null || move < 9
 
 //legal move 
 const isLegalMove = (r, c) => {
-  return (0 <= r && r < 3 && 0 <= c && c < 3 && board[r][c] === ''
-
+  return 0 <= r && r < 3 && 0 <= c && c < 3 && board[r][c] === '';
+}
 
 
 registerOnclick((x, y) => {
