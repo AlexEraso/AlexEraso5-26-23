@@ -105,8 +105,7 @@ const gameOver = () => findWinner() !== null || move < 9
 //legal move 
 const isLegalMove = (r, c) => {
   return 0 <= r && r < 3 && 0 <= c && c < 3 && board[r][c] === '';
-}
-
+};
 
 registerOnclick((x, y) => {
 
@@ -114,7 +113,7 @@ registerOnclick((x, y) => {
   const c = Math.floor((x - boardLeft) / cellSize);
 
   if (!gameOver()) {
-    if (0 <= r && r < 3 && 0 <= c && c < 3 && board[r][c] === '') {
+    if (isLegalMove(r, c)) {
 
       makeMove(r, c);
       //EXTRACTING ARGUMENTS is sorta just making it a top level function, then doing the const thing, putting the local variables in the arguments, and calling it again with the locals arguments at the bottom, very repetitive process.
