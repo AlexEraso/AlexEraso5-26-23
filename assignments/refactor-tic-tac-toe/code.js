@@ -45,8 +45,10 @@ const drawArm = (x, y, radius, isLeftArm) => {
     x2 = x + radius * 2.35;
   }
   */
-  let x1 = x + radius * 0.6 * (isLeftArm ? 1 : -1);
-  let x2 = x + radius * 2.35 * (isLeftArm ? 1 : -1);
+  //let x1 = x + radius * 0.6 * (isLeftArm ? 1 : -1);
+  //let x2 = x + radius * 2.35 * (isLeftArm ? 1 : -1);
+  x1 = x + radius * 0.6;
+  x2 = x + radius * 2.35;
   drawLine(x1, y - radius * 0.25, x2, y - radius * 0.85, 'black', 3);
 };
 
