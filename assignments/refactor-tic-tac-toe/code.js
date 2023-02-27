@@ -1,4 +1,4 @@
-const snowBall = (x, y, radius) => {  
+const snowBall = (x, y, radius) => {
   drawCircle(x, y, radius + 2, 'black', 3);
   drawFilledCircle(x, y, radius, 'white', 3);
 };
@@ -6,7 +6,7 @@ const snowBall = (x, y, radius) => {
 const drawHead = (x, headY, headSize) => {
   const headRadius = headSize / 2;
   // Draw the head
-snowBall(x, headY, headRadius);
+  snowBall(x, headY, headRadius);
 
   // Draw the eyes
   const eyeSpacing = headRadius * 0.25;
@@ -33,12 +33,25 @@ snowBall(x, headY, headRadius);
   drawFilledRect(x - hatWidth / 2, brimTop - hatHeight, hatWidth, hatHeight, 'black');
 };
 
+const drawArm = (x, y, radius, isLeftArm) => {
+  let x1 = x + radius * 0.6;
+  let x2 = x + radius * 2.35;
+  if (!isLeftArm) {
+    x1 = x1 * -1;
+    x2 = x2 * -1;
+  }
+  drawLine(x1, y - radius * 0.25, x2, y - radius * 0.85, 'black', 3);
+};
+
 const drawTorso = (x, torsoY, torsoSize) => {
-const torsoRadius = torsoSize / 2;
- // Draw the torso
-snowBall(x, torsoY, torsoRadius);
+  const torsoRadius = torsoSize / 2;
+  // Draw the torso
+  snowBall(x, torsoY, torsoRadius);
 
   // Draw the arms
+  drawArm(x, torsoY, torsoRadius, true);
+  drawArm(x, torsoY, torsoRadius, false);
+  
   let x1 = x + torsoRadius * 0.6;
   let x2 = x + torsoRadius * 2.35;
   drawLine(x1, torsoY - torsoRadius * 0.25, x2, torsoY - torsoRadius * 0.85, 'black', 3);
@@ -75,13 +88,13 @@ const drawPicture = (horizon, base, size) => {
   const buttY = torsoY + torsoSize / 2 + buttSize / 2;
 
   // Draw the head
-drawHead(x, headY, headSize);
+  drawHead(x, headY, headSize);
 
   // Draw the torso
-drawTorso(x, torsoY, torsoSize);
+  drawTorso(x, torsoY, torsoSize);
 
   // Draw the butt
-snowBall(x, buttY, buttSize / 2);
+  snowBall(x, buttY, buttSize / 2);
 };
 
 drawPicture(height * 0.7, height * 0.9, height * 0.7);
