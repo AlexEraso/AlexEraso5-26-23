@@ -33,13 +33,9 @@ const drawHead = (x, headY, headSize) => {
   drawFilledRect(x - hatWidth / 2, brimTop - hatHeight, hatWidth, hatHeight, 'black');
 };
 
-const drawArm = (x, y, radius, isLeftArm) => {
-  var x1 = x + radius * 0.6;
-  var x2 = x + radius * 2.35;
-  if (isLeftArm) {
-    x1 = x1 * -1;
-    x2 = x2 * -1;
-  }
+const drawArm = (x, y, radius, direction) => {
+  let x1 = x + radius * 0.6 * direction;
+  let x2 = x + radius * 2.35 * direction;
   drawLine(x1, y - radius * 0.25, x2, y - radius * 0.85, 'black', 3);
 };
 
@@ -49,8 +45,8 @@ const drawTorso = (x, torsoY, torsoSize) => {
   snowBall(x, torsoY, torsoRadius);
 
   // Draw the arms
-  drawArm(x, torsoY, torsoRadius, true);
-  drawArm(x, torsoY, torsoRadius, false);
+  drawArm(x, torsoY, torsoRadius, 1);
+  drawArm(x, torsoY, torsoRadius, -1);
   
   /*
   let x1 = x + torsoRadius * 0.6;
