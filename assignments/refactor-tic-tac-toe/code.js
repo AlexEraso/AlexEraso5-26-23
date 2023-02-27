@@ -33,10 +33,10 @@ const drawHead = (x, headY, headSize) => {
   drawFilledRect(x - hatWidth / 2, brimTop - hatHeight, hatWidth, hatHeight, 'black');
 };
 
-const drawArm = (x, y, radius, isRightArm) => {
+const drawArm = (x, y, radius, isLeftArm) => {
   let x1 = x + radius * 0.6;
   let x2 = x + radius * 2.35;
-  if (isRightArm) {
+  if (!isLeftArm) {
     x1 = x1 * -1;
     x2 = x2 * -1;
   }
@@ -49,9 +49,18 @@ const drawTorso = (x, torsoY, torsoSize) => {
   snowBall(x, torsoY, torsoRadius);
 
   // Draw the arms
-  drawArm(x, torsoY, torsoRadius, false);
   drawArm(x, torsoY, torsoRadius, true);
+  drawArm(x, torsoY, torsoRadius, false);
   
+  /*
+  let x1 = x + torsoRadius * 0.6;
+  let x2 = x + torsoRadius * 2.35;
+  drawLine(x1, torsoY - torsoRadius * 0.25, x2, torsoY - torsoRadius * 0.85, 'black', 3);
+  x1 = x + torsoRadius * 0.6 * -1;
+  x2 = x + torsoRadius * 2.35 * -1;
+  drawLine(x1, torsoY - torsoRadius * 0.25, x2, torsoY - torsoRadius * 0.85, 'black', 3);
+  */
+
   // Draw the buttons
   for (let i = 0; i < 3; i++) {
     drawFilledCircle(x, torsoY - torsoRadius * 0.5 + i * torsoRadius * 0.5, 4, 'black');
