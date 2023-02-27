@@ -1,32 +1,13 @@
-const snowBall = (x, y, size) => {  
+const snowBall = (x, y, radius) => {  
   const radius = size / 2;
   drawCircle(x, y, radius + 2, 'black', 3);
   drawFilledCircle(x, y, radius, 'white', 3);
 };
 
-const drawPicture = (horizon, base, size) => {
-
-  // Draw the background
-  drawFilledRect(0, 0, width, horizon, '#ddeeff');
-  drawFilledRect(0, horizon, width, height, 'white');
-  drawLine(0, horizon, width, horizon, '#bbb');
-
-  // Draw the snowman
-  const x = width / 2;
-  const proportions = [3, 4, 5];
-  const [headP, torsoP, buttP] = proportions;
-  const total = proportions.reduce((tot, p) => tot + p, 0);
-
-  const headSize = size * (headP / total);
-  const torsoSize = size * (torsoP / total)
-  const buttSize = size * (buttP / total);
-
-  const headY = (base - size) + headSize / 2;
-  const torsoY = headY + headSize / 2 + torsoSize / 2;
-  const buttY = torsoY + torsoSize / 2 + buttSize / 2;
-
+const drawHead = (x, headY, headSize) => {
+  const headRadius = headSize / 2;
   // Draw the head
-snowBall(x, headY, headSize);
+snowBall(x, headY, headRadius);
 
   // Draw the eyes
   const eyeSpacing = headRadius * 0.25;
@@ -51,6 +32,39 @@ snowBall(x, headY, headSize);
   const hatHeight = headRadius * 1.25;
   drawFilledRect(x - brimWidth / 2, brimTop, brimWidth, brimHeight, 'black');
   drawFilledRect(x - hatWidth / 2, brimTop - hatHeight, hatWidth, hatHeight, 'black');
+};
+
+const drawTorso = () => {
+
+};
+
+const drawButt = () => {
+
+};
+
+const drawPicture = (horizon, base, size) => {
+
+  // Draw the background
+  drawFilledRect(0, 0, width, horizon, '#ddeeff');
+  drawFilledRect(0, horizon, width, height, 'white');
+  drawLine(0, horizon, width, horizon, '#bbb');
+
+  // Draw the snowman
+  const x = width / 2;
+  const proportions = [3, 4, 5];
+  const [headP, torsoP, buttP] = proportions;
+  const total = proportions.reduce((tot, p) => tot + p, 0);
+
+  const headSize = size * (headP / total);
+  const torsoSize = size * (torsoP / total)
+  const buttSize = size * (buttP / total);
+
+  const headY = (base - size) + headSize / 2;
+  const torsoY = headY + headSize / 2 + torsoSize / 2;
+  const buttY = torsoY + torsoSize / 2 + buttSize / 2;
+
+  // Draw the head
+drawHead(x, headY, headSize);
 
   // Draw the torso
 snowBall(x, torsoY, torsoSize);
