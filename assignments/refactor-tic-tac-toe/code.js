@@ -85,7 +85,7 @@ drawHead(x, headY, headSize);
 drawTorso(x, torsoY, torsoSize);
 
   // Draw the butt
-snowBall(x, buttY, buttSize);
+drawButt(x, buttY, buttSize);
 };
 
 drawPicture(height * 0.7, height * 0.9, height * 0.7);
