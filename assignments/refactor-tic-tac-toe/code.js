@@ -53,10 +53,6 @@ snowBall(x, torsoY, torsoRadius);
 
 };
 
-const drawButt = () => {
-
-};
-
 const drawPicture = (horizon, base, size) => {
 
   // Draw the background
