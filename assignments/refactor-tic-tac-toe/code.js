@@ -1,5 +1,4 @@
 const snowBall = (x, y, radius) => {  
-  const radius = size / 2;
   drawCircle(x, y, radius + 2, 'black', 3);
   drawFilledCircle(x, y, radius, 'white', 3);
 };
