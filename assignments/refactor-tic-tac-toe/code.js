@@ -114,8 +114,8 @@ registerOnclick((x, y) => {
 
   if (!gameOver()) {
     if (isLegalMove(r, c)) {
-
       makeMove(r, c);
+      
       //EXTRACTING ARGUMENTS is sorta just making it a top level function, then doing the const thing, putting the local variables in the arguments, and calling it again with the locals arguments at the bottom, very repetitive process.
       // Check if there's a winner now
       let winner = findWinner();
