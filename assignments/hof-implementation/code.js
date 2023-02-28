@@ -12,7 +12,7 @@ const filter = (predicate, array) => {
 const map = (fn, array) => {
   let nArray = []
   for (let i = 0; i < array.length; x++) {
-  nArray.push(fn(array[x]))
+  nArray.push(fn(array[i]))
 }
 return nArray
 };
