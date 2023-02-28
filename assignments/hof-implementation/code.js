@@ -1,6 +1,7 @@
 // N.B. Do not use the array methods of the same name to implement these functions!
 
 const filter = (predicate, array) => {
+let array = []
 for (let i = 0; i < array.length; i++)
 
 };
