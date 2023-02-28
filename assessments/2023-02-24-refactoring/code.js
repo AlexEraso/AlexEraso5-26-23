@@ -3,30 +3,25 @@ const snowBall = (x, y, radius) => {
   drawFilledCircle(x, y, radius, 'white', 3);
 };
 
-
 const drawHead = (x, headY, headSize) => {
   const headRadius = headSize / 2;
   // Draw the head
   snowBall(x, headY, headRadius);
-
 
   // Draw the eyes
   const eyeSpacing = headRadius * 0.25;
   drawFilledCircle(x - eyeSpacing, headY - eyeSpacing, 4, 'black');
   drawFilledCircle(x + eyeSpacing, headY - eyeSpacing, 4, 'black');
 
-
   // Draw the nose
   const noseLength = headRadius * 0.8;
   drawFilledTriangle(x, headY, x + noseLength, headY + noseLength * 0.2, x, headY + noseLength * 0.3, 'orange');
-
 
   // Draw the mouth
   for (let i = 0; i < 5; i++) {
     const dy = -2 * (2.1 ** Math.abs(i - 2));
     drawFilledCircle(x - (i - 2.3) * headRadius * 0.21, headY + headRadius * 0.65 + dy, 4, 'black');
   }
-
 
   // Draw the hat
   const brimTop = headY - headRadius * 0.9;
@@ -37,7 +32,6 @@ const drawHead = (x, headY, headSize) => {
   drawFilledRect(x - brimWidth / 2, brimTop, brimWidth, brimHeight, 'black');
   drawFilledRect(x - hatWidth / 2, brimTop - hatHeight, hatWidth, hatHeight, 'black');
 };
-
 
 const drawArm = (x, y, radius, direction) => {
   let x1 = x + radius * 0.6 * direction;
@@ -54,12 +48,10 @@ const drawArm = (x, y, radius, direction) => {
   drawLine(x1, y - radius * 0.25, x2, y - radius * 0.85, 'black', 3);
 };
 
-
 const drawTorso = (x, torsoY, torsoSize) => {
   const torsoRadius = torsoSize / 2;
   // Draw the torso
   snowBall(x, torsoY, torsoRadius);
-
 
   // Draw the arms
   drawArm(x, torsoY, torsoRadius, 1);
@@ -71,47 +63,39 @@ const drawTorso = (x, torsoY, torsoSize) => {
   }
 };
 
-const drawBackground = (width, horizon) => {
-  drawFilledRect(0, 0, width, horizon, '#ddeeff');
-  drawFilledRect(0, horizon, width, height, 'white');
-  drawLine(0, horizon, width, horizon, '#bbb');
-};
 const drawPicture = (horizon, base, size) => {
 
-
+  // Draw the background
+  const drawBackground = (width, horizon) => {
+    drawFilledRect(0, 0, width, horizon, '#ddeeff');
+    drawFilledRect(0, horizon, width, height, 'white');
+    drawLine(0, horizon, width, horizon, '#bbb');
+  };
   // Draw the snowman
   const x = width / 2;
   const proportions = [3, 4, 5];
   const [headP, torsoP, buttP] = proportions;
   const total = proportions.reduce((tot, p) => tot + p, 0);
 
-
   const headSize = size * (headP / total);
   const torsoSize = size * (torsoP / total)
   const buttSize = size * (buttP / total);
-
 
   const headY = (base - size) + headSize / 2;
   const torsoY = headY + headSize / 2 + torsoSize / 2;
   const buttY = torsoY + torsoSize / 2 + buttSize / 2;
 
-  //Draw the background
-  drawBackground(width, horizon);
-
   // Draw the head
   drawHead(x, headY, headSize);
-
 
   // Draw the torso
   drawTorso(x, torsoY, torsoSize);
 
-
   // Draw the butt
   snowBall(x, buttY, buttSize / 2);
+
+  // Draw the background
+  drawBackground(width, horizon);
 };
 
-
 drawPicture(height * 0.7, height * 0.9, height * 0.7);
-
-
-
