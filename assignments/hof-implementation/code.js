@@ -3,8 +3,8 @@
 const filter = (predicate, array) => {
 let nArray = []
 for (let i = 0; i < array.length; i++)
-if (predicate (array[x])) {
-  nArray.push(array[x])
+if (predicate (array[i])) {
+  nArray.push(array[i])
 }
 return nArray
 };
