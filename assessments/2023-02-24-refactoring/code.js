@@ -64,7 +64,7 @@ const drawTorso = (x, torsoY, torsoSize) => {
   // Draw the arms
   drawArm(x, torsoY, torsoRadius, 1);
   drawArm(x, torsoY, torsoRadius, -1);
- 
+
   // Draw the buttons
   for (let i = 0; i < 3; i++) {
     drawFilledCircle(x, torsoY - torsoRadius * 0.5 + i * torsoRadius * 0.5, 4, 'black');
@@ -78,9 +78,6 @@ const drawBackground = (width, horizon) => {
 };
 const drawPicture = (horizon, base, size) => {
 
-
-//Draw the background
-drawBackground(width, horizon);
 
   // Draw the snowman
   const x = width / 2;
@@ -98,6 +95,8 @@ drawBackground(width, horizon);
   const torsoY = headY + headSize / 2 + torsoSize / 2;
   const buttY = torsoY + torsoSize / 2 + buttSize / 2;
 
+  //Draw the background
+  drawBackground(width, horizon);
 
   // Draw the head
   drawHead(x, headY, headSize);
