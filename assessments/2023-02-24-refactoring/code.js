@@ -69,19 +69,18 @@ const drawTorso = (x, torsoY, torsoSize) => {
   for (let i = 0; i < 3; i++) {
     drawFilledCircle(x, torsoY - torsoRadius * 0.5 + i * torsoRadius * 0.5, 4, 'black');
   }
-
-
 };
 
-
-const drawPicture = (horizon, base, size) => {
-
-
-  // Draw the background
+const drawBackground = (width, horizon) => {
   drawFilledRect(0, 0, width, horizon, '#ddeeff');
   drawFilledRect(0, horizon, width, height, 'white');
   drawLine(0, horizon, width, horizon, '#bbb');
+};
+const drawPicture = (horizon, base, size) => {
 
+
+//Draw the background
+drawBackground(width, horizon);
 
   // Draw the snowman
   const x = width / 2;
