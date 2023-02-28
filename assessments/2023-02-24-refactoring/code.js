@@ -115,4 +115,6 @@ const drawPicture = (horizon, base, size) => {
 drawPicture(height * 0.7, height * 0.9, height * 0.7);
 
 //I don't know crazy I'm supposed to go with the refactoring, so I just spent like 30 mins working on it and doing a reasonable amount. 
+//I refactored the different sections of the snowman which I thought was enough to show that I know how to refactor code. 
+
 
