@@ -18,11 +18,18 @@ return nArray
 };
 
 const flatMap = (fn, array) => {
+let nArray = []
+  for (let i = 0; i < array.length; i++) {
 
+  }
+  return nArray
 };
 
 const reduce = (fn, initialValue, array) => {
-
+ for (let i = 0; i < array.length; i++) {
+ initialValue = fn(initialValue, array[i])
+ }
+ return 
 };
 
 const every = (predicate, array) => {
