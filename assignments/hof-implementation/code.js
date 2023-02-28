@@ -1,16 +1,16 @@
 // N.B. Do not use the array methods of the same name to implement these functions!
 
 const filter = (predicate, array) => {
-let nArray = []
-for (let i = 0; i < array.length; i++)
-if (predicate (array[i])) {
-  nArray.push(array[i])
-}
-return nArray
+  let nArray = []
+  for (let i = 0; i < array.length; i++)
+    if (predicate(array[i])) {
+      nArray.push(array[i])
+    }
+  return nArray
 };
 
 const map = (fn, array) => {
-for (let i = 0; i< array.length; x++)
+  for (let i = 0; i < array.length; x++)
 
 };
 
