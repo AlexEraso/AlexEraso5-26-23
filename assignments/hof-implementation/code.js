@@ -36,12 +36,11 @@ const reduce = (fn, initialValue, array) => {
 };
 
 const every = (predicate, array) => {
-for (let i = 0; i < array.length; i++) {
-  if (predicate(array[i])){
-  } else {return false}
+  for (let i = 0; i < array.length; i++) {
+    if (predicate(array[i])) {
+    } else { return false }
   }
-return true
-}
+  return true
 };
 
 const some = (predicate, array) => {
