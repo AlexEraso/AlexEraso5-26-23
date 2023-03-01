@@ -44,5 +44,10 @@ const every = (predicate, array) => {
 };
 
 const some = (predicate, array) => {
-
+  for (let i = 0; i < array.length; i++) {
+    if (predicate(array[i])) {
+      return true
+    }
+  }
+  return false
 };
