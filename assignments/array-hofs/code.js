@@ -34,8 +34,8 @@ const allEven = (array) => {
 return array.every((n) => n % 2 ===0)
 };
 
-const someEven = () => {
-
+const someEven = (array) => {
+return array.some((n) => n % 2 ===0)
 };
 
 const lengthOfNames = () => {
