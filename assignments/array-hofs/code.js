@@ -26,7 +26,7 @@ const averageGrade = () => {
 
 };
 
-const flatpairs = () => {
+const flatpairs = (array) => {
 return array.flatMap((n) => [n ,n])
 };
 
