@@ -15,7 +15,7 @@ return array.map((n) => n.name)
 };
 
 const grades = (array) => {
-return array.map((n) => n.grades)
+return array.map((n) => n.grade)
 };
 
 const pairs = () => {
