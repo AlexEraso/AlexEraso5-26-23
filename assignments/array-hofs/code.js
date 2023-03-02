@@ -10,8 +10,8 @@ const big = (array) => {
 return array.filter ((n) => n > 100)
 };
 
-const names = () => {
-
+const names = (array) => {
+return array.map((n) => n.name)
 };
 
 const grades = () => {
