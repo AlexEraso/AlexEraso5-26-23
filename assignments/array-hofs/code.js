@@ -22,8 +22,8 @@ const pairs = (array) => {
   return array.map((n) => [n, n])
 };
 
-const averageGrade = () => {
-
+const averageGrade = (array) => {
+return array.map((n) => n.grade)
 };
 
 const flatpairs = (array) => {
@@ -38,6 +38,6 @@ const someEven = (array) => {
 return array.some((n) => n % 2 ===0)
 };
 
-const lengthOfNames = () => {
-
+const lengthOfNames = (array) => {
+return array.filter
 };
