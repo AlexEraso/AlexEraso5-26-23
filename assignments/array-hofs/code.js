@@ -19,7 +19,7 @@ return array.map((n) => n.grade)
 };
 
 const pairs = (array) => {
-return array.map ((n) => (n ,n))
+return array.map ((n) => [n ,n])
 };
 
 const averageGrade = () => {
