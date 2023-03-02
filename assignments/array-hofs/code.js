@@ -30,7 +30,7 @@ const flatpairs = (array) => {
   return array.flatMap((n) => [n, n])
 };
 
-const allEven = () => {
+const allEven = (array) => {
 return array.every((n) => n % 2 ===0)
 };
 
