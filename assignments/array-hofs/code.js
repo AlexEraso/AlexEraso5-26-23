@@ -39,5 +39,5 @@ return array.some((n) => n % 2 ===0)
 };
 
 const lengthOfNames = (array) => {
-return array.filter
+return array.filter((n) => n[0].toUpperCase() === n[0])
 };
