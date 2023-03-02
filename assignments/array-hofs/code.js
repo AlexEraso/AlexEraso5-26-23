@@ -18,8 +18,8 @@ const grades = (array) => {
 return array.map((n) => n.grade)
 };
 
-const pairs = () => {
-
+const pairs = (array) => {
+return array.flatmap ((n) => (n ,n))
 };
 
 const averageGrade = () => {
