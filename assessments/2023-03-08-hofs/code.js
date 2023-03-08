@@ -28,11 +28,21 @@ const allSiblings = (array) => {
 }
 
 const allPassing = (students, passing) => {
-  for (let i = 0; i < array.length; i++) {
-    if (students(passing[i])) {
-    } else { return false }
+  for (let i = 0; i < passing.length; i++) {
+    if (!students(passing[i])) {
+      return false;
+    }
   }
-  return true
+  return true;
+};
+
+const someonesFavorite = (people, food) => {
+  for (let i = 0; i < food.length; i++) {
+    if (people(food[i])) {
+      return true
+    }
+  }
+  return false
 };
 
 const strange = (array) => {
