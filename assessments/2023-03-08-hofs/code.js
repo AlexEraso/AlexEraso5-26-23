@@ -17,16 +17,24 @@ const shouty = (array) => {
 };
 
 const join = (array) => {
-  return
+  return 
 }
 
 const allSiblings = (array) => {
   let r = []
   for (let i = 0; i < array.length; i++) {
-    if 
-}
+
+  }
 }
 
 const strange = (array) => {
-  return strange.map
+  return array.filter((n) => n.strange)
+}
+
+const birthdays = () => {
+
+}
+
+const allCromulent = (array) => {
+  return array.filter((n) =>)
 }
