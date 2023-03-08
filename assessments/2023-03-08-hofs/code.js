@@ -8,6 +8,14 @@ const evens = (array) => {
   return r;
 };
 
+const shouty = (array) => {
+  let r = [];
+  for (let i = 0; i < array.length; i++) {
+    if 
+  }
+}
 
-
+const join = (array) => {
+  
+}
 
