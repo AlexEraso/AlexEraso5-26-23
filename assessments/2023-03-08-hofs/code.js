@@ -11,11 +11,12 @@ const evens = (array) => {
 const shouty = (array) => {
   let r = [];
   for (let i = 0; i < array.length; i++) {
-    if 
+    r.push(array[i]);
   }
+  return r;
 }
 
 const join = (array) => {
-  
+  return 
 }
 
