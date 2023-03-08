@@ -11,12 +11,22 @@ const evens = (array) => {
 const shouty = (array) => {
   let r = [];
   for (let i = 0; i < array.length; i++) {
-    r.push(array[i]);
+    r.push[i].toUpperCase;
   }
   return r;
 };
 
 const join = (array) => {
-  return 
+  return
 }
 
+const allSiblings = (array) => {
+  let r = []
+  for (let i = 0; i < array.length; i++) {
+    if 
+}
+}
+
+const strange = (array) => {
+  return strange.map
+}
