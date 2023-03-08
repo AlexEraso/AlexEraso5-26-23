@@ -14,7 +14,7 @@ const shouty = (array) => {
     r.push(array[i]);
   }
   return r;
-}
+};
 
 const join = (array) => {
   return 
