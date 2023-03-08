@@ -27,9 +27,13 @@ const allSiblings = (array) => {
   }
 }
 
-const allPassing = (array) => {
-  return array.every
-}
+const allPassing = (students, passing) => {
+  for (let i = 0; i < array.length; i++) {
+    if (students(passing[i])) {
+    } else { return false }
+  }
+  return true
+};
 
 const strange = (array) => {
   return array.filter((n) => n.strange)
