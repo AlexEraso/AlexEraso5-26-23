@@ -1,16 +1,16 @@
-const evens = (array) => {
+const evens = (numbers) => {
   let r = [];
-  for (let i = 0; i < array.length; i++) {
-    if (array[i] % 2 === 0) {
-      r.push(array[i]);
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2 === 0) {
+      r.push(numbers[i]);
     }
   }
   return r;
 };
 
-const shouty = (array) => {
+const shouty = (strings) => {
   let r = [];
-  for (let i = 0; i < array.length; i++) {
+  for (let i = 0; i < strings.length; i++) {
     r.push[i].toUpperCase;
   }
   return r;
@@ -25,6 +25,10 @@ const allSiblings = (array) => {
   for (let i = 0; i < array.length; i++) {
 
   }
+}
+
+const allPassing = (array) => {
+  return array.every
 }
 
 const strange = (array) => {
