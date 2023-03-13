@@ -47,10 +47,20 @@ function startTimer() {
     clearInterval(timer);
     timer = -1; // set back to invalid timer id
   };
-  
+
+  function fastforward() {
+    console.log("fastforward()");
+    //how do I reset the timer so that it's on the next break or work time?
+    //if working -> rest
+    //if rest -> working
+    //something like that
+  }
+
+
 
 document.getElementById("start").addEventListener("click", startTimer);
 document.getElementById("stop").addEventListener("click", stopTimer);
+document.getElementById("pause").addEventListener("click", fastforward);
 
 //p.querySelector('#counter').textContent = `${counter}`;
 
