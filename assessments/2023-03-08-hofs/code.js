@@ -69,7 +69,7 @@ const allPassing = (students, passing) => {
   return true;
 };
 
-const someonesFavorite = (people, food) => { // pattern
+const someonesFavorit = (people, food) => { // pattern
   for (let i = 0; i < food.length; i++) {
     if (people(food[i])) {
       return true
