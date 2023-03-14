@@ -16,9 +16,16 @@ const shouty = (strings) => { // almost
   return r;
 };
 
-const join = (array) => {
-  return
-}
+//New shouty-forgot the () after the toUpperCase
+const shouty = (strings) => {
+  const r = [];
+  for (let i = 0; i < strings.length; i++) {
+    r.push(strings[i].toUpperCase());    
+  }
+  return r;
+};
+
+//New join 
 
 const allSiblings = (array) => {
   let r = []
@@ -54,5 +61,5 @@ const birthdays = () => {
 }
 
 const allCromulent = (array) => {
-  return array.filter((n) =>)
+  return array.filter(() =>)
 }
