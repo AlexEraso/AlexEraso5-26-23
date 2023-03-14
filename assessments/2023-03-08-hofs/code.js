@@ -25,14 +25,32 @@ const shouty = (strings) => {
   return r;
 };
 
-//New join 
-
-const allSiblings = (array) => {
-  let r = []
-  for (let i = 0; i < array.length; i++) {
-
+//New join
+const join = (strings, delimiter) => {
+  let joined = null;
+  for (let i = 0; i < strings.length; i++) {
+    if (joined === null) {
+      joined = strings[i];
+    } else {
+      joined += delimiter + strings[i];
+    }
   }
-}
+  return joined;
+};
+
+//New allSiblings
+const allSiblings = (students) => {
+  const siblings = [];
+  for (let i = 0; i < students.length; i++) {
+    const sibs = students[i].siblings;
+    for (let j = 0; j < sibs.length; j++) {
+      siblings.push(sibs[j]);
+    }
+  }
+  return siblings;
+};
+
+
 
 const allPassing = (students, passing) => { // pattern
   for (let i = 0; i < passing.length; i++) {
