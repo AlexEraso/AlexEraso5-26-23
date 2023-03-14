@@ -17,7 +17,7 @@ const shouty = (strings) => { // almost
 };
 
 //New shouty-forgot the () after the toUpperCase
-const shouty = (strings) => {
+const shout = (strings) => {
   const r = [];
   for (let i = 0; i < strings.length; i++) {
     r.push(strings[i].toUpperCase());    
