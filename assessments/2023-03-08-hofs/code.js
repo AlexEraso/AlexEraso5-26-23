@@ -50,7 +50,7 @@ const allSiblings = (students) => {
   return siblings;
 };
 
-const allPassing = (students, passing) => { // pattern
+const allPassin = (students, passing) => { // pattern
   for (let i = 0; i < passing.length; i++) {
     if (!students(passing[i])) {
       return false;
