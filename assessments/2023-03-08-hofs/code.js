@@ -50,11 +50,19 @@ const allSiblings = (students) => {
   return siblings;
 };
 
-
-
 const allPassing = (students, passing) => { // pattern
   for (let i = 0; i < passing.length; i++) {
     if (!students(passing[i])) {
+      return false;
+    }
+  }
+  return true;
+};
+
+//New allPassing 
+const allPassing = (students, passing) => {
+  for (let i = 0; i < students.length; i++) {
+    if (students[i].grade < passing) {
       return false;
     }
   }
@@ -70,14 +78,31 @@ const someonesFavorite = (people, food) => { // pattern
   return false
 };
 
+//New someonesFavorite
+const someonesFavorite = (people, food) => {
+  for (let i = 0; i < people.length; i++) {
+    if (people[i].favoriteFood === food) {
+      return true;
+    }
+  }
+  return false;
+};
+
 const strange = (array) => { // correct
   return array.filter((n) => n.strange)
 }
 
-const birthdays = () => {
+//New birthdays
+const birthdays = (students) => students.map((s) => s.birthday);
 
-}
+//New heaviest
+const heaviest = (animals) => animals.reduce((h, a) => Math.max(h, a.weight), 0);
 
-const allCromulent = (array) => {
-  return array.filter(() =>)
-}
+//New allStudents
+const allStudents = (grades) => grades.flatMap((grade) => grade.students);
+
+//New allCromulent
+const allCromulent = (things) => things.every(isCromulent);
+
+//New notAllTerrible
+const notAllTerrible = (things) => things.some((t) => !isTerrible(t));
