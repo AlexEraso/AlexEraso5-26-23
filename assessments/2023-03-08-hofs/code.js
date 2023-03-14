@@ -1,4 +1,4 @@
-const evens = (numbers) => {
+const evens = (numbers) => { // correct
   let r = [];
   for (let i = 0; i < numbers.length; i++) {
     if (numbers[i] % 2 === 0) {
@@ -8,7 +8,7 @@ const evens = (numbers) => {
   return r;
 };
 
-const shouty = (strings) => {
+const shouty = (strings) => { // almost
   let r = [];
   for (let i = 0; i < strings.length; i++) {
     r.push[i].toUpperCase;
@@ -17,7 +17,7 @@ const shouty = (strings) => {
 };
 
 const join = (array) => {
-  return 
+  return
 }
 
 const allSiblings = (array) => {
@@ -27,7 +27,7 @@ const allSiblings = (array) => {
   }
 }
 
-const allPassing = (students, passing) => {
+const allPassing = (students, passing) => { // pattern
   for (let i = 0; i < passing.length; i++) {
     if (!students(passing[i])) {
       return false;
@@ -36,7 +36,7 @@ const allPassing = (students, passing) => {
   return true;
 };
 
-const someonesFavorite = (people, food) => {
+const someonesFavorite = (people, food) => { // pattern
   for (let i = 0; i < food.length; i++) {
     if (people(food[i])) {
       return true
@@ -45,7 +45,7 @@ const someonesFavorite = (people, food) => {
   return false
 };
 
-const strange = (array) => {
+const strange = (array) => { // correct
   return array.filter((n) => n.strange)
 }
 
