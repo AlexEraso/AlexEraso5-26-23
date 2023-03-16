@@ -23,7 +23,7 @@ function startTimer() {
     // check to see if timer has not been created (timer id is invalid)
     if (timer == -1) {
         //timer was sorta changed, but came from this link https://stackoverflow.com/questions/31559469/how-to-create-a-simple-javascript-timer
-        timer = setInterval(function(){
+        timer = setInterval(function () {
             document.getElementById('safeTimerDisplay').innerHTML = toMinSecStr(sec);
             sec--;
             // timer expired
@@ -42,19 +42,19 @@ function startTimer() {
     }
 }
 
-  function stopTimer() {
+function stopTimer() {
     console.log("stopTimer()");
     clearInterval(timer);
     timer = -1; // set back to invalid timer id
-  };
+};
 
-  function fastforward() {
-    console.log("fastforward()");
-    //how do I reset the timer so that it's on the next break or work time?
-    //if working -> rest
-    //if rest -> working
-    //something like that
-  }
+function fastforward() {
+console.log("fastforward()");
+}
+//how do I reset the timer so that it's on the next break or work time?
+//if working -> rest
+//if rest -> working
+//something like that
 
 
 
@@ -63,5 +63,3 @@ document.getElementById("stop").addEventListener("click", stopTimer);
 document.getElementById("pause").addEventListener("click", fastforward);
 
 //p.querySelector('#counter').textContent = `${counter}`;
-
-
