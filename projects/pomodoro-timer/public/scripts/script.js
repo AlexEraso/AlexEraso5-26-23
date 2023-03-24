@@ -1,12 +1,8 @@
-
-
 let timer = -1; // timer's id, initialize to invalid
 var onbreak = false; // are we on break? (25 min vs 5 min)
 var sec = 1500; // timer seconds remaining
-
 // return sec in mm:ss string format
 function toMinSecStr(sec) {
-    //https://stackoverflow.com/questions/6312993/javascript-seconds-to-time-string-with-format-hhmmss This thing converts the total number of seconds to the mm:ss format 
     var date = new Date(0);
     date.setSeconds(sec);
     return date.toISOString().substring(14, 19); // sec = 1500, return "25:00"
@@ -22,7 +18,6 @@ function startTimer() {
 
     // check to see if timer has not been created (timer id is invalid)
     if (timer == -1) {
-        //timer was sorta changed, but came from this link https://stackoverflow.com/questions/31559469/how-to-create-a-simple-javascript-timer
         timer = setInterval(function () {
             document.getElementById('safeTimerDisplay').innerHTML = toMinSecStr(sec);
             sec--;
@@ -48,18 +43,21 @@ function stopTimer() {
     timer = -1; // set back to invalid timer id
 };
 
-function fastforward() {
-console.log("fastforward()");
+function forward() {
+    console.log("forward")
+    if (onbreak) {
+        sec = 1500;
+        onbreak = false
+    } else {
+        sec = 300
+        onbreak = true
+    }
 }
-//how do I reset the timer so that it's on the next break or work time?
-//if working -> rest
-//if rest -> working
-//something like that
 
 
 
-document.getElementById("start").addEventListener("click", startTimer);
-document.getElementById("stop").addEventListener("click", stopTimer);
-document.getElementById("pause").addEventListener("click", fastforward);
+document.getElementById("start").addEventListener("click", () => { startTimer(); });
+document.getElementById("stop").addEventListener("click", () => { stopTimer(); });
+document.getElementById("Forward").addEventListener("click", () => { forward() });
 
 //p.querySelector('#counter').textContent = `${counter}`;

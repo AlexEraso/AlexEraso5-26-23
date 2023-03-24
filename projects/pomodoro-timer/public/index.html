@@ -1,84 +1,23 @@
+
 <!DOCTYPE html>
 <html>
-
 <head>
-  <script src="/scripts/script.js" type="module"></script>
+<script src="./scripts/script.js" type="module"></script>
+<link rel="stylesheet" href="./styles/style.css">
+<title>Promodoro timer</title>
 
-  <style>
-    h1 {
-      text-align: center;
-    }
+</head>
+  
+<body style="background-color:rgb(40, 144, 178);">
+<h1 style="color: white;">Pomodoro Timer</h1>
+<div class="container">
+  <p id="safeTimerDisplay">25:00</p>
 
-    .container {
-      text-align: center;
-    }
+  <input id="start" type="button" class="button" value="Start Timer"/>
+  <input id="stop" type="button" class="buttontwo" value="Stop Timer"/>
+  <input type="button" id="Forward" class="buttonthree" value="Fast Forward">
+  
+</div>
 
-    <!-- doesn't work -->
-
-    .#rcorners1 {
-      text-align: center;
-    }
-
-    .button {
-      background-color: #ac232f;
-      border: none;
-      color: white;
-      padding: 30px 64px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 24px;
-      margin: 4px 2px;
-      cursor: pointer;
-    }
-
-    .buttontwo {
-      background-color: #ac232f;
-      border: none;
-      color: white;
-      padding: 30px 64px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 24px;
-      margin: 4px 2px;
-      cursor: pointer;
-    }
-
-    .buttonthree {
-      background-color: #ac232f;
-      border: none;
-      color: white;
-      padding: 30px 64px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 24px;
-      margin: 4px 2px;
-      cursor: pointer;
-    }
-
-    #rcorners1 {
-      border-radius: 25px;
-      background: #bb1d37;
-      padding: 20px;
-      width: 200px;
-      height: 150px;
-    }
-  </style>
-
-<body style="background-color:rgb(210, 70, 70);">
-  <h1 style="color: white;">Pomodoro Timer</h1>
-  <div class="container">
-    <p id="safeTimerDisplay">25:00</p>
-
-    <input id="start" type="button" class="button" value="Start Timer" />
-    <input id="stop" type="button" class="buttontwo" value="Stop Timer" />
-    <input id="stop" type="button" class="buttonthree" value="Fastforward" />
-    <input id="rcorners1" />
-<!-- #rcorners1 and id: https://www.w3schools.com/css/tryit.asp?filename=trycss3_border-radius -->
-  </div>
-  </head>
 </body>
-
 </html>
