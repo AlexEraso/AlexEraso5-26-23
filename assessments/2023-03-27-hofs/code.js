@@ -135,5 +135,10 @@ const allColors = (fruits) => {
 
 //#5
 const areAllTasty = (fruits) => {
-  fruits
+  fruits.every(isTasty)
+}
+
+//#6 
+const notAllInconvenient = (fruits) => {
+  fruits.some
 }
