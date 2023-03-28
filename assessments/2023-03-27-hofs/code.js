@@ -108,3 +108,4 @@ const fruitBowl = [
 const isTasty = (fruit) => fruit.tastiness >= 5;
 
 const isInconvenient = (fruit) => fruit.inconvenience >= 5;
+
