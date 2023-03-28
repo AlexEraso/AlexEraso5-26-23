@@ -188,12 +188,13 @@ const allCountries = (fruits) => {
 const allGrownInMoreThanNCountries = (fruits, n) => {
     for (let x = 0; x < fruits.length; x++) {
       if (fruits[x].grownIn.length > n) {
-        
+        return true 
       }
     }
+    return false
 }
 
 //#12
 const someMoreThanColors = (fruits, n) => {
-
+  
 }
