@@ -176,7 +176,7 @@ const averageInconvenience = (fruits) => {
 const allCountries = (fruits) => {
   let result = []
   for (let x = 0; x < fruits.length; x++) {
-    const countries = fruits[x].grownIn
+   // const countries = fruits[x].grownIn
     for (let y = 0; y < fruits.length; y++) {
       result.push(countries[y])
     }
@@ -186,7 +186,11 @@ const allCountries = (fruits) => {
 
 //#11
 const allGrownInMoreThanNCountries = (fruits, n) => {
-
+    for (let x = 0; x < fruits.length; x++) {
+      if (fruits[x].grownIn.length > n) {
+        
+      }
+    }
 }
 
 //#12
