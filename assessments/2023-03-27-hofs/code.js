@@ -109,3 +109,6 @@ const isTasty = (fruit) => fruit.tastiness >= 5;
 
 const isInconvenient = (fruit) => fruit.inconvenience >= 5;
 
+const redFruits = (fruits) => {
+  fruits.filter(fruit) => (fruit.color)
+}
