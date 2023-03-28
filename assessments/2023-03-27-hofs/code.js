@@ -140,5 +140,34 @@ const areAllTasty = (fruits) => {
 
 //#6 
 const notAllInconvenient = (fruits) => {
-  fruits.some
+  fruits.some((i) => !isInconvenient(i))
 }
+
+//#7
+const tasty = (fruits) => {
+  let result = []
+  for (let x = 0; x < fruits.length; x++) {
+    if (isTasty(fruits[x])) {
+      result.push(fruits[x])
+    }
+  }
+  return result
+}
+
+//#8 
+const names = (fruits) => {
+  let result = []
+  for (let x = 0; x < fruits.length; x++) {
+    result[x] = fruits[x].name
+  }
+  return result
+}
+
+//#9
+const averageInconvenience = (fruits) => {
+  let average = []
+  for (let x = 0; x < fruits.length; x++) {
+
+  }
+
+//#10
