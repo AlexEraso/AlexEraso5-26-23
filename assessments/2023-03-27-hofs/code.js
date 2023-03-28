@@ -112,12 +112,12 @@ const isInconvenient = (fruit) => fruit.inconvenience >= 5;
 //Start
 
 
-//#1
+//#1 GOOD 
 const redFruits = (fruits) => {
   fruits.filter((fruit) => fruit.color.includes('red'))
 }
 
-//#2
+//#2 GOOD 
 const weights = (fruits) => {
   fruits.map((fruits) => fruits.grams)
 }
@@ -128,22 +128,22 @@ const heaviest = (fruits) => {
   fruits.reduce((h, f) => Math.max(h, f.weight), 0);
 }
 
-//#4 
+//#4 GOOD 
 const allColors = (fruits) => {
   fruits.flatmap((fruit) => fruit.color)
 }
 
-//#5
+//#5 GOOD 
 const areAllTasty = (fruits) => {
   fruits.every(isTasty)
 }
 
-//#6 
+//#6 GOOD 
 const notAllInconvenient = (fruits) => {
   fruits.some((i) => !isInconvenient(i))
 }
 
-//#7
+//#7 I THINK OK
 const tasty = (fruits) => {
   let result = []
   for (let x = 0; x < fruits.length; x++) {
@@ -154,7 +154,7 @@ const tasty = (fruits) => {
   return result
 }
 
-//#8 
+//#8 I THINK OK
 const names = (fruits) => {
   let result = []
   for (let x = 0; x < fruits.length; x++) {
@@ -176,7 +176,7 @@ const averageInconvenience = (fruits) => {
 const allCountries = (fruits) => {
   let result = []
   for (let x = 0; x < fruits.length; x++) {
-   // const countries = fruits[x].grownIn
+    // const countries = fruits[x].grownIn
     for (let y = 0; y < fruits.length; y++) {
       result.push(countries[y])
     }
@@ -184,17 +184,22 @@ const allCountries = (fruits) => {
   return result
 }
 
-//#11
+//#11 I THINK OK
 const allGrownInMoreThanNCountries = (fruits, n) => {
-    for (let x = 0; x < fruits.length; x++) {
-      if (fruits[x].grownIn.length > n) {
-        return true 
-      }
+  for (let x = 0; x < fruits.length; x++) {
+    if (fruits[x].grownIn.length > n) {
+      return true
     }
-    return false
+  }
+  return false
 }
 
-//#12
+//#12 I THINK OK 
 const someMoreThanColors = (fruits, n) => {
-  
+  for (let x = 0; x < fruits.length; x++) {
+    if (fruits[x].colors.length > n) {
+      return true
+    }
+  }
+  return false
 }
