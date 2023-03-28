@@ -114,5 +114,9 @@ const redFruits = (fruits) => {
 }
 
 const weights = (fruits) => {
-  fruits.map((fruit) => )
+  fruits.map((fruits) => fruits.grams)
+}
+
+const heaviest = (fruits) => {
+  
 }
