@@ -117,6 +117,8 @@ const weights = (fruits) => {
   fruits.map((fruits) => fruits.grams)
 }
 
+//come back to heaviest
+
 const heaviest = (fruits) => {
-  
+  fruits.reduce((fruits) => Math.max)
 }
