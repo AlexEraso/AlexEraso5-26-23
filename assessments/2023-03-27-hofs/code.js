@@ -122,8 +122,8 @@ const weights = (fruits) => {
   fruits.map((fruits) => fruits.grams)
 }
 
-//come back to heaviest
-//#3
+
+//#3 COME BACK TO THIS QUESTION
 const heaviest = (fruits) => {
   fruits.reduce((h, f) => Math.max(h, f.weight), 0);
 }
@@ -163,11 +163,30 @@ const names = (fruits) => {
   return result
 }
 
-//#9
+//#9 COME BACK TO THIS QUESTION
 const averageInconvenience = (fruits) => {
-  let average = []
+  let total = 0
   for (let x = 0; x < fruits.length; x++) {
-
+    total += fruits[x].inconvenience
   }
+  return total / fruits.length
+}
 
 //#10
+const allCountries = (fruits) => {
+  for (let x = 0; x < fruits.length; x++) {
+    for (let y = 0; y < fruits.length; y++) {
+
+    }
+  }
+}
+
+//#11
+const allGrownInMoreThanNCountries = (fruits, n) => {
+
+}
+
+//#12
+const someMoreThanColors = (fruits, n) => {
+
+}
