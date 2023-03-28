@@ -109,16 +109,26 @@ const isTasty = (fruit) => fruit.tastiness >= 5;
 
 const isInconvenient = (fruit) => fruit.inconvenience >= 5;
 
+//Start
+
+
+//#1
 const redFruits = (fruits) => {
   fruits.filter((fruit) => fruit.color.includes('red'))
 }
 
+//#2
 const weights = (fruits) => {
   fruits.map((fruits) => fruits.grams)
 }
 
 //come back to heaviest
-
+//#3
 const heaviest = (fruits) => {
-  fruits.reduce((fruits) => Math.max)
+  fruits.reduce((h, f) => Math.max(h, f.weight), 0);
+}
+
+//#4 
+const allColors = (fruits) => {
+  
 }
