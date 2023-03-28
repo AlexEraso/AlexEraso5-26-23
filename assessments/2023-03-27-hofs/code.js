@@ -130,5 +130,10 @@ const heaviest = (fruits) => {
 
 //#4 
 const allColors = (fruits) => {
-  
+  fruits.flatmap((fruit) => fruit.color)
+}
+
+//#5
+const areAllTasty = (fruits) => {
+  fruits
 }
