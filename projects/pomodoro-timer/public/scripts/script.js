@@ -1,6 +1,7 @@
-let timer = -1; // timer's id, initialize to invalid
+let timer = -1; // timer's id, initialize to invalid (-1)
 var onbreak = false; // are we on break? (25 min vs 5 min)
 var sec = 1500; // timer seconds remaining
+var counter = 0;
 // return sec in mm:ss string format
 function toMinSecStr(sec) {
     var date = new Date(0);
@@ -23,18 +24,31 @@ function startTimer() {
             sec--;
             // timer expired
             if (sec < 0) {
-                if (onbreak) {
-                    onbreak = false;
-                    sec = 1500;
-                } else {
-                    onbreak = true;
-                    sec = 300;
-                }
                 //clearInterval(timer);
+                resetSeconds();
                 stopTimer();
             }
         }, 1000);
     }
+}
+
+function resetSeconds() {
+    console.log("resetSeconds()");
+    if (onbreak) {
+        // we just finished a break
+        sec = 1500;
+        onbreak = false;
+    } else {
+        // finished a work interval
+        counter += 1;
+        if (counter % 5 == 0) {
+            sec = 1200;
+        } else {
+            sec = 300;
+        }
+        onbreak = true;
+    }
+    document.getElementById('safeTimerDisplay').innerHTML = toMinSecStr(sec);
 }
 
 function stopTimer() {
@@ -45,19 +59,11 @@ function stopTimer() {
 
 function forward() {
     console.log("forward")
-    if (onbreak) {
-        sec = 1500;
-        onbreak = false
-    } else {
-        sec = 300
-        onbreak = true
-    }
+    // short circuit the timer
+    resetSeconds();
+    stopTimer();
 }
-
-
 
 document.getElementById("start").addEventListener("click", () => { startTimer(); });
 document.getElementById("stop").addEventListener("click", () => { stopTimer(); });
-document.getElementById("Forward").addEventListener("click", () => { forward() });
-
-//p.querySelector('#counter').textContent = `${counter}`;
+document.getElementById("Forward").addEventListener("click", () => { forward(); });
