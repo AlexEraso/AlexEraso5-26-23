@@ -145,43 +145,43 @@ const notAllInconvenient = (fruits) => {
 
 //#7 I THINK OK
 const tasty = (fruits) => {
-  let result = []
+  let r = []
   for (let x = 0; x < fruits.length; x++) {
     if (isTasty(fruits[x])) {
-      result.push(fruits[x])
+      r.push(fruits[x])
     }
   }
-  return result
+  return r
 }
 
 //#8 I THINK OK
 const names = (fruits) => {
-  let result = []
+  let r = []
   for (let x = 0; x < fruits.length; x++) {
-    result[x] = fruits[x].name
+    r[x] = fruits[x].name
+  //r.push(fruits[x].name)
   }
-  return result
+  return r
 }
 
-//#9 COME BACK TO THIS QUESTION
+//#9 IM CONFUSED**
 const averageInconvenience = (fruits) => {
-  let total = 0
+  let avg = null
   for (let x = 0; x < fruits.length; x++) {
-    total += fruits[x].inconvenience
+    avg += fruits[x].inconvenience
   }
-  return total / fruits.length
+  return fruit.inconvenience / fruits.length
 }
 
 //#10 COME BACK TO THIS QUESTION
 const allCountries = (fruits) => {
-  let result = []
+  let r = []
   for (let x = 0; x < fruits.length; x++) {
-    // const countries = fruits[x].grownIn
     for (let y = 0; y < fruits.length; y++) {
-      result.push(countries[y])
+      r.push(countries[y])
     }
   }
-  return result
+  return r
 }
 
 //#11 I THINK OK
