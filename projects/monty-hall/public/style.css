@@ -10,3 +10,15 @@ h1 {
 p {
   font-size: 18px;
 }
+
+#doors {
+  width: 100%
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr)
+  gap: 10px;
+}
+
+div div {
+  border: 1px solid black;
+  height: 100px;
+}
