@@ -13,3 +13,5 @@ const triangular = (n) => {
     return n + triangular(n - 1);
   }
 }
+
+const fibonacci = 
