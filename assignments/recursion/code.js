@@ -14,4 +14,10 @@ const triangular = (n) => {
   }
 }
 
-const fibonacci = 
+const fibonacci = (n) => {
+  if (n ===0) {
+    return 0;
+  } else {
+    return n
+  }
+}
