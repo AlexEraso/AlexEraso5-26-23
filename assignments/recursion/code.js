@@ -30,12 +30,12 @@ const gcd = (a, b) => {
   }
 }
 
-const sum = (array) => {
-  if (array.length === 0) {
-    return 0;
+const sum = (numbers) => {
+  if (numbers.length === 0) {
+    return 0; 
   } else {
-
-  } 
+    return numbers[0] + sum(numbers.slice(1));
+  }
 }
 
 const search = (array, value) => {
