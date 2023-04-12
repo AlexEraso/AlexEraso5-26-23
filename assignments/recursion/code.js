@@ -29,3 +29,7 @@ const gcd = (a, b) => {
     return gcd(b, a % b)
   }
 }
+
+const sum = (array) => {
+  
+}
