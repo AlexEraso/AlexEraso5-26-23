@@ -31,5 +31,8 @@ const gcd = (a, b) => {
 }
 
 const sum = (array) => {
-  
+  if (array.length === 0) {
+    return 0;
+  } else {
+  }
 }
