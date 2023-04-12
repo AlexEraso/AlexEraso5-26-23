@@ -22,4 +22,10 @@ const fibonacci = (n) => {
   }
 }
 
-const gcd = (a, b)
+const gcd = (a, b) => {
+  if (b === 0) {
+    return a
+  } else {
+    return gcb(b, a % b)
+  }
+}
