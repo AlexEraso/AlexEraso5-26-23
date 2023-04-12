@@ -34,5 +34,10 @@ const sum = (array) => {
   if (array.length === 0) {
     return 0;
   } else {
-  }
+
+  } 
+}
+
+const search = (array, value) => {
+  if 
 }
