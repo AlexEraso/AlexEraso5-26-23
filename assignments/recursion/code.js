@@ -39,5 +39,13 @@ const sum = (numbers) => {
 }
 
 const search = (array, value) => {
-  
+  if 
+}
+
+const reserveString = (string) => {
+  if (string.length === 0){
+    return '';
+  } else {
+    return 
+  }
 }
