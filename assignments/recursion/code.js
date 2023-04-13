@@ -49,5 +49,5 @@ const reverseString = (string) => {
 }
 
 const treeMap = (tree, func) => {
-  let tree = {}
+  let tree = 
 }
