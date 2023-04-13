@@ -32,7 +32,7 @@ const gcd = (a, b) => {
 
 const sum = (numbers) => {
   if (numbers.length === 0) {
-    return 0; 
+    return 0;
   } else {
     return numbers[0] + sum(numbers.slice(1));
   }
@@ -42,10 +42,10 @@ const search = (array, value) => {
   if 
 }
 
-const reserveString = (string) => {
-  if (string.length === 0){
+const reverseString = (string) => {
+  if (string.length === 0) {
     return '';
   } else {
-    return 
-  }
+ return string[0] + reverseString(string.slice(1));
+}
 }
