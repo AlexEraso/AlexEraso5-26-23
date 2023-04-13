@@ -44,6 +44,6 @@ const reverseString = (string) => {
   if (string.length === 0) {
     return '';
   } else {
- return string[0] + reverseString(string.slice(1));
+ return reverseString(string.slice(1)) + string[0]
 }
 }
