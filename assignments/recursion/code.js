@@ -38,6 +38,6 @@ const sum = (numbers) => {
   }
 }
 
-const = search () => {
+const = search (array, value) => {
   
 }
