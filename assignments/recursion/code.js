@@ -47,3 +47,7 @@ const reverseString = (string) => {
  return reverseString(string.slice(1)) + string[0]
 }
 }
+
+const treeMap = (tree, func) => {
+  let tree = {}
+}
