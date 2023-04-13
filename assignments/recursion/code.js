@@ -38,9 +38,7 @@ const sum = (numbers) => {
   }
 }
 
-const search = (array, value) => {
-  if 
-}
+const search = (array, value) => {}
 
 const reverseString = (string) => {
   if (string.length === 0) {
