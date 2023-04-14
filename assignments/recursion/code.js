@@ -48,7 +48,7 @@ const search = (array, value) => {
       return search(array.slice(1).value)
     }
   }
-
+}
   const reverseString = (string) => {
     if (string.length === 0) {
       return '';
