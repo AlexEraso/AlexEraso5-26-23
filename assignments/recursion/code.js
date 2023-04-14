@@ -40,23 +40,21 @@ const sum = (numbers) => {
 
 const search = (array, value) => {
   if (array.length === 0) {
-    return false 
+    return false
   } else {
     if (array[0] === value) {
-    return true 
+      return true
     } else {
       return search(array.slice(1).value)
     }
+  }
+
+  const reverseString = (string) => {
+    if (string.length === 0) {
+      return '';
+    } else {
+      return reverseString(string.slice(1)) + string[0]
     }
+  }
 
-const reverseString = (string) => {
-  if (string.length === 0) {
-    return '';
-  } else {
- return reverseString(string.slice(1)) + string[0]
-}
-}
-
-const treeMap = (tree, func) => {
-  return tree
-}
+  const treeMap = (tree, func) => {}
