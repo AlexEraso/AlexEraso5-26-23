@@ -38,7 +38,16 @@ const sum = (numbers) => {
   }
 }
 
-const search = (array, value) => {}
+const search = (array, value) => {
+  if (array.length === 0) {
+    return false 
+  } else {
+    if (array[0] === value) {
+    return true 
+    } else {
+      return search(array.slice(1).value)
+    }
+    }
 
 const reverseString = (string) => {
   if (string.length === 0) {
