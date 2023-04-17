@@ -58,5 +58,5 @@ const search = (array, value) => {
   }
 
   const treeMap = (tree, func) => {
-
+    
   }
