@@ -45,7 +45,7 @@ const search = (array, value) => {
     if (array[0] === value) {
       return true
     } else {
-      return search(array.slice(1).value)
+      return search(array.slice(1), value)
     }
   }
 }
@@ -57,4 +57,6 @@ const search = (array, value) => {
     }
   }
 
-  const treeMap = (tree, func) => {}
+  const treeMap = (tree, func) => {
+
+  }
