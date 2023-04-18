@@ -58,6 +58,12 @@ const search = (array, value) => {
   }
 
   const treeMap = (tree, func) => {
-    if (isLeaf(tree)) 
+    if (isLeaf(tree)) {
     return func(tree)
+  } else {
+ return {
+      left: treeMap(tree.left, fn),
+      right: treeMap(tree.right, fn)
+    };
   }
+};
