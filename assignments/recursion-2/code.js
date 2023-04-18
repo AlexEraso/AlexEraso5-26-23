@@ -29,3 +29,7 @@ const triple = (a , b) => {
     return triple(a * 3, b - 1)
   }
 }
+
+const power = (a , b) => {
+  
+}
