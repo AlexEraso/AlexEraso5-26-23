@@ -58,5 +58,6 @@ const search = (array, value) => {
   }
 
   const treeMap = (tree, func) => {
-    
+    if (isLeaf(tree)) 
+    return func(tree)
   }
