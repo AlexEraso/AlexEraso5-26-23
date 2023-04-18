@@ -64,6 +64,6 @@ const search = (array, value) => {
  return {
       left: treeMap(tree.left, func),
       right: treeMap(tree.right, func)
-    };
+    }
   }
-};
+}
