@@ -21,3 +21,11 @@ const double = (a , b) => {
     return double(a * 2, b - 1)
   }
 }
+
+const triple = (a , b) => {
+    if (b === 0) {
+    return a;
+  } else {
+    return triple(a * 3, b - 1)
+  }
+}
