@@ -49,19 +49,19 @@ const search = (array, value) => {
     }
   }
 }
-  const reverseString = (string) => {
-    if (string.length === 0) {
-      return '';
-    } else {
-      return reverseString(string.slice(1)) + string[0]
-    }
+const reverseString = (string) => {
+  if (string.length === 0) {
+    return '';
+  } else {
+    return reverseString(string.slice(1)) + string[0]
   }
+}
 
-  const treeMap = (tree, func) => {
-    if (isLeaf(tree)) {
+const treeMap = (tree, func) => {
+  if (isLeaf(tree)) {
     return func(tree)
   } else {
- return {
+    return {
       left: treeMap(tree.left, func),
       right: treeMap(tree.right, func)
     }
