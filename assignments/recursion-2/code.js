@@ -50,8 +50,12 @@ const deleteXs = (string) => {
   }
 }
 
-const countXs = () => {
-
+const countXs = (string) => {
+  if (string.length === 0)
+  return 0;
+} else {
+  if (string[0] === 'x')
+  return 1
 }
 
 const maximum = () => {
