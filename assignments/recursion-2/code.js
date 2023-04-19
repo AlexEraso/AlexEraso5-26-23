@@ -56,7 +56,7 @@ const countXs = (string) => {
   } else {
     if (string[0] === 'x')
       return
-  }
+  };
 };
 const maximum = () => {
 
