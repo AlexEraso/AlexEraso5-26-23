@@ -72,12 +72,13 @@ const maximum = (array) => {
 
 
 const every = (array, predicate) => {
-  if (array.length === 0) {
+ if (array.length === 0) {
     return true;
   } else {
-    if 
+    return predicate(array[0]) && every(array.slice(1), predicate);
   }
-}
+};
+
 
 const some = () => {
   
