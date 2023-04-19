@@ -43,7 +43,7 @@ const deleteXs = (string) => {
     return false
   } else {
     if (string[0] === value) {
-      return deleteXs(string.slice(1), value)
+      return deleteXs(string.slice(1))
     }
   }
 }
