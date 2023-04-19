@@ -38,7 +38,7 @@ const power = (a , b) => {
   }
 }
 
-const deleteXs = () => {
+const deleteXs = (array, value) => {
   if (array.length === 0) {
     return false
   } else {
