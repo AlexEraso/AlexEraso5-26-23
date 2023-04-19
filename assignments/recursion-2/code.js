@@ -45,7 +45,7 @@ const deleteXs = (array, value) => {
     if (array[0] === value) {
       return true
     } else {
-      return search(array.slice(1), value)
+      return deleteXs(array.slice(1), value)
     }
   }
 }
