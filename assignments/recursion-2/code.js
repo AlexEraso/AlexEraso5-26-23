@@ -75,7 +75,7 @@ const every = (array, predicate) => {
  if (array.length === 0) {
     return true;
   } else {
-    return predicate(array[0]) && every(array.slice(1), predicate);
+    return predicate(array[0])
   }
 };
 
