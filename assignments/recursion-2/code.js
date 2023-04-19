@@ -40,10 +40,12 @@ const power = (a , b) => {
 
 const deleteXs = (string) => {
   if (string.length === 0) {
-    return false
+    return '';
   } else {
-    if (string[0] === value) {
+    if (string[0] === 'x') {
       return deleteXs(string.slice(1))
+    } else {
+      return deleteXs(string.slice) + string[0]
     }
   }
 }
