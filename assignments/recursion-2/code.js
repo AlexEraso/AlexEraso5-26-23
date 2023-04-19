@@ -56,16 +56,24 @@ const countXs = (string) => {
   } else {
     if (string[0] === 'x') {
       return 1 + countXs(string.slice(1))
+    } else {
+      return countXs(string.slice(1))
+    }
+  };
+};
+
+const maximum = (array) => {
+  if (array.length === 0) {
+    return array[0];
   } else {
-    return countXs(string.slice(1))
+    if (array)
   }
-};
-};
-
-const maximum = () => {
-
 }
 
 const every = () => {
 
+}
+
+const some = () => {
+  
 }
