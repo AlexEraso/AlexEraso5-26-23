@@ -60,6 +60,8 @@ const countXs = (string) => {
     return countXs(string.slice(1))
   }
 };
+};
+
 const maximum = () => {
 
 }
