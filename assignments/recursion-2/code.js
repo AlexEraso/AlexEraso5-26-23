@@ -38,14 +38,12 @@ const power = (a , b) => {
   }
 }
 
-const deleteXs = (array, value) => {
-  if (array.length === 0) {
+const deleteXs = (string) => {
+  if (string.length === 0) {
     return false
   } else {
-    if (array[0] === value) {
-      return true
-    } else {
-      return deleteXs(array.slice(1), value)
+    if (string[0] === value) {
+      return string.slice(1), value)
     }
   }
 }
