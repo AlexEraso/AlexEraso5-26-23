@@ -39,7 +39,15 @@ const power = (a , b) => {
 }
 
 const deleteXs = () => {
-
+  if (array.length === 0) {
+    return false
+  } else {
+    if (array[0] === value) {
+      return true
+    } else {
+      return search(array.slice(1), value)
+    }
+  }
 }
 
 const countXs = () => {
@@ -50,4 +58,6 @@ const maximum = () => {
 
 }
 
-const every = ()
+const every = () => {
+
+}
