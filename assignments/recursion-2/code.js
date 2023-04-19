@@ -37,3 +37,17 @@ const power = (a , b) => {
     return a * power(a, b - 1)
   }
 }
+
+const deleteXs = () => {
+
+}
+
+const countXs = () => {
+
+}
+
+const maximum = () => {
+
+}
+
+const every = ()
