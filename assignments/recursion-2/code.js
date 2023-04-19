@@ -64,13 +64,12 @@ const countXs = (string) => {
 
 const maximum = (array) => {
   if (array.length === 0) {
-    return array[0];
+    return -Infinity;
   } else {
-    if (array) {
-      
+    return Math.max(array[0], maximum(array.slice(1)))
     }
   }
-}
+
 
 const every = () => {
 
