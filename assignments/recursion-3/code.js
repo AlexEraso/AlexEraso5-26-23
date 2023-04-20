@@ -28,11 +28,11 @@ const lucas = (n) => {
 
 
 
-  const isDescending = (ns) => {
-  if (ns.length < 2) {
+  const isDescending = (numbers) => {
+  if (numbers.length < 2) {
     return true;
   } else {
-    return ns[0] >= ns[1] && isDescending(ns.slice(1));
+    return numbers[0] >= numberss[1] && isDescending(numbers.slice(1));
   }
 };
   const sumNested = () => {
