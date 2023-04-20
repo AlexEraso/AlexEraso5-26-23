@@ -17,6 +17,7 @@ const lucas = (n) => {
     }
   }
 }
+
   const isAscending = (numbers) => {
     if (numbers.length < 2) {
       return true
@@ -27,10 +28,13 @@ const lucas = (n) => {
 
 
 
-  const isDescending = () => {
-
+  const isDescending = (ns) => {
+  if (ns.length < 2) {
+    return true;
+  } else {
+    return ns[0] >= ns[1] && isDescending(ns.slice(1));
   }
-
+};
   const sumNested = () => {
 
   }
