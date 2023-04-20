@@ -14,10 +14,10 @@ const isAscending = (numbers) => {
   if (numbers.length < 2 ) {
   return true
   } else {
-    if (numbers[0] < numbers[1]) {
-      return isAscending(numbers.slice[1])
-    } else {
+    if (numbers[0] > numbers[1]) {
       return false
+    } else {
+      return isAscending(numbers.slice[1])
     }
   }
 }
