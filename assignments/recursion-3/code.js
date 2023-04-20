@@ -10,8 +10,14 @@ const lucas = () => {
 
 }
 
-const isAscending = () => {
-
+const isAscending = (numbers) => {
+  if (numbers.length === 0) {
+  return true
+  } else {
+    if (numbers[0] <= numbers[1]) {
+      return isAscending(numbers.slice[1])
+    }
+  }
 }
 
 const isDescending = () => {
