@@ -80,5 +80,10 @@ const every = (array, predicate) => {
 };
 
 
-const some = (array, predicate) => 
-array.length !== 0 && (p(xs[0]) || some(xs.slice(1), p));
+const some = (array, predicate) => {
+  if (array.length === 0) {
+    return false;
+  } else {
+    return predicate(array[0]) || some(array.slice(1), predicate);
+  }
+};
