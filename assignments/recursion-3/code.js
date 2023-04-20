@@ -32,7 +32,7 @@ const lucas = (n) => {
   if (numbers.length < 2) {
     return true;
   } else {
-    return numbers[0] >= numberss[1] && isDescending(numbers.slice(1));
+    return numbers[0] >= numbers[1] && isDescending(numbers.slice(1));
   }
 };
   const sumNested = () => {
