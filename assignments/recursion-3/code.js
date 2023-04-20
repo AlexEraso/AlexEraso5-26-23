@@ -16,9 +16,12 @@ const isAscending = (numbers) => {
   } else {
     if (numbers[0] <= numbers[1]) {
       return isAscending(numbers.slice[1])
+    } else {
+      return false
     }
   }
 }
+
 
 const isDescending = () => {
 
