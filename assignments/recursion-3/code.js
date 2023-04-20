@@ -14,7 +14,7 @@ const isAscending = (numbers) => {
   if (numbers.length < 2 ) {
   return true
   } else {
-      return array[0] <= array[1] && isAscending(array.slice(1));
+      return numbers[0] <= numbers[1] && isAscending(numbers.slice(1));
     }
   }
 
