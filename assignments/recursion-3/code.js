@@ -16,7 +16,7 @@ const lucas = (n) => {
       return lucas(n - 1) + lucas(n - 2);
     }
   }
-
+}
   const isAscending = (numbers) => {
     if (numbers.length < 2) {
       return true
