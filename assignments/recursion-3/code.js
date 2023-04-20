@@ -11,7 +11,7 @@ const lucas = () => {
 }
 
 const isAscending = (numbers) => {
-  if (numbers.length === 0) {
+  if (numbers.length < 2 ) {
   return true
   } else {
     if (numbers[0] <= numbers[1]) {
