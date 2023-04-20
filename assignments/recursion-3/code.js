@@ -1,5 +1,5 @@
-const product = () => {
-
+const product = (corgis) => {
+  
 }
 
 const sumSquares = () => {
@@ -25,8 +25,6 @@ const lucas = (n) => {
       return numbers[0] <= numbers[1] && isAscending(numbers.slice(1));
     }
   }
-
-
 
   const isDescending = (numbers) => {
   if (numbers.length < 2) {
