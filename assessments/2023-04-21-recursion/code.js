@@ -5,7 +5,7 @@ const factorial = (integer) => {
   if ( integer === 0 ) {
     return 1
   } else {
-    return 
+    return integer * factorial(integer - 1)
   }
 }
 
