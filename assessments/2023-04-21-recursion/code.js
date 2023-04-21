@@ -45,8 +45,14 @@ const treeMap = (tree, func) => {
 }
 
 const sumPrimesBelow = (n) => {
-  if (n > 1){
-    return 
+  if (n === 2) {
+    return 0
+  } else {
+    if (isPrime(n)) {
+      return n + sumPrimesBelow(n - 1)
+    } else {
+      return sumPrimeBelow(n - 1)
+    }
   }
 }
 
