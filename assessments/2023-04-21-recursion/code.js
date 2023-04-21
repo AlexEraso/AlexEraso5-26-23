@@ -1,6 +1,33 @@
 ////////////////////////////////////////////////////////////////
 // Write your code here ...
 
+const factorial = (integer) => {
+  if ( integer === 0 ) {
+    return 1
+  } else {
+    return 
+  }
+}
+
+const fibonacci = () => {}
+
+const sumSquares = () => {}
+
+const maximum = () => {}
+
+const treeMap = () => {}
+
+const sumPrimesBelow = () => {}
+
+const nvwls = () => {}
+
+const caesar = () => {}
+
+const toList = () => {}
+
+const map = () => {}
+
+
 
 
 
