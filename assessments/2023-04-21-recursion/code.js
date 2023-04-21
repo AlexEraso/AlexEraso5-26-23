@@ -73,7 +73,11 @@ const caesar = (string, key) => {
 }
 
 const toList = (array) => {
-
+  if (array.length === 0 ) {
+    return []
+  } else {
+    return {first: array[0], rest: toList(array.slice(1))}
+  }
 }
 
 const map = () => { }
