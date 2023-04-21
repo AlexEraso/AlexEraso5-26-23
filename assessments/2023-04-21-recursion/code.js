@@ -46,7 +46,7 @@ const treeMap = (tree, func) => {
 
 const sumPrimesBelow = (n) => {
   if (n === 2) {
-    return 0
+    return 2
   } else {
     if (isPrime(n)) {
       return n + sumPrimesBelow(n - 1)
@@ -56,11 +56,17 @@ const sumPrimesBelow = (n) => {
   }
 }
 
-const nvwls = () => { }
+const nvwls = (string) => {
+  if (string.length === 0){
+    return ''
+  } else {
+
+  }
+}
 
 const caesar = () => { }
 
-const toList = () => { }
+const toList = (array) => { }
 
 const map = () => { }
 
