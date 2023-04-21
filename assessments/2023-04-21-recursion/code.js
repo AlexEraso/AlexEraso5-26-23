@@ -2,7 +2,7 @@
 // Write your code here ...
 
 const factorial = (integer) => {
-  if ( integer === 0 ) {
+  if (integer === 0) {
     return 1
   } else {
     return integer * factorial(integer - 1)
@@ -10,15 +10,15 @@ const factorial = (integer) => {
 }
 
 const fibonacci = (n) => {
-  if (n < 2 ) {
+  if (n < 2) {
     return 0
   } else {
-    return fibonacci( n - 1) + fibonacci(n - 2)
+    return fibonacci(n - 1) + fibonacci(n - 2)
   }
 }
 
 const sumSquares = (n) => {
-  if (n < 2 ) {
+  if (n < 2) {
     return 0
   } else {
     return n ** 2 * sumSquares(n - 1)
@@ -30,8 +30,8 @@ const maximum = (array) => {
     return -Infinity;
   } else {
     return Math.max(array[0], maximum(array.slice(1)))
-    }
   }
+}
 
 const treeMap = (tree, func) => {
   if (isLeaf(tree)) {
@@ -44,15 +44,17 @@ const treeMap = (tree, func) => {
   }
 }
 
-const sumPrimesBelow = () => {}
+const sumPrimesBelow = (n) => {
+  if 
+}
 
-const nvwls = () => {}
+const nvwls = () => { }
 
-const caesar = () => {}
+const caesar = () => { }
 
-const toList = () => {}
+const toList = () => { }
 
-const map = () => {}
+const map = () => { }
 
 
 
