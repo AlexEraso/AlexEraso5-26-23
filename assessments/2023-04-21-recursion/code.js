@@ -57,10 +57,10 @@ const sumPrimesBelow = (n) => {
 }
 
 const nvwls = (string) => {
-  if (string.length === 0){
+  if (string.length === 0) {
     return ''
   } else {
-    return 
+    return
   }
 }
 
@@ -73,15 +73,20 @@ const caesar = (string, key) => {
 }
 
 const toList = (array) => {
-  if (array.length === 0 ) {
+  if (array.length === 0) {
     return []
   } else {
-    return {first: array[0], rest: toList(array.slice(1))}
+    return { first: array[0], rest: toList(array.slice(1)) }
   }
 }
 
-const map = () => { }
-
+const map = (list, func) => {
+  if (list.rest === null) {
+    return
+  } else {
+    return map(list.first) + 
+  }
+}
 
 
 
