@@ -9,11 +9,23 @@ const factorial = (integer) => {
   }
 }
 
-const fibonacci = () => {}
+const fibonacci = (n) => {
+  if (n === 0 ) {
+    return 0
+  } else {
+    return fibonacci( n - 1) + fibonacci(n - 2)
+  }
+}
 
 const sumSquares = () => {}
 
-const maximum = () => {}
+const maximum = (array) => {
+  if (array.length === 0) {
+    return -Infinity;
+  } else {
+    return Math.max(array[0], maximum(array.slice(1)))
+    }
+  }
 
 const treeMap = () => {}
 
