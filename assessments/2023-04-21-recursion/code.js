@@ -82,7 +82,7 @@ const toList = (array) => {
 
 const map = (list, func) => {
   if (list.rest === null) {
-    return
+    return list 
   } else {
     return map(list.first) + map(list.first, func)
   }
