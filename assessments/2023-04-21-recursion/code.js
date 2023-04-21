@@ -64,7 +64,13 @@ const nvwls = (string) => {
   }
 }
 
-const caesar = (string, ) => { }
+const caesar = (string, key) => {
+  if (string.length === 0) {
+    return ''
+  } else {
+    return 
+  }
+}
 
 const toList = (array) => { }
 
