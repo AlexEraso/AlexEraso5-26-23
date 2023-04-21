@@ -33,7 +33,16 @@ const maximum = (array) => {
     }
   }
 
-const treeMap = () => {}
+const treeMap = (tree, func) => {
+  if (isLeaf(tree)) {
+    return func(tree)
+  } else {
+    return {
+      left: treeMap(tree.left, func),
+      right: treeMap(tree.right, func)
+    }
+  }
+}
 
 const sumPrimesBelow = () => {}
 
