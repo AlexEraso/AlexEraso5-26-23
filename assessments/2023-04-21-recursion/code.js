@@ -68,11 +68,13 @@ const caesar = (string, key) => {
   if (string.length === 0) {
     return ''
   } else {
-    return 
+    return rotate(string[0], key) + caesar(string.slice(1), key)
   }
 }
 
-const toList = (array) => { }
+const toList = (array) => {
+
+}
 
 const map = () => { }
 
