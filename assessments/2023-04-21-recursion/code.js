@@ -45,7 +45,9 @@ const treeMap = (tree, func) => {
 }
 
 const sumPrimesBelow = (n) => {
-  if 
+  if (n > 1){
+    return 
+  }
 }
 
 const nvwls = () => { }
