@@ -17,7 +17,13 @@ const fibonacci = (n) => {
   }
 }
 
-const sumSquares = () => {}
+const sumSquares = (n) => {
+  if (n < 2 ) {
+    return 0
+  } else {
+    return n ** 2 * sumSquares(n - 1)
+  }
+}
 
 const maximum = (array) => {
   if (array.length === 0) {
