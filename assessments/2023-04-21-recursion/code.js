@@ -84,7 +84,7 @@ const map = (list, func) => {
   if (list.rest === null) {
     return
   } else {
-    return map(list.first) + 
+    return map(list.first) + map(list.first, func)
   }
 }
 
