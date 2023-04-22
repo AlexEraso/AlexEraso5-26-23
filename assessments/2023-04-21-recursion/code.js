@@ -18,10 +18,10 @@ const fibonacci = (n) => {
 }
 
 const sumSquares = (n) => {
-  if (n < 2) {
+  if (n === 0) {
     return 0
   } else {
-    return n ** 2 * sumSquares(n - 1)
+    return n ** 2 + sumSquares(n - 1)
   }
 }
 
