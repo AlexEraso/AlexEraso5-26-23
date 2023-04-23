@@ -51,11 +51,13 @@ const sumPrimesBelow = (n) => {
     if (isPrime(n)) {
       return n + sumPrimesBelow(n - 1)
     } else {
-      return sumPrimeBelow(n - 1)
+      return sumPrimesBelow(n - 1)
     }
   }
 }
 
+
+//unoptimal but i dont really know how to do it otherwise
 const  nvwls = (string) => {
   if (string.length === 0) {
     return ''
