@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////////
 // Write your code here ...
 
-const factorial = (integer) => {
+const factorial = (integer) => { // correct
   if (integer === 0) {
     return 1
   } else {
@@ -9,7 +9,7 @@ const factorial = (integer) => {
   }
 }
 
-const fibonacci = (n) => {
+const fibonacci = (n) => { // almost
   if (n < 2) {
     return 0
   } else {
@@ -17,7 +17,7 @@ const fibonacci = (n) => {
   }
 }
 
-const sumSquares = (n) => {
+const sumSquares = (n) => { // correct
   if (n === 0) {
     return 0
   } else {
@@ -25,7 +25,7 @@ const sumSquares = (n) => {
   }
 }
 
-const maximum = (array) => {
+const maximum = (array) => { // correct
   if (array.length === 0) {
     return -Infinity;
   } else {
@@ -33,7 +33,7 @@ const maximum = (array) => {
   }
 }
 
-const treeMap = (tree, func) => {
+const treeMap = (tree, func) => { // correct
   if (isLeaf(tree)) {
     return func(tree)
   } else {
@@ -44,7 +44,7 @@ const treeMap = (tree, func) => {
   }
 }
 
-const sumPrimesBelow = (n) => {
+const sumPrimesBelow = (n) => { // correct
   if (n === 2) {
     return 2
   } else {
@@ -57,7 +57,7 @@ const sumPrimesBelow = (n) => {
 }
 
 //unoptimal but i dont really know how to do it otherwise
-const  nvwls = (string) => {
+const  nvwls = (string) => { // correct
   if (string.length === 0) {
     return ''
   } else {
@@ -69,7 +69,7 @@ const  nvwls = (string) => {
   }
 }
 
-const caesar = (string, key) => {
+const caesar = (string, key) => { // correct
   if (string.length === 0) {
     return ''
   } else {
@@ -77,7 +77,7 @@ const caesar = (string, key) => {
   }
 }
 
-const toList = (array) => {
+const toList = (array) => { // almost
   if (array.length === 0) {
     return []
   } else {
@@ -85,9 +85,9 @@ const toList = (array) => {
   }
 }
 
-const map = (list, func) => {
+const map = (list, func) => { // something
   if (list.rest === null) {
-    return list 
+    return list
   } else {
     return map(list.first) + map(list.first, func)
   }
