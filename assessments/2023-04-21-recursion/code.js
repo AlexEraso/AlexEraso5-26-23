@@ -56,11 +56,15 @@ const sumPrimesBelow = (n) => {
   }
 }
 
-const nvwls = (string) => {
+const  nvwls = (string) => {
   if (string.length === 0) {
     return ''
   } else {
-    return
+    if (string [0] === 'a' || string[0] === 'e' || string[0] === 'i' || string[0] === 'o' || string[0] === 'u' || string[0] === 'A' || string[0] === 'E' || string[0] === 'I' || string[0] === 'O' || string[0] === 'U') {
+      return nvwls(string.slice(1))
+    } else {
+      return string[0] + nvwls(string.slice(1))
+    }
   }
 }
 
