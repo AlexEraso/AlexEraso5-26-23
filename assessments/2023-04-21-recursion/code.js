@@ -56,7 +56,6 @@ const sumPrimesBelow = (n) => {
   }
 }
 
-
 //unoptimal but i dont really know how to do it otherwise
 const  nvwls = (string) => {
   if (string.length === 0) {
@@ -93,9 +92,6 @@ const map = (list, func) => {
     return map(list.first) + map(list.first, func)
   }
 }
-
-
-
 
 ////////////////////////////////////////////////////////////////
 // Functions you will use in your code. No need to touch these
