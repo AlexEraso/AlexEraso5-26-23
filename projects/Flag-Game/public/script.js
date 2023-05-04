@@ -1,4 +1,4 @@
-//Makes it so that you can't click the button multiple times
+//Function that doesn't allow user to click button more than once
 
 function done() {
   const input = document.getElementsByClassName('input');
@@ -7,8 +7,7 @@ function done() {
   }
 }
 
-//Changes the color of the buttons based on the class, correct or error. Then done makes it so you can't click more than once 
-
+//Function that changes the color based on the button Id, correct = green, error = red. 
 function click(event) {
   const input = event.target;
   if (input.id === 'correct') {
@@ -21,19 +20,24 @@ function click(event) {
   }
 }
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {  
   const input = document.getElementsByClassName('input');
   for (let i = 0; i < input.length; i++) {
     input[i].addEventListener('click', click);
   }
 });
 
-//Switch Between Flags Randomly
+//Switch Between Flags Randomly after reloading page 
+//Based off of: https://www.peachpit.com/articles/article.aspx?p=2239154&seqNum=10
+
 window.onload = chooseFlag;
 
-var myFlag = new Array("https://tinyurl.com/2hbxcsbs","https://tinyurl.com/38jm6rwt");
+var myPicture = new Array ("https://tinyurl.com/fdramphs", "https://tinyurl.com/38jm6rwt");
+
+//For some reason, when I change "var myPicture = new Array ("https://tinyurl.com/2hbxcsbs","https://tinyurl.com/38jm6rwt");" to "var myFlag = ["https://tinyurl.com/2hbxcsbs", "https://tinyurl.com/38jm6rwt"];" it doesn't load the image, so I'm just going to keep it how it was until I figure out why. 
+//First url is italy, second is China
 
 function chooseFlag() {
-     var randomNum = Math.floor(Math.random() * myFlag.length);
-     document.getElementById("myFlag").src = myFlag[randomNum];
-};
+     var randomNum = Math.floor(Math.random() * myPicture.length);
+     document.getElementById("myCountry").src = myPicture[randomNum];
+}
