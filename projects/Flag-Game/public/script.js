@@ -50,9 +50,7 @@ function click(event) {
     disableButtons();
   }
 }
-//
-//
-//
+
 document.addEventListener("DOMContentLoaded", function () {
   const input = document.getElementsByClassName("input");
   for (let i = 0; i < input.length; i++) {
@@ -77,7 +75,15 @@ var AllCountries = [
   "Austria",
   "Belarus",
   "Belgium",
-  "Bosnia"
+  "Bosnia",
+  "Bulgaria",
+  "Croatia",
+  "Cyprus",
+  "Czechia",
+  "Denmark",
+  "Estonia",
+  "Finland",
+  "France"
 ];
 
 var Flags = {
@@ -94,7 +100,16 @@ var Flags = {
   Belgium: { url: "https://tinyurl.com/5c4j376a" },
   Bosnia: { url: "https://tinyurl.com/yvd3dbpe" },
   Bulgaria: { url: "https://tinyurl.com/49t2fm96" },
-  Croatia: { url: "https://tinyurl.com/35kxckzs" }
+  Croatia: { url: "https://tinyurl.com/35kxckzs" },
+  Cyprus: {url: "https://tinyurl.com/2p8ujxfa"}, 
+  Czechia: {url: "https://tinyurl.com/2c36xtkr"},
+  Denmark: {url: "https://tinyurl.com/mrndrwcm"}, 
+  Estonia: {url: "https://tinyurl.com/33w5ds3h"}, 
+  Findland: {url: "https://tinyurl.com/5n6c6njz"},
+  France: {url: "https://tinyurl.com/4vy5b5a6"},
+  Germany: {url: "https://tinyurl.com/2xz62zze"},
+  
+
 };
 
 function getRandomCountryIndex(countryArray) {
