@@ -11,7 +11,10 @@ p {
   font-size: 18px;
 }
 
-.button, .buttontwo, .buttonthree, .buttonfour {
+.button,
+.buttontwo,
+.buttonthree,
+.buttonfour {
   background-color: #d7d8d9;
   border: none;
   color: white;
@@ -34,14 +37,21 @@ p {
   height: 98%;
 }
 
-  body {
-    background-image: url('https://cdn.wallpapersafari.com/69/76/GiMBax.png');
-  }
-  input{
-    width:32%;
-  }
-.green{background-color: green;}
-.red{background-color: red;}
+body {
+  background-image: url('https://cdn.wallpapersafari.com/69/76/GiMBax.png');
+}
+
+input {
+  width: 32%;
+}
+
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
 
 #next {
   visibility: hidden;
