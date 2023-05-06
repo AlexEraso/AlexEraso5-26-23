@@ -1,5 +1,5 @@
 //Function that doesn't allow user to click button more than once
-
+let score = 0;
 function disableButtons() {
   const input = document.getElementsByClassName("input");
   for (let i = 0; i < input.length; i++) {
@@ -21,6 +21,7 @@ function click(event) {
   const input = event.target;
   var red = document.getElementsByClassName("red");
   if (input.classList.contains("correct")) {
+    score = +1;
     input.classList.add("green");
     document.getElementById("next").style.visibility = "visible";
     document.getElementById("next").addEventListener("click", function () {
@@ -50,7 +51,9 @@ function click(event) {
     disableButtons();
   }
 }
-
+//
+//
+//
 document.addEventListener("DOMContentLoaded", function () {
   const input = document.getElementsByClassName("input");
   for (let i = 0; i < input.length; i++) {
@@ -83,7 +86,12 @@ var AllCountries = [
   "Denmark",
   "Estonia",
   "Finland",
-  "France"
+  "France",
+  "Germany",
+  "Georgia",
+  "Greece",
+  "Hungary",
+  ""
 ];
 
 var Flags = {
@@ -101,17 +109,19 @@ var Flags = {
   Bosnia: { url: "https://tinyurl.com/yvd3dbpe" },
   Bulgaria: { url: "https://tinyurl.com/49t2fm96" },
   Croatia: { url: "https://tinyurl.com/35kxckzs" },
-  Cyprus: {url: "https://tinyurl.com/2p8ujxfa"}, 
-  Czechia: {url: "https://tinyurl.com/2c36xtkr"},
-  Denmark: {url: "https://tinyurl.com/mrndrwcm"}, 
-  Estonia: {url: "https://tinyurl.com/33w5ds3h"}, 
-  Findland: {url: "https://tinyurl.com/5n6c6njz"},
-  France: {url: "https://tinyurl.com/4vy5b5a6"},
-  Germany: {url: "https://tinyurl.com/2xz62zze"},
-  
+  Cyprus: { url: "https://tinyurl.com/2p8ujxfa" },
+  Czechia: { url: "https://tinyurl.com/2c36xtkr" },
+  Denmark: { url: "https://tinyurl.com/mrndrwcm" },
+  Estonia: { url: "https://tinyurl.com/33w5ds3h" },
+  Findland: { url: "https://tinyurl.com/5n6c6njz" },
+  France: { url: "https://tinyurl.com/4vy5b5a6" },
+  Germany: { url: "https://tinyurl.com/2xz62zze" },
+  Georiga: { url: "https://tinyurl.com/24xtvvp8" },
+  Greece: { url: "https://tinyurl.com/5n83bnhf" },
+  Hungary: {url: "https://tinyurl.com/2p9et2ar"},
+
 
 };
-
 function getRandomCountryIndex(countryArray) {
   return Math.floor(Math.random() * countryArray.length); // country name
 }
@@ -148,6 +158,7 @@ function getIncorrectCountries(selectedCountry) {
 }
 
 function turn() {
+  document.getElementById("score").innerHTML = `Score: ${score}`;
   // each turn
   //   pick a flag from the list
   var countryIndex = getRandomCountryIndex(RemainingCountries);

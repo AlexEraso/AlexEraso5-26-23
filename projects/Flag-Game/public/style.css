@@ -28,7 +28,7 @@ p {
 }
 
 .rectangle {
-  background-color: #33CCFF;
+  background-color: #33ccff;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -38,7 +38,7 @@ p {
 }
 
 body {
-  background-image: url('https://cdn.wallpapersafari.com/69/76/GiMBax.png');
+  background-image: url("https://cdn.wallpapersafari.com/69/76/GiMBax.png");
 }
 
 input {
