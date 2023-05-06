@@ -21,7 +21,7 @@ function click(event) {
   const input = event.target;
   var red = document.getElementsByClassName("red");
   if (input.classList.contains("correct")) {
-    score = +1;
+    score = score + 1;
     input.classList.add("green");
     document.getElementById("next").style.visibility = "visible";
     document.getElementById("next").addEventListener("click", function () {
@@ -91,7 +91,6 @@ var AllCountries = [
   "Georgia",
   "Greece",
   "Hungary",
-  ""
 ];
 
 var Flags = {
@@ -118,10 +117,9 @@ var Flags = {
   Germany: { url: "https://tinyurl.com/2xz62zze" },
   Georiga: { url: "https://tinyurl.com/24xtvvp8" },
   Greece: { url: "https://tinyurl.com/5n83bnhf" },
-  Hungary: {url: "https://tinyurl.com/2p9et2ar"},
-
-
+  Hungary: { url: "https://tinyurl.com/2p9et2ar" },
 };
+
 function getRandomCountryIndex(countryArray) {
   return Math.floor(Math.random() * countryArray.length); // country name
 }

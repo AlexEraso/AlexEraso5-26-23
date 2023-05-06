@@ -34,21 +34,18 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 32%;
-  height: 98%;
+  height: 100%;
 }
 
 body {
   background-image: url("https://cdn.wallpapersafari.com/69/76/GiMBax.png");
 }
-
 input {
-  width: 32%;
+  width: 12%;
 }
-
 .green {
   background-color: green;
 }
-
 .red {
   background-color: red;
 }
@@ -60,4 +57,7 @@ input {
   margin-left: 80%;
   width: 15%;
   font-size: 20px;
+}
+image {
+  width: 50%;
 }
