@@ -26,6 +26,7 @@ function click(event) {
     document.getElementById("next").style.visibility = "visible";
     document.getElementById("next").addEventListener("click", function () {
       input.classList.remove("green");
+      input.classList.remove("correct");
       document.getElementById("next").style.visibility = "hidden";
 
       for (let i = 0; i < red.length; i++) {
@@ -115,6 +116,11 @@ var AllCountries = [
   "Ukraine",
   "United Kingdom",
   "Vatican City",
+  "Algeria",
+  "Angola",
+  "Benin",
+  "Botswana",
+  
 ];
 
 var Flags = {
@@ -145,27 +151,32 @@ var Flags = {
   Lithuania: { url: "https://tinyurl.com/d6eksst6" },
   Luxembourg: { url: "https://tinyurl.com/mr4c8c9m" },
   Malta: { url: "https://tinyurl.com/yz4mah6a" },
-  Moldova : {url : "https://tinyurl.com/yp24vrsa"},
-  Monaco : {url : "https://tinyurl.com/muzupftx"},
-  Montenegro : {url : "https://tinyurl.com/4zc9vz27"},
-  Netherlands : {url: "https://tinyurl.com/ymx2wfh3"},
-  North_Macedonia : {url : "https://tinyurl.com/yckksjtc"},
-  Norway : {url : "https://tinyurl.com/58kd7t7n"},
-  Poland : {url : "https://tinyurl.com/588h35zj"},
-  Portugal : {url : "https://tinyurl.com/y2mjccbf"},
-  Romania : {url : "https://tinyurl.com/2tbf392j"},
-  Russia : {url : "https://tinyurl.com/7ye3k5vp"},
-  San_Marino : {url : "https://tinyurl.com/5c33u3kh"},
-  Serbia : {url : "https://tinyurl.com/26phvaps"},
-  Slovakia : {url : "https://tinyurl.com/3b6e7cwt"},
-  Slovenia : {url : "https://tinyurl.com/3k7962hf"},
-  Spain : {url : "https://tinyurl.com/y2c5fjzs"},
-  Sweden : {url : "https://tinyurl.com/2p8mmbpr"},
-  Switzerland : {url : "https://tinyurl.com/nmtjp4jz"},
-  Turkey : {url : "https://tinyurl.com/bdtedzxd"},
-  Ukraine : {url : "https://tinyurl.com/2ejuv62k"},
-  United_Kingdom : {url : "https://tinyurl.com/4pcttt4k"},
-  Vatican_City : {url : "https://tinyurl.com/yzh76vzw"},
+  Moldova: { url: "https://tinyurl.com/yp24vrsa" },
+  Monaco: { url: "https://tinyurl.com/muzupftx" },
+  Montenegro: { url: "https://tinyurl.com/4zc9vz27" },
+  Netherlands: { url: "https://tinyurl.com/ymx2wfh3" },
+  North_Macedonia: { url: "https://tinyurl.com/yckksjtc" },
+  Norway: { url: "https://tinyurl.com/58kd7t7n" },
+  Poland: { url: "https://tinyurl.com/588h35zj" },
+  Portugal: { url: "https://tinyurl.com/y2mjccbf" },
+  Romania: { url: "https://tinyurl.com/2tbf392j" },
+  Russia: { url: "https://tinyurl.com/7ye3k5vp" },
+  San_Marino: { url: "https://tinyurl.com/5c33u3kh" },
+  Serbia: { url: "https://tinyurl.com/26phvaps" },
+  Slovakia: { url: "https://tinyurl.com/3b6e7cwt" },
+  Slovenia: { url: "https://tinyurl.com/3k7962hf" },
+  Spain: { url: "https://tinyurl.com/y2c5fjzs" },
+  Sweden: { url: "https://tinyurl.com/2p8mmbpr" },
+  Switzerland: { url: "https://tinyurl.com/nmtjp4jz" },
+  Turkey: { url: "https://tinyurl.com/bdtedzxd" },
+  Ukraine: { url: "https://tinyurl.com/2ejuv62k" },
+  United_Kingdom: { url: "https://tinyurl.com/4pcttt4k" },
+  Vatican_City: { url: "https://tinyurl.com/yzh76vzw" },
+  Algeria : {url : "https://tinyurl.com/356exkrs"},
+  Angola : {url : "https://tinyurl.com/3p74e5p3"},
+  Benin : {url : "https://tinyurl.com/43s4epp9"},
+  Botswana : {url : "https://tinyurl.com/ypwp3tjx"},
+  
 };
 
 function getRandomCountryIndex(countryArray) {
