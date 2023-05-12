@@ -217,6 +217,18 @@ var AllCountries = [
   "Uzbekistan",
   "Vietnam",
   "Yemen",
+  "Argentina ",
+  "Bolivia",
+  "Brazil",
+  "Chile",
+  "Colombia",
+  "Ecuador",
+  "Guyana",
+  "Paraguay",
+  "Peru",
+  "Suriname",
+  "Uruguay",
+  "Venezuela",
 ];
 
 var Flags = {
@@ -369,6 +381,18 @@ var Flags = {
   Uzbekistan: { url: "https://cdn.britannica.com/47/7247-004-44F420D7/Flag-Uzbekistan.jpg" },
   Vietnam: { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/2000px-Flag_of_Vietnam.svg.png" },
   Yemen: { url: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAPFBMVEUAAAD////OESfNEicGBgb+//v+/f/EGSrQFirODCXp6enQCyXw8O/9/Pzo6eX///zo5+z29vbOFivIEiZzMpT+AAABuUlEQVR4nO3bS04CURBA0QftBxFBcf97FaIkNNd59+CcFVRuJTWrsWPmfD6P3bTdvm0nbr5vTfhziaLJo2na/Tbh5q7J0ttZiWuIW5OlZ1kNTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0qd8m10fa96U/WFfjWmI7Xnk0DhvmDmO/+Vh6iFX52OzH8fTMvdNxfL4w9zmOS+9ldY6Xe8LcXpPQpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qT242vpEVbnazwN5hT5jyqPnjQJTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNKlLEx79AAJ0/2huSCRaAAAAAElFTkSuQmCC" },
+  Argentina: { url: "https://i.ebayimg.com/images/g/dtoAAMXQiNdRcUIj/s-l500.jpg" },
+  Bolivia: { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Flag_of_Bolivia_%28state%29.svg/2560px-Flag_of_Bolivia_%28state%29.svg.png" },
+  Brazil: { url: "https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/640px-Flag_of_Brazil.svg.png" },
+  Chile: { url: "https://static.vecteezy.com/system/resources/previews/002/431/835/original/illustration-of-the-chile-flag-free-vector.jpg" },
+  Colombia: { url: "https://cdn.britannica.com/68/7668-004-08492AB7/Flag-Colombia.jpg" },
+  Ecuador: { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Flag_of_Ecuador.svg/2560px-Flag_of_Ecuador.svg.png" },
+  Guyana: { url: "https://cdn.britannica.com/06/1106-004-F6772F48/Flag-Guyana.jpg" },
+  Paraguay: { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Flag_of_Paraguay_%281842-1954%29.svg/2560px-Flag_of_Paraguay_%281842-1954%29.svg.png" },
+  Peru: { url: "https://www.state.gov/wp-content/uploads/2018/08/peru-flag.gif" },
+  Suriname: { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Flag_of_Suriname.svg/255px-Flag_of_Suriname.svg.png" },
+  Uruguay: { url: "https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Uruguay.svg" },
+  Venezuela: { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Flag_of_Venezuela_%281930%E2%80%932006%29.svg/220px-Flag_of_Venezuela_%281930%E2%80%932006%29.svg.png" },
 };
 
 function getRandomCountryIndex(countryArray) {
