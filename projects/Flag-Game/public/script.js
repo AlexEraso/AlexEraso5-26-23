@@ -229,6 +229,13 @@ var AllCountries = [
   "Suriname",
   "Uruguay",
   "Venezuela",
+  "Belize",
+  "Costa Rica",
+  "El Salvador",
+  "Guatemala",
+  "Honduras",
+  "Nicaragua",
+  "Panama",
 ];
 
 var Flags = {
@@ -393,6 +400,13 @@ var Flags = {
   Suriname: { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Flag_of_Suriname.svg/255px-Flag_of_Suriname.svg.png" },
   Uruguay: { url: "https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Uruguay.svg" },
   Venezuela: { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Flag_of_Venezuela_%281930%E2%80%932006%29.svg/220px-Flag_of_Venezuela_%281930%E2%80%932006%29.svg.png" },
+  Belize: { url: "https://upload.wikimedia.org/wikipedia/commons/e/e7/Flag_of_Belize.svg" },
+  Costa_Rica: { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Flag_of_Costa_Rica.svg/255px-Flag_of_Costa_Rica.svg.png" },
+  El_Salvador: { url: "https://cdn.britannica.com/10/7210-004-65DAD2F0/Flag-El-Salvador.jpg" },
+  Guatemala: { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Flag_of_Guatemala.svg/2000px-Flag_of_Guatemala.svg.png" },
+  Honduras: { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Flag_of_Honduras.svg/255px-Flag_of_Honduras.svg.png" },
+  Nicaragua: { url: "https://cdn.britannica.com/19/7219-004-8AB96369/Flag-Nicaragua.jpg" },
+  Panama: { url: "https://www.crwflags.com/fotw/images/p/pa.gif" },
 };
 
 function getRandomCountryIndex(countryArray) {
