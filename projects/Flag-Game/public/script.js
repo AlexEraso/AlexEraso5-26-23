@@ -236,9 +236,42 @@ var AllCountries = [
   "Honduras",
   "Nicaragua",
   "Panama",
+  "Cuba",
+  "Haiti",
+  "Bahamas",
+  "Barbados",
+  "Saint Vincent",
+  "Antigua and Barbuda",
+  "Dominica",
+  "Trinidad and Tobago",
+  "Puerto Rico",
+  "Jamaica",
+  "Saint Lucia",
+  "United States",
+  "Canada",
+  "Mexico",
+  "Greenland",
+  "Grenada",
+  "Australia",
+  "Papa New Guinea",
+  "New Zealand",
+  "Fiji",
+  "Solomon Islands",
+  "Micronesia",
+  "Vanuatu",
+  "Samoa",
+  "Kiribati",
+  "Tonga",
+  "Marshall Islands",
+  "Palau",
+  "Tuvalu",
+  "Nauru",
+
+
 ];
 
 var Flags = {
+  //Europe
   Albania: { url: "https://tinyurl.com/2s2jwa39" },
   Andorra: { url: "https://tinyurl.com/4h6b4cy2" },
   Austria: { url: "https://tinyurl.com/2p8a3h8d" },
@@ -287,6 +320,7 @@ var Flags = {
   Ukraine: { url: "https://tinyurl.com/2ejuv62k" },
   United_Kingdom: { url: "https://tinyurl.com/4pcttt4k" },
   Vatican_City: { url: "https://tinyurl.com/yzh76vzw" },
+  //Africa
   Algeria: { url: "https://tinyurl.com/356exkrs" },
   Angola: { url: "https://tinyurl.com/3p74e5p3" },
   Benin: { url: "https://tinyurl.com/43s4epp9" },
@@ -341,6 +375,7 @@ var Flags = {
   Uganda: { url: "https://tinyurl.com/2ecnb46w" },
   Zambia: { url: "https://tinyurl.com/bdhe5a88" },
   Zimbabwe: { url: "https://tinyurl.com/4yc45mr5" },
+  //Asia
   Afghanistan: { url: "https://cdn.britannica.com/40/5340-004-B25ED5CF/Flag-Afghanistan.jpg" },
   Armenia: { url: "https://cdn.britannica.com/11/4711-004-1504C169/Flag-Armenia.jpg" },
   Azerbijan: { url: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAACfCAMAAABX0UX9AAAAkFBMVEUAteJQni/vM0D///8AvOv6ISr4JkE9pC7vLjzvKTjvMT7vLDruHC7uIDHuFiruECb+9PX70NL8293zb3f95ebxVmDyZm7ze4L+7/D0g4n2m6DzdXzyanL5xMf70dPtABT1k5nwQ07wSVT5vcH3o6jxXWbtAAj0iY/72NrxUlzvOUX5x8n3qKz4s7b3rbH84eMwX1lWAAADrklEQVR4nO3ba2+iQBSAYVf2wgzDoEJrdVuLtV1t7eX//7v1UhGtYt2z2TmbvM+HpklpQt4MMMDQagEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPxFXyHQ+gaBVlsfGyfGJLG1oXfkNG35rHFp+yIfDPKHp9SZOPT+nKArn/Hjct6J3nW6wztvVI9BTfmMn75Fe4rSpYoD6skX+7KzH281Boc+Cb1vR6nJl971drNddefz+WxZtLhIQ+/dMVry+cFOuue87d2SHw8mUVR6pQewjnw2e6nFm+VZmmx6WZOmZdRV2k9FPuvntZGXZ3vnOmuy5zedV2AV+bKbbb2JMx83sOnjJNbYT0M+97ytV2aHK8XtvsYptIJ85nJb76c7tpW1T+tfVFUMn8+a7XRvcHqGklxqmgWGz+e2F91Xf3rzrKPpJBg8X3xX1Xv7xOwkuY4GB64toQTP5yZVvoemw9Ks/5hOotF6jMYaKobOZ21V76bp0DXDy+V00LrFhk+LQZr4i3sF/ULnM2WV77Hpmho/RL08M6a/nNyYJLscRT8VXENC5/O97ZmvecNRFBX92+5yy1/54r+K7B/tYpPA+VYH4/uEuflYTFazw2Jdevmjr+DYDZ0vyat84xOXXb/7QOtKw+ALnc8MNzk6p3LUSi9NNQy+0PnSatoyO3q7tmbNbf1J/tWtikcwgfO57qbHS9P9mk2cGXTrgy+aTWMXvmDofNUJ7bUhX+zym+ijbj8NPXcJnM8XmxbPx/PFD1cH4q1cB+7H6BMJnW+0aTHh3Hc+rrwizPtEkuuqB3cd57O+6sE97x9ws02+Hk9czsfzPpHa0+Y5T5vPx7sOkdqbtoI3bedzr1W/z7zn9bzn3WHT7SqDPqsMzsYaFxl3X7sXO7bCyuaqur3TkK+dba++R9f3vSSKTnkVFfmsrz2MOrS61LO6tMnu2ube7tpm58rFXE9lPSX5FvORaf1xSuf1er2y3vtx/yaK7pXWU5Ovnd7Noh2dXnc+euO7jk+Ks/7BN0Kd6f65UBE9+RYTwGxQ7McrSq/oHu0DTflWX1QOd76ofOSLyrPEfM8r9T99Tf4dAq0fEGh9gQD5RMgnQj4R8omQT4R8IuQTIZ8I+UTIJ0I+EfKJkE+EfCLkEyGfCPlEyCdCPhHyiZBPhHwi5BMhnwj5RMgnQj4R8omQT4R8IuQTIZ8I+UTIJ0I+EfKJkE+EfCLkEyGfCPlEyCdCPhHyiZBPhHwi5BMhnwj5RMgnQj6R30k1BoaZ0xT8AAAAAElFTkSuQmCC" },
@@ -388,6 +423,7 @@ var Flags = {
   Uzbekistan: { url: "https://cdn.britannica.com/47/7247-004-44F420D7/Flag-Uzbekistan.jpg" },
   Vietnam: { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/2000px-Flag_of_Vietnam.svg.png" },
   Yemen: { url: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAPFBMVEUAAAD////OESfNEicGBgb+//v+/f/EGSrQFirODCXp6enQCyXw8O/9/Pzo6eX///zo5+z29vbOFivIEiZzMpT+AAABuUlEQVR4nO3bS04CURBA0QftBxFBcf97FaIkNNd59+CcFVRuJTWrsWPmfD6P3bTdvm0nbr5vTfhziaLJo2na/Tbh5q7J0ttZiWuIW5OlZ1kNTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0qd8m10fa96U/WFfjWmI7Xnk0DhvmDmO/+Vh6iFX52OzH8fTMvdNxfL4w9zmOS+9ldY6Xe8LcXpPQpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qT242vpEVbnazwN5hT5jyqPnjQJTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNKlLEx79AAJ0/2huSCRaAAAAAElFTkSuQmCC" },
+  //South America
   Argentina: { url: "https://i.ebayimg.com/images/g/dtoAAMXQiNdRcUIj/s-l500.jpg" },
   Bolivia: { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Flag_of_Bolivia_%28state%29.svg/2560px-Flag_of_Bolivia_%28state%29.svg.png" },
   Brazil: { url: "https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/640px-Flag_of_Brazil.svg.png" },
@@ -400,6 +436,7 @@ var Flags = {
   Suriname: { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Flag_of_Suriname.svg/255px-Flag_of_Suriname.svg.png" },
   Uruguay: { url: "https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Uruguay.svg" },
   Venezuela: { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Flag_of_Venezuela_%281930%E2%80%932006%29.svg/220px-Flag_of_Venezuela_%281930%E2%80%932006%29.svg.png" },
+  //Central American 
   Belize: { url: "https://upload.wikimedia.org/wikipedia/commons/e/e7/Flag_of_Belize.svg" },
   Costa_Rica: { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Flag_of_Costa_Rica.svg/255px-Flag_of_Costa_Rica.svg.png" },
   El_Salvador: { url: "https://cdn.britannica.com/10/7210-004-65DAD2F0/Flag-El-Salvador.jpg" },
@@ -407,6 +444,38 @@ var Flags = {
   Honduras: { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Flag_of_Honduras.svg/255px-Flag_of_Honduras.svg.png" },
   Nicaragua: { url: "https://cdn.britannica.com/19/7219-004-8AB96369/Flag-Nicaragua.jpg" },
   Panama: { url: "https://www.crwflags.com/fotw/images/p/pa.gif" },
+  Cuba: { url: "https://upload.wikimedia.org/wikipedia/commons/b/bd/Flag_of_Cuba.svg" },
+  Haiti: { url: "https://www.state.gov/wp-content/uploads/2018/08/haiti-flag.gif" },
+  Bahamas: { url: "https://media.istockphoto.com/id/1141056337/vector/bahamas-flag-icon-in-flat-style-national-sign-vector-illustration-politic-business-concept.jpg?s=612x612&w=0&k=20&c=-x70qZmoW9wLU56d9ui4tlGKSdDvvUtu3PQT6tK5MEM=" },
+  Barbados: { url: "https://cdn.britannica.com/08/5108-004-FD58C8EF/Flag-Barbados.jpg" },
+  Saint_Vincent: { url: "https://upload.wikimedia.org/wikipedia/commons/6/6d/Flag_of_Saint_Vincent_and_the_Grenadines.svg" },
+  Antigua_and_Barbuda: { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Flag_of_Antigua_and_Barbuda.svg/800px-Flag_of_Antigua_and_Barbuda.svg.png" },
+  Dominica: { url: "https://cdn.britannica.com/12/5112-050-2A5C6946/Flag-Dominica.jpg" },
+  Trinidad_and_Tobago: { url: "https://cdn.britannica.com/28/5128-004-2809EB66/Flag-Trinidad-and-Tobago.jpg" },
+  Puerto_Rico: { url: "https://cdn.britannica.com/30/5130-004-7653391E/Flag-Puerto-Rico.jpg" },
+  Jamaica: { url: "data:image/png;base64,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" },
+  Saint_Lucia: { url: "https://www.state.gov/wp-content/uploads/2018/08/saintlucia-flag.gif" },
+  //North America
+  United_States: { url: "https://cdn.britannica.com/33/4833-004-828A9A84/Flag-United-States-of-America.jpg" },
+  Canada: { url: "https://www.worldatlas.com/img/flag/ca-flag.jpg" },
+  Mexico: { url: "https://mexicanappetizersandmore.com/wp-content/uploads/2016/07/Mexico_flag-3.jpg" },
+  Grenada: { url: "https://cdn.shopify.com/s/files/1/0399/6198/5173/products/grenada_tnnew_1400x.jpg?v=1591628744" }, //needs fixing
+  Greenland: { url: "data:image/png;base64,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" },
+  //Oceania https://www.worldometers.info/geography/how-many-countries-in-oceania/
+  Australia: { url: "https://pixelz.cc/wp-content/uploads/2018/11/australia-flag-uhd-4k-wallpaper-768x432.jpg" },
+  Papa_New_Guinea: { url: "https://cdn.shopify.com/s/files/1/0690/6812/8571/products/papua-new-guinea-flag__56795.1639690374.1280.1280.jpg?v=16733910612" },
+  New_Zealand: { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Flag_of_New_Zealand.svg/800px-Flag_of_New_Zealand.svg.png" },
+  Fiji: { url: "https://cdn.britannica.com/86/3286-004-ADA8C1B4/Flag-Fiji.jpg" },
+  Solomon_Islands: { url: "https://cdn.shopify.com/s/files/1/0690/6812/8571/products/solomon-islands-flag__15114.1639690376.1280.1280.jpg?v=1673391412" },
+  Micronesia: { url: "data:image/jpeg;base64,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" },
+  Vanuatu: { url: "https://m.media-amazon.com/images/I/51oU5ex1bWL.jpg" },
+  Samoa: { url: "https://cdn.shopify.com/s/files/1/0690/6812/8571/products/western-samoa-flag__21795.1639690375.1280.1280_grande.jpg?v=1673391211" },
+  Kiribati: { url: "https://cdn.britannica.com/88/3288-004-1F9FDA41/Flag-Kiribati.jpg" },
+  Tonga: { url: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAACfCAMAAABX0UX9AAAAwFBMVEXCAAD////CAAHDBga/AAD///3//P7BAASuMDL6//////q5AADeqqj+//////yzAADivLv66eq/SUzqwr+uAADIAAGkAAD/+vW6Q0XlrKf519DToqKpAAD2///KAACeAADt//////L3//j/+f/s3NvMn5f58/LjurT75eHgvbL56uHmu7766t741tf/0c/mm5mlOTqUAADwpKjCRkHlrqboqqvqw7PwvrjeiojwrbDfy8KqQkCxO0TqrqOpMjW1IyGJj75UAAAEtklEQVR4nO3dDVPbNgDGcctISiVVdrtYCd3s0JBtbShj7XjZW9d+/281O2wlxiIkebYFz8//Do4jic/+nWKDbEwiDpsyworn8qinJU+Cz8nelab1p6fCl/axp8OXHJpi55o1Jt/eJc0qk2/fksZvHz5vrBaVVd1H5pW2Sut9+HpYuufoU1b5b7+J9N33C5vtuKz+8iV77vuUr8yLMu/kTl7quTaGfBu3WHnj34SQhPu5t9Vce/JtzJt697bM09H90vzstdUmslMk3xpfteLrHixDcVYpVQ3l0LEvn9deLV3oLi9/KbSpOPo2l2VGvIhtcc1nGxDyke/xyAdFPijyQZEPinxQ5IMiHxT5oMgHRT6obfiU9spam33JKmF1zSe7y3NnRmVKZGtZU5lswxT0/5zPnypzfwZPV96/kzG+c6+t8utlwmgdOy8yDD6l6k2vKt/6ZlWZ6Ogr3mpv25P1un65F+2XD4jPe/vDxcXF1+0uLn7MI3yT8+l0Op+2mk9Vpe1Q+Yyx7ydFXpbl5K+PcnJSFkWeRvjSsjypnzNZ78OH50LNh8rnF/NL6VyY3RVkSIJzo+7yjlySpy5xa9XP/sno08Hy6fllSNpnhEJwSXqURpYXZrLBXWuUF9eVHuyRV3lxnIYI1ZaNQvFKDHffVx84yfdA5IMiHxT5oLbmi/yMt2Xk4+h7IPJBkQ+KfFDkg+KRF2rL33llmsjWnIGUMolc3tfMLEjXvuLUzfIh89Udy1HrzRtmMbrV8lYPrT8aXJJfGTHYyXrzuubrTE6lIxebrG/opGtbzNy194OdrK837zIk7Qk/KUN8BDrnjo5c6+3rkvKVGO7oszY7dqP2SAtp7RQ705a4PJ21D9NOlldCDHa2WU3FxzKXeXFX7opJmceWN5Nl6VxRtJ58ci2GO1kvdDW+GS/H690slz//UkRGX/nrePyu9dTx8ubmrNKDffOK6Dla/+BFGirygocPHAPg68ZrXG4jHxT5oMgHRT4o8kGRD4p8UOSDIh8U+aDIB0U+KPJBkQ+KfFDkg/pX+AT5Nm9xZirxxiXd26GW56c6I98jW6y08b/9/lW3j2dmYTed2SCfEF4JdRr9I8lpphfG8BZgm/lMlmXNn0neT9R0mnyPZbLmBqURJeONVuR7pMwbr2139HmrKzOwm2+q3cuU98pmppOqx5+uH9s+IbRdmKv+8unDZqanvebbY/T9kwk7X4g/ohccPfkavmeH7dOzT5/ef54dWmKvGr6QHvSG56G5HjXpL1+td8hVkM2/6nD93fcddW6//J92e6Fv5L4IPWjFJ9P0oOOvv33ho98+kQ+KfFDkgyIfFPmgyAdFPijyQZEPinxQ5IMiHxT5oMgHRT4o8kGRD4p8UOSDIh8U+aDIB0U+KPJBkQ+KfFDkgyIfFPmgyAdFPijyQZEPinxQ5IMiHxT5oMgHRT4o8kGRD4p8UOSDIh8U+aDIB0U+KPJBkQ+KfFDkgyIfFPmgyAdFPijyQZEPinxQ5IMiHxT5oMgHRT4o8kGRD4p8UOSDuuOj3+7VajXfii5lO7ZCW/Gl5Nu9v0ff6r7Nh16Z/tWQrfZ98tBr0tfkLZ9svmK7tTKr+RjQn82ksg6JxSZ8AAAAAElFTkSuQmCC" },
+  Marshall_Islands: { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Flag_of_the_Marshall_Islands.svg/255px-Flag_of_the_Marshall_Islands.svg.png" },
+  Palau: { url: "https://cdn.britannica.com/49/3349-004-6152ED8A/Flag-Palau.jpg" },
+  Tuvalu: { url: "https://cdn.britannica.com/03/3303-004-C17F03F9/Flag-Tuvalu.jpg" },
+  Nauru: { url: "https://upload.wikimedia.org/wikipedia/commons/3/30/Flag_of_Nauru.svg" },
 };
 
 function getRandomCountryIndex(countryArray) {
