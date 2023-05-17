@@ -558,3 +558,20 @@ function chooseFlag() {
 }
 
 //This link might help https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll
+
+
+
+
+//Reoccuring Issues:
+//Long country names don't completely show 
+//Title Page
+//Incorrect when correct occassionally 
+//Correct when incorrect occassionally 
+
+//To do
+//Title Page
+//Settings -> select continent -> how many countries (10, 25, 50, 100...)
+//Library
+//Fix bugs 
+//Center Buttons, flags
+//Make more visually appealing
