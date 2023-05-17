@@ -266,8 +266,6 @@ var AllCountries = [
   "Palau",
   "Tuvalu",
   "Nauru",
-
-
 ];
 
 var Flags = {
