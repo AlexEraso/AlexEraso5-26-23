@@ -11,6 +11,8 @@ p {
   font-size: 18px;
 }
 
+
+
 .button,
 .buttontwo,
 .buttonthree,
@@ -25,10 +27,11 @@ p {
   font-size: 24px;
   margin: 10px;
   cursor: pointer;
+  
 }
 
 .rectangle {
-  background-color: #6EB1D6;
+  background-color: #76c0e8;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -38,7 +41,7 @@ p {
 }
 
 body {
-  background-color: #5293BB
+  background-color: #91d1d5
 }
 input {
   width: 12%;
