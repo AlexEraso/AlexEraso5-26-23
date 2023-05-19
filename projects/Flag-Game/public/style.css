@@ -1,8 +1,42 @@
 body {
   width: 40em;
   margin: 1in auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.show {
+  visibility: visible;
 }
 
+#start {
+  visibility: visible;
+}
+#start #title {
+  text-align: center;
+  color: darkcyan;
+  -webkit-text-stroke: 2px white;
+}
+#start #yellow-banner {
+  text-align: center;
+  border: 10px solid #fff;
+  background-color: yellow;
+  border-radius: 25px;
+}
+#start #red-banner {
+  text-align: center;
+  border: 10px solid #fff;
+  background-color: red;
+  border-radius: 25px;
+}
+#start h3 {
+  cursor: pointer;
+  text-align: center;
+  margin-top: 20%;
+  border: 0;
+  border-radius: 25px;
+  background-color: #fff;
+  text-decoration: none;
+  color: black;
+}
 h1 {
   font-family: sans-serif;
 }
@@ -10,8 +44,6 @@ h1 {
 p {
   font-size: 18px;
 }
-
-
 
 .button,
 .buttontwo,
@@ -27,22 +59,23 @@ p {
   font-size: 24px;
   margin: 10px;
   cursor: pointer;
-  
 }
 
 .rectangle {
-  background-color: #76c0e8;
+  padding: 2%;
+  background-color: #33ccff;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 32%;
+  width: 35%;
   height: 100%;
 }
 
 body {
-  background-color: #91d1d5
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/80/Collection-national-flags.png");
 }
+
 input {
   width: 12%;
 }
