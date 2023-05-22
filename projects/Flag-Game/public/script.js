@@ -565,8 +565,11 @@ function chooseFlag() {
 
 //To do
 //Title Page
+
 //Settings -> select continent -> how many countries (10, 25, 50, 100...)
-//Library
+//Can you categorize elements in an array? Could help with selecting specific continent to quiz on 
+//Library: List of all Flags, country names, and continent
+
 //Fix bugs 
 //Center Buttons, flags
 //Make more visually appealing
