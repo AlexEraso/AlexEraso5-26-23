@@ -557,11 +557,6 @@ function chooseFlag() {
   turn();
 }
 
-//This link might help https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll
-
-
-
-
 //Reoccuring Issues:
 //Long country names don't completely show 
 //Title Page
