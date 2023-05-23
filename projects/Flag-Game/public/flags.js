@@ -198,7 +198,7 @@ var AllCountries = [
     "Tuvalu",
     "Nauru",
   ];
-  //hi pr
+
   var Flags = {
     //Europe
     Albania: { url: "https://tinyurl.com/2s2jwa39" },

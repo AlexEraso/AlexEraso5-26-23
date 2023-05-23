@@ -12,19 +12,19 @@ body {
 }
 #start #title {
   text-align: center;
-  color: darkcyan;
+  color: rgb(2, 5, 10);
   -webkit-text-stroke: 2px white;
 }
 #start #yellow-banner {
   text-align: center;
   border: 10px solid #fff;
-  background-color: yellow;
+  background-color: #007bff ;
   border-radius: 25px;
 }
 #start #red-banner {
   text-align: center;
   border: 10px solid #fff;
-  background-color: red;
+  background-color: #00b894;
   border-radius: 25px;
 }
 #start h3 {
@@ -45,26 +45,40 @@ p {
   font-size: 20px;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 .button,
 .buttontwo,
 .buttonthree,
 .buttonfour {
-  align-items: center;
-  background-color: #d7d8d9;
+  background-color: white;
   border: none;
   color: white;
   padding: 15px 180px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display: block;
   font-size: 30px;
-  margin: 10px;
+  margin: 55px auto;
   cursor: pointer;
+  color: black;
+  /* Add the following properties */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.button, .buttontwo, .buttonthree, .buttonfour {border-radius: 12px;}
 
 .rectangle {
   padding: 2%;
-  background-color: #33ccff;
+  background-color: #a9aeae;
   position: absolute;
   top: 50%;
   left: 50%;
