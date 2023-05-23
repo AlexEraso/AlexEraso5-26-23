@@ -49,6 +49,7 @@ p {
 .buttontwo,
 .buttonthree,
 .buttonfour {
+  align-items: center;
   background-color: #d7d8d9;
   border: none;
   color: white;

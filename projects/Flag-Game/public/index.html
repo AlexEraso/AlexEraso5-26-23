@@ -21,10 +21,12 @@
         <p>From Afaghanistan to Zimbabwe</p>
       </div>
       <div>
-        <a href="play/index.html">
+        <!--<a href="play/index.html">-->
+        <div id="playButton">
           <h3 id="play">Play <img src="https://cdn-icons-png.flaticon.com/512/0/375.png"
               style="width:100px;height:100px;"> </h3>
-        </a>
+        </div>
+        <!--</a>-->
         <a href="options/index.html">
           <h3>Options <img
               src="https://upload.wikimedia.org/wikipedia/commons/9/96/Gear-icon-transparent-background.png"
@@ -35,7 +37,38 @@
           </a>
       </div>
     </div>
+    <div id="gamePlayButtons" hidden>
+      <div id="score"></div>
+      <div id="title"></div>
+      <div id="choices" style="align-content: center;">
+        <img src="images/spacer.gif" width="305" height="312" id="myCountry" alt="some image" />
+        <input id="button_1" type="button" class="input button" value="Place Holder #1" />
+        <input id="button_2" type="button" class="input button" value="Place Holder #2" />
+        <input id="button_3" type="button" class="input button" value="Italy / China" />
+        <input id="button_4" type="button" class="input button" value="Place Holder #4" />
+      </div>
+      <button id="next">Next</button>
+    </div>
+    <script src="flags.js"></script>
     <script src="script.js" defer></script>
+
+    <!--
+    <div class="rectangle" id="gameButtons" hidden>
+      <div id="score"></div>
+      <div id="title"></div>
+      <div id="red-banner"><h2>Country Flags Quiz</div>
+        <div id="yellow-banner"><p>Guess the flags of 197 countries:</p><p>from Afaghanistan to Zimbabwe</p></div>
+        <div>
+      <div id="choices">
+        <img src="images/spacer.gif" width="305" height="312" id="myCountry" alt="some image" />
+        <input id="button_1" type="button" class="input button" value="Place Holder #1" />
+        <input id="button_2" type="button" class="input button" value="Place Holder #2" />
+        <input id="button_3" type="button" class="input button" value="Italy / China" />
+        <input id="button_4" type="button" class="input button" value="Place Holder #4" />
+      </div>
+      <button id="next">Next</button>
+    </div>
+  -->
 </body>
 
 </html>
