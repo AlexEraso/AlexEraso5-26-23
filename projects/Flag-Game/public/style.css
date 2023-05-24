@@ -68,7 +68,6 @@ p {
   margin: 55px auto;
   cursor: pointer;
   color: black;
-  /* Add the following properties */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,7 +77,7 @@ p {
 
 .rectangle {
   padding: 2%;
-  background-color: #a9aeae;
+  background-color:#ADD8E6  ;
   position: absolute;
   top: 50%;
   left: 50%;

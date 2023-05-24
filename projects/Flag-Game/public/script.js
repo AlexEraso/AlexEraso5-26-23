@@ -46,15 +46,12 @@ function click(event) {
       for (let i = 0; i < red.length; i++) {
         red[i].classList.remove("red");
       }
-      //window.location.reload();
       turn();
     });
     disableButtons();
   }
 }
-//
-//
-//
+
 document.addEventListener("DOMContentLoaded", function () {
   const input = document.getElementsByClassName("input");
   for (let i = 0; i < input.length; i++) {
@@ -74,12 +71,6 @@ function onPlayClicked(event) {
   }
   turn();
 }
-
-//Switch Between Flags Randomly after reloading page
-//Based off of: https://www.peachpit.com/articles/article.aspx?p=2239154&seqNum=10
-
-//window.onload = chooseFlag;
-
 
 
 function getRandomCountryIndex(countryArray) {
@@ -147,20 +138,9 @@ function turn() {
   }
 
   enableButtons();
-
-  //   assign country name to correct button
-  //   assign random country names to remaining button (make sure not to use the same name twice, remember selected indexes again)
-  //   wait for button to be clicked
 }
 
-//Turn this into objects rather than an Array. Have the country name and have the url attatched.
-
-//For some reason, when I change "var myPicture = new Array ("https://tinyurl.com/2hbxcsbs","https://tinyurl.com/38jm6rwt");" to "var myFlag = ["https://tinyurl.com/2hbxcsbs", "https://tinyurl.com/38jm6rwt", ];" it doesn't load the image, so I'm just going to keep it how it was until I figure out why.
-//First url is italy, second is China, third is Spain, fourth is Colombia, fifth is Argentina, sixth is Vietnam
-
 function chooseFlag() {
-  //var randomNum = Math.floor(Math.random() * myPicture.length);
-  //document.getElementById("myCountry").src = myPicture[randomNum];
   turn();
 }
 
@@ -171,7 +151,8 @@ function chooseFlag() {
 //Correct when incorrect occassionally 
 
 //To do
-//Title Page
+//Options, library
+//Back Button 
 
 //Settings -> select continent -> how many countries (10, 25, 50, 100...)
 //Can you categorize elements in an array? Could help with selecting specific continent to quiz on 

@@ -406,3 +406,7 @@ var AllCountries = [
     Tuvalu: { url: "https://cdn.britannica.com/03/3303-004-C17F03F9/Flag-Tuvalu.jpg" },
     Nauru: { url: "https://upload.wikimedia.org/wikipedia/commons/3/30/Flag_of_Nauru.svg" },
   };
+
+  //Maybe use filter HOF to filter things out of my array based on continent attribute, but I forget how to do it. 
+  //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+  
