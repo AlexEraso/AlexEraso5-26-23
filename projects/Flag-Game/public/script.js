@@ -148,7 +148,6 @@ function chooseFlag() {
 //Long country names don't completely show 
 //Title Page
 //Incorrect when correct occassionally 
-//Correct when incorrect occassionally 
 
 //To do
 //Options, library
