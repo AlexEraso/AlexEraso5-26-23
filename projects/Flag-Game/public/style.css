@@ -18,13 +18,13 @@ body {
 #start #yellow-banner {
   text-align: center;
   border: 10px solid #fff;
-  background-color: #007bff ;
+  background-color: #0072ec ;
   border-radius: 25px;
 }
 #start #red-banner {
   text-align: center;
   border: 10px solid #fff;
-  background-color: #00b894;
+  background-color: #02cea5;
   border-radius: 25px;
 }
 #start h3 {
@@ -77,7 +77,7 @@ p {
 
 .rectangle {
   padding: 2%;
-  background-color:#ADD8E6  ;
+  background-color:#afd8e5  ;
   position: absolute;
   top: 50%;
   left: 50%;
